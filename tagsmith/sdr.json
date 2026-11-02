@@ -43,7 +43,7 @@
     },
     {
       "type": "eVar",
-      "id": "eVar1",
+      "id": "eVar3",
       "name": "Page URL",
       "description": "Full page URL of the current page. Baseline dimension. Mirrored to prop.",
       "valueFormat": "URL string",
@@ -55,38 +55,38 @@
     },
     {
       "type": "eVar",
-      "id": "eVar2",
+      "id": "eVar40",
       "name": "Business Unit",
       "description": "Business unit / brand owner (Heritage SG / NHB — Singapore Night Festival). Baseline dimension. Mirrored to prop.",
       "valueFormat": "String",
       "exampleValue": "SNF",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "_experience.analytics.customDimensions.eVars.eVar2",
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar40",
       "dataLayerPath": "digitalData.page.businessUnit"
     },
     {
       "type": "eVar",
-      "id": "eVar3",
+      "id": "eVar1",
       "name": "Environment",
       "description": "Environment flag (production/staging/dev). Drives the Production Data Only segment. Baseline.",
       "valueFormat": "String",
       "exampleValue": "production",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
-      "xdmField": "_experience.analytics.customDimensions.eVars.eVar3",
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar1",
       "dataLayerPath": "digitalData.page.environment"
     },
     {
       "type": "eVar",
-      "id": "eVar4",
+      "id": "eVar2",
       "name": "Login Status",
       "description": "Visitor registration/login status (registered vs guest). BRD 201/203/1603 — email-only auth, registration optional.",
       "valueFormat": "String",
       "exampleValue": "registered",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "_experience.analytics.customDimensions.eVars.eVar4",
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar2",
       "dataLayerPath": "digitalData.user.loginStatus"
     },
     {
@@ -1282,7 +1282,7 @@
     {
       "brd_row": 10,
       "evars": [
-        "eVar3"
+        "eVar1"
       ],
       "props": [
         "prop3"
@@ -2376,6 +2376,36 @@
           "kind": "variable",
           "id": "baseline",
           "slot": "eVar1",
+          "name": "Environment",
+          "description": "Environment flag (production/staging/dev). Drives the Production Data Only segment. Baseline.",
+          "allocation": "Most Recent (Last)",
+          "expiration": "Page View",
+          "value_format": "String",
+          "example_value": "production",
+          "data_element": "digitalData.page.environment",
+          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar1",
+          "implementation_scope": "Data Layer",
+          "implementation_status": "Not Started"
+        },
+        {
+          "kind": "variable",
+          "id": "baseline",
+          "slot": "eVar2",
+          "name": "Login Status",
+          "description": "Visitor registration/login status (registered vs guest). BRD 201/203/1603 — email-only auth, registration optional.",
+          "allocation": "Most Recent (Last)",
+          "expiration": "Visit",
+          "value_format": "String",
+          "example_value": "registered",
+          "data_element": "digitalData.user.loginStatus",
+          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar2",
+          "implementation_scope": "Data Layer",
+          "implementation_status": "Not Started"
+        },
+        {
+          "kind": "variable",
+          "id": "baseline",
+          "slot": "eVar3",
           "name": "Page URL",
           "description": "Full page URL of the current page. Baseline dimension. Mirrored to prop.",
           "allocation": "Most Recent (Last)",
@@ -2389,48 +2419,8 @@
         },
         {
           "kind": "variable",
-          "id": "baseline",
-          "slot": "eVar2",
-          "name": "Business Unit",
-          "description": "Business unit / brand owner (Heritage SG / NHB — Singapore Night Festival). Baseline dimension. Mirrored to prop.",
-          "allocation": "Most Recent (Last)",
-          "expiration": "Visit",
-          "value_format": "String",
-          "example_value": "SNF",
-          "data_element": "digitalData.page.businessUnit",
-          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar2",
-          "implementation_scope": "Data Layer",
-          "implementation_status": "Not Started"
-        },
-        {
-          "kind": "variable",
-          "id": "baseline",
-          "slot": "eVar3",
-          "name": "Environment",
-          "description": "Environment flag (production/staging/dev). Drives the Production Data Only segment. Baseline.",
-          "allocation": "Most Recent (Last)",
-          "expiration": "Page View",
-          "value_format": "String",
-          "example_value": "production",
-          "data_element": "digitalData.page.environment",
-          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar3",
-          "implementation_scope": "Data Layer",
-          "implementation_status": "Not Started"
-        },
-        {
-          "kind": "variable",
           "id": "1603",
-          "slot": "eVar4",
-          "name": "Login Status",
-          "description": "Visitor registration/login status (registered vs guest). BRD 201/203/1603 — email-only auth, registration optional.",
-          "allocation": "Most Recent (Last)",
-          "expiration": "Visit",
-          "value_format": "String",
-          "example_value": "registered",
-          "data_element": "digitalData.user.loginStatus",
-          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar4",
-          "implementation_scope": "Data Layer",
-          "implementation_status": "Not Started"
+          "slot": "eVar4"
         },
         {
           "kind": "variable",
@@ -2982,6 +2972,20 @@
           "example_value": "light installations near museum",
           "data_element": "digitalData.search.keyword",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar39",
+          "implementation_scope": "Data Layer",
+          "implementation_status": "Not Started"
+        },
+        {
+          "kind": "variable",
+          "slot": "eVar40",
+          "name": "Business Unit",
+          "description": "Business unit / brand owner (Heritage SG / NHB — Singapore Night Festival). Baseline dimension. Mirrored to prop.",
+          "allocation": "Most Recent (Last)",
+          "expiration": "Visit",
+          "value_format": "String",
+          "example_value": "SNF",
+          "data_element": "digitalData.page.businessUnit",
+          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar40",
           "implementation_scope": "Data Layer",
           "implementation_status": "Not Started"
         }
