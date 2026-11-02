@@ -67,14 +67,14 @@
     },
     {
       "type": "eVar",
-      "id": "eVar1",
+      "id": "eVar41",
       "name": "Environment",
       "description": "Environment flag (production/staging/dev). Drives the Production Data Only segment. Baseline.",
       "valueFormat": "String",
       "exampleValue": "production",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
-      "xdmField": "_experience.analytics.customDimensions.eVars.eVar1",
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar41",
       "dataLayerPath": "digitalData.page.environment"
     },
     {
@@ -91,14 +91,14 @@
     },
     {
       "type": "eVar",
-      "id": "eVar5",
+      "id": "eVar1",
       "name": "Visitor ID (Hashed)",
       "description": "[Hashed — PII] Registered visitor identifier. SHA-256 hashed in JS before entering data layer. BRD 201/204 — email registration, AEP/RT-CDP profile. Never expiration for identity stitching.",
       "valueFormat": "SHA-256 hash (hex)",
       "exampleValue": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
       "allocation": "Most Recent (Last)",
       "expiration": "Never",
-      "xdmField": "_experience.analytics.customDimensions.eVars.eVar5",
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar1",
       "dataLayerPath": "digitalData.user.idHash"
     },
     {
@@ -1282,7 +1282,7 @@
     {
       "brd_row": 10,
       "evars": [
-        "eVar1"
+        "eVar41"
       ],
       "props": [
         "prop3"
@@ -1335,7 +1335,7 @@
     {
       "brd_row": 18,
       "evars": [
-        "eVar5"
+        "eVar1"
       ],
       "props": [],
       "events": [
@@ -2376,13 +2376,13 @@
           "kind": "variable",
           "id": "baseline",
           "slot": "eVar1",
-          "name": "Environment",
-          "description": "Environment flag (production/staging/dev). Drives the Production Data Only segment. Baseline.",
+          "name": "Visitor ID (Hashed)",
+          "description": "[Hashed — PII] Registered visitor identifier. SHA-256 hashed in JS before entering data layer. BRD 201/204 — email registration, AEP/RT-CDP profile. Never expiration for identity stitching.",
           "allocation": "Most Recent (Last)",
-          "expiration": "Page View",
-          "value_format": "String",
-          "example_value": "production",
-          "data_element": "digitalData.page.environment",
+          "expiration": "Never",
+          "value_format": "SHA-256 hash (hex)",
+          "example_value": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+          "data_element": "digitalData.user.idHash",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar1",
           "implementation_scope": "Data Layer",
           "implementation_status": "Not Started"
@@ -2425,17 +2425,7 @@
         {
           "kind": "variable",
           "id": "201",
-          "slot": "eVar5",
-          "name": "Visitor ID (Hashed)",
-          "description": "[Hashed — PII] Registered visitor identifier. SHA-256 hashed in JS before entering data layer. BRD 201/204 — email registration, AEP/RT-CDP profile. Never expiration for identity stitching.",
-          "allocation": "Most Recent (Last)",
-          "expiration": "Never",
-          "value_format": "SHA-256 hash (hex)",
-          "example_value": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
-          "data_element": "digitalData.user.idHash",
-          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar5",
-          "implementation_scope": "Data Layer",
-          "implementation_status": "Not Started"
+          "slot": "eVar5"
         },
         {
           "kind": "variable",
@@ -2986,6 +2976,20 @@
           "example_value": "SNF",
           "data_element": "digitalData.page.businessUnit",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar40",
+          "implementation_scope": "Data Layer",
+          "implementation_status": "Not Started"
+        },
+        {
+          "kind": "variable",
+          "slot": "eVar41",
+          "name": "Environment",
+          "description": "Environment flag (production/staging/dev). Drives the Production Data Only segment. Baseline.",
+          "allocation": "Most Recent (Last)",
+          "expiration": "Page View",
+          "value_format": "String",
+          "example_value": "production",
+          "data_element": "digitalData.page.environment",
+          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar41",
           "implementation_scope": "Data Layer",
           "implementation_status": "Not Started"
         }
