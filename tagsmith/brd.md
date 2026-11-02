@@ -1,8 +1,8 @@
 ---
-client: Singapore Night Festival 2026 (Adobe × Heritage SG / NHB)
+client: Brand new
 template: government-default-brd
 ---
-# Business Requirements — Singapore Night Festival 2026 (Adobe × Heritage SG / NHB)
+# Business Requirements — Brand new
 
 <!-- Managed by Tagsmith. Edit rows freely; keep each ID stable. IDs that are multiples of 100 are category headers. eVar / Event / prop hold the allocated Adobe variables (comma-separated). -->
 
