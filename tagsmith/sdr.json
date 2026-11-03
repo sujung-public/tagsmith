@@ -2142,7 +2142,7 @@
           "expiration": "Page View",
           "value_format": "String (URL)",
           "example_value": "https://singaporenightfestival.sg/programmes/light-walk",
-          "data_element": "digitalData.page.url",
+          "data_element": "web.webPageDetails.URL",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar1",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2157,7 +2157,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "Heritage SG - SNF",
-          "data_element": "digitalData.page.businessUnit",
+          "data_element": "web.webPageDetails.businessUnit",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar2",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2172,7 +2172,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "production",
-          "data_element": "digitalData.page.environment",
+          "data_element": "web.webPageDetails.environment",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar3",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2187,7 +2187,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "registered",
-          "data_element": "digitalData.user.loginStatus",
+          "data_element": "user.loginStatus",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar4",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2202,7 +2202,7 @@
           "expiration": "Visitor",
           "value_format": "String (SHA-256 hash)",
           "example_value": "8f14e45fceea167a...",
-          "data_element": "digitalData.user.idHash",
+          "data_element": "user.idHash",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar5",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2217,7 +2217,7 @@
           "expiration": "Visit",
           "value_format": "String (Y/N)",
           "example_value": "Y",
-          "data_element": "digitalData.user.studentCohortFlag",
+          "data_element": "journey.studentCohortFlag",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar6",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2236,7 +2236,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Programmes : Light Walk",
-          "data_element": "digitalData.page.name",
+          "data_element": "web.webPageDetails.name",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar7",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2251,7 +2251,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Programmes",
-          "data_element": "digitalData.page.siteSection",
+          "data_element": "web.webPageDetails.siteSection",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar8",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2266,7 +2266,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "programme-detail",
-          "data_element": "digitalData.page.pageType",
+          "data_element": "content.pageType",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar9",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2281,7 +2281,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "mobile",
-          "data_element": "digitalData.page.viewportMode",
+          "data_element": "content.viewportMode",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar10",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2296,7 +2296,7 @@
           "expiration": "Page View",
           "value_format": "String (Y/N)",
           "example_value": "Y",
-          "data_element": "digitalData.page.brandCompliant",
+          "data_element": "content.brandCompliant",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar11",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2311,7 +2311,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Event+Place",
-          "data_element": "digitalData.page.structuredDataTypes",
+          "data_element": "content.structuredDataTypes",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar12",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2330,7 +2330,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "INST-0421",
-          "data_element": "digitalData.content.programmeId",
+          "data_element": "content.programmeId",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar13",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2345,7 +2345,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Lights of Memory",
-          "data_element": "digitalData.content.programmeTitle",
+          "data_element": "content.programmeTitle",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar14",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2360,7 +2360,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "National Museum of Singapore",
-          "data_element": "digitalData.content.venueName",
+          "data_element": "content.venueName",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar15",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2375,7 +2375,7 @@
           "expiration": "Page View",
           "value_format": "String (date/time)",
           "example_value": "2026-08-22 20:00",
-          "data_element": "digitalData.content.timeSlot",
+          "data_element": "content.timeSlot",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar16",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2390,7 +2390,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "unlocked",
-          "data_element": "digitalData.content.unlockedContentStatus",
+          "data_element": "content.unlockedContentStatus",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar17",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2405,7 +2405,7 @@
           "expiration": "Page View",
           "value_format": "String (year)",
           "example_value": "2026",
-          "data_element": "digitalData.content.firstFestivalYear",
+          "data_element": "content.firstFestivalYear",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar18",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2424,7 +2424,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "cta-click",
-          "data_element": "digitalData.eventData.interactionType",
+          "data_element": "web.webInteraction.type",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar19",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2439,7 +2439,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "klook-INST-0421",
-          "data_element": "digitalData.eventData.klookCtaContext",
+          "data_element": "marketing.eventData.klookCtaContext",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar20",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2454,7 +2454,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "pin-click",
-          "data_element": "digitalData.eventData.mapContext",
+          "data_element": "web.webInteraction.eventData.mapContext",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar21",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2469,7 +2469,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "granted",
-          "data_element": "digitalData.user.locationPermission",
+          "data_element": "journey.locationPermission",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar22",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2484,7 +2484,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "zone-bras-basah",
-          "data_element": "digitalData.user.zoneLabel",
+          "data_element": "journey.zoneLabel",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar23",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2499,7 +2499,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "high",
-          "data_element": "digitalData.content.crowdDensityLevel",
+          "data_element": "content.crowdDensityLevel",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar24",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2514,7 +2514,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "Heritage Lights Trail",
-          "data_element": "digitalData.trail.name",
+          "data_element": "web.webInteraction.name",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar25",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2529,7 +2529,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "ITIN-9f3a",
-          "data_element": "digitalData.trail.itineraryId",
+          "data_element": "content.trail.itineraryId",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar26",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2544,7 +2544,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "shared-view",
-          "data_element": "digitalData.trail.itinerarySource",
+          "data_element": "content.trail.itinerarySource",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar27",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2559,7 +2559,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "time-conflict",
-          "data_element": "digitalData.eventData.optimisationSuggestion",
+          "data_element": "content.eventData.optimisationSuggestion",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar28",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2574,7 +2574,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "qr-first-scan",
-          "data_element": "digitalData.eventData.registrationTrigger",
+          "data_element": "journey.registrationTrigger",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar29",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2589,7 +2589,7 @@
           "expiration": "Visit",
           "value_format": "String (list)",
           "example_value": "Tier0|Tier1",
-          "data_element": "digitalData.consent.tierSelection",
+          "data_element": "journey.consent.tierSelection",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar30",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2604,7 +2604,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "withdraw",
-          "data_element": "digitalData.consent.action",
+          "data_element": "journey.consent.action",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar31",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2619,7 +2619,7 @@
           "expiration": "Visit",
           "value_format": "String (list)",
           "example_value": "StrictlyNecessary|Analytics",
-          "data_element": "digitalData.consent.cookieCategories",
+          "data_element": "journey.consent.cookieCategories",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar32",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2634,7 +2634,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "your-picks-tonight",
-          "data_element": "digitalData.eventData.personalisationUseCase",
+          "data_element": "content.eventData.personalisationUseCase",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar33",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2649,7 +2649,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "picks-slot-2:INST-0421",
-          "data_element": "digitalData.eventData.recommendationContext",
+          "data_element": "content.eventData.recommendationContext",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar34",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2664,7 +2664,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "whatsapp",
-          "data_element": "digitalData.eventData.shareMethod",
+          "data_element": "journey.eventData.shareMethod",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar35",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2679,7 +2679,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "trail-recommendation",
-          "data_element": "digitalData.eventData.conciergeIntent",
+          "data_element": "journey.eventData.conciergeIntent",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar36",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2694,7 +2694,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "answered",
-          "data_element": "digitalData.eventData.conciergeOutcome",
+          "data_element": "journey.eventData.conciergeOutcome",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar37",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2713,7 +2713,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "chatgpt",
-          "data_element": "digitalData.page.aiDiscoverySource",
+          "data_element": "content.aiDiscoverySource",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar38",
           "implementation_scope": "WebSDK",
           "implementation_status": "Pending"
@@ -2752,7 +2752,7 @@
           "description": "Mirror of the Page URL eVar for PathFinder / pathing analysis. Baseline variable.",
           "value_format": "String (URL)",
           "example_value": "https://singaporenightfestival.sg/programme/lumen",
-          "data_element": "digitalData.page.url",
+          "data_element": "web.webPageDetails.URL",
           "xdm_field": "_experience.analytics.customDimensions.props.prop1",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2765,7 +2765,7 @@
           "description": "Mirror of the Business Unit eVar for pathing / ClickMap segmentation. Baseline variable.",
           "value_format": "String",
           "example_value": "Heritage SG — Singapore Night Festival",
-          "data_element": "digitalData.page.businessUnit",
+          "data_element": "web.webPageDetails.businessUnit",
           "xdm_field": "_experience.analytics.customDimensions.props.prop2",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2782,7 +2782,7 @@
           "description": "Mirror of the Page Name eVar for PathFinder pathing across the SNF site. Supports page-tagging requirement.",
           "value_format": "String",
           "example_value": "Programme Detail — Lumen",
-          "data_element": "digitalData.page.name",
+          "data_element": "web.webPageDetails.name",
           "xdm_field": "_experience.analytics.customDimensions.props.prop3",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2795,7 +2795,7 @@
           "description": "Mirror of the Site Section eVar for next-page-flow pathing through the SNF site hierarchy.",
           "value_format": "String",
           "example_value": "Programme",
-          "data_element": "digitalData.page.siteSection",
+          "data_element": "web.webPageDetails.siteSection",
           "xdm_field": "_experience.analytics.customDimensions.props.prop4",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2808,7 +2808,7 @@
           "description": "Mirror of the Page Type eVar for pathing between listing, detail and policy page templates.",
           "value_format": "String",
           "example_value": "programme-detail",
-          "data_element": "digitalData.page.pageType",
+          "data_element": "content.pageType",
           "xdm_field": "_experience.analytics.customDimensions.props.prop5",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2825,7 +2825,7 @@
           "description": "Mirror of the Programme / Installation Name eVar for pathing across festival content items.",
           "value_format": "String",
           "example_value": "Lumen Light Garden",
-          "data_element": "digitalData.page.programmeName",
+          "data_element": "content.programmeName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop6",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2838,7 +2838,7 @@
           "description": "Mirror of the Venue Name eVar for pathing / ClickMap of precinct venue interactions.",
           "value_format": "String",
           "example_value": "National Museum of Singapore",
-          "data_element": "digitalData.page.venueName",
+          "data_element": "content.venueName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop7",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2851,7 +2851,7 @@
           "description": "Mirror of the Trail Name eVar for pathing through curated and custom trail flows.",
           "value_format": "String",
           "example_value": "Civic District Heritage Trail",
-          "data_element": "digitalData.page.trailName",
+          "data_element": "content.trail.trailName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop8",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2868,7 +2868,7 @@
           "description": "Mirror of the Registration Trigger Moment eVar for pathing analysis of which moment drove registration (QR scan, trail save, share adoption).",
           "value_format": "String",
           "example_value": "qr-scan-first",
-          "data_element": "digitalData.eventData.registrationTrigger",
+          "data_element": "journey.registrationTrigger",
           "xdm_field": "_experience.analytics.customDimensions.props.prop9",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2881,7 +2881,7 @@
           "description": "Mirror of the Brand Concierge Query Intent eVar for pathing of intent sequences within concierge sessions.",
           "value_format": "String",
           "example_value": "trail-recommendation",
-          "data_element": "digitalData.eventData.conciergeIntent",
+          "data_element": "journey.eventData.conciergeIntent",
           "xdm_field": "_experience.analytics.customDimensions.props.prop10",
           "implementation_scope": "Website (WebSDK)",
           "implementation_status": "Not Started"
@@ -2912,7 +2912,7 @@
           "description": "Numeric page load time in milliseconds. Paired with Page Load Time Instances to build the Avg Page Load Time calculated metric.",
           "event_type": "Numeric",
           "unique_recording": "Once per page view",
-          "data_element": "digitalData.page.loadTimeMs",
+          "data_element": "web.webPageDetails.pageLoadTimeMs",
           "xdm_field": "_experience.analytics.event1to100.event2.value",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Not Started"
