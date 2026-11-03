@@ -699,7 +699,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event1.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "pageLoad"
     },
     {
       "type": "event",
@@ -709,7 +710,8 @@
       "eventType": "Numeric",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event2.value",
-      "dataLayerPath": "web.webPageDetails.pageLoadTimeMs"
+      "dataLayerPath": "web.webPageDetails.pageLoadTimeMs",
+      "cdlEventKey": "pageLoad"
     },
     {
       "type": "event",
@@ -719,7 +721,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event3.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "pageLoad"
     },
     {
       "type": "event",
@@ -739,7 +742,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event5.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "pageLoad"
     },
     {
       "type": "event",
@@ -749,7 +753,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event6.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "pageLoad"
     },
     {
       "type": "event",
@@ -759,7 +764,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event7.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "pageLoad"
     },
     {
       "type": "event",
@@ -769,7 +775,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event8.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "ctaClick"
     },
     {
       "type": "event",
@@ -789,7 +796,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event10.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "userRegistration"
     },
     {
       "type": "event",
@@ -809,7 +817,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event12.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "userRegistration"
     },
     {
       "type": "event",
@@ -959,7 +968,8 @@
       "eventType": "Counter",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event27.value",
-      "dataLayerPath": ""
+      "dataLayerPath": "",
+      "cdlEventKey": "userRegistration"
     },
     {
       "type": "event",
