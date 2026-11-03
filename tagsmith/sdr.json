@@ -2316,7 +2316,7 @@
           "description": "Full page URL mirrored from the Page URL eVar for PathFinder and pathing analysis.",
           "value_format": "URL string",
           "example_value": "https://www.singaporenightfestival.sg/programme/lightwalk",
-          "data_element": "digitalData.page.url",
+          "data_element": "web.webPageDetails.URL",
           "xdm_field": "_experience.analytics.customDimensions.props.prop1",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2329,7 +2329,7 @@
           "description": "Business unit mirrored from the Business Unit eVar for ClickMap and pathing segmentation.",
           "value_format": "String",
           "example_value": "SNF",
-          "data_element": "digitalData.page.businessUnit",
+          "data_element": "web.webPageDetails.businessUnit",
           "xdm_field": "_experience.analytics.customDimensions.props.prop2",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2350,7 +2350,7 @@
           "description": "Human-readable page name mirrored from the Page Name eVar for PathFinder pathing across programme and installation pages.",
           "value_format": "String",
           "example_value": "Programme: LightWalk",
-          "data_element": "digitalData.page.pageName",
+          "data_element": "web.webPageDetails.name",
           "xdm_field": "_experience.analytics.customDimensions.props.prop3",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2363,7 +2363,7 @@
           "description": "Top-level site section mirrored from the Site Section eVar for next-page pathing and ClickMap.",
           "value_format": "String",
           "example_value": "Programme",
-          "data_element": "digitalData.page.siteSection",
+          "data_element": "web.webPageDetails.siteSection",
           "xdm_field": "_experience.analytics.customDimensions.props.prop4",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2376,7 +2376,7 @@
           "description": "Festival programme/installation title mirrored from the Programme Title eVar for pathing through listings and detail pages.",
           "value_format": "String",
           "example_value": "LightWalk at Armenian Street",
-          "data_element": "digitalData.content.programmeTitle",
+          "data_element": "content.programmeTitle",
           "xdm_field": "_experience.analytics.customDimensions.props.prop5",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2389,7 +2389,7 @@
           "description": "Venue name mirrored from the Venue eVar for ClickMap on precinct listings and venue flow analysis.",
           "value_format": "String",
           "example_value": "Armenian Street",
-          "data_element": "digitalData.content.venueName",
+          "data_element": "content.venueName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop6",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2406,7 +2406,7 @@
           "description": "Unique installation/programme identifier mirrored from the Installation ID eVar for QR check-in pathing.",
           "value_format": "String",
           "example_value": "INST-0427",
-          "data_element": "digitalData.content.installationId",
+          "data_element": "content.installationId",
           "xdm_field": "_experience.analytics.customDimensions.props.prop7",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2419,7 +2419,7 @@
           "description": "Content classification (programme, installation, trail, policy page) mirrored from the Content Type eVar for pathing.",
           "value_format": "String",
           "example_value": "programme",
-          "data_element": "digitalData.content.contentType",
+          "data_element": "content.contentType",
           "xdm_field": "_experience.analytics.customDimensions.props.prop8",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2436,7 +2436,7 @@
           "description": "Self-guided trail name mirrored from the Trail Name eVar for trail selection and progress pathing.",
           "value_format": "String",
           "example_value": "Civic District Heritage Trail",
-          "data_element": "digitalData.trail.trailName",
+          "data_element": "journey.trail.trailName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop9",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2449,7 +2449,7 @@
           "description": "Current trail step/stop label mirrored from the Trail Step eVar for QR check-in progress pathing.",
           "value_format": "String",
           "example_value": "Stop 3 of 7",
-          "data_element": "digitalData.trail.trailStep",
+          "data_element": "journey.trail.trailStep",
           "xdm_field": "_experience.analytics.customDimensions.props.prop10",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2462,7 +2462,7 @@
           "description": "Registration trigger moment mirrored from the Registration Trigger eVar for funnel pathing by entry point.",
           "value_format": "String",
           "example_value": "qr-scan-prompt",
-          "data_element": "digitalData.registration.triggerMoment",
+          "data_element": "journey.registration.triggerMoment",
           "xdm_field": "_experience.analytics.customDimensions.props.prop11",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2475,7 +2475,7 @@
           "description": "Brand Concierge query intent mirrored from the Concierge Intent eVar for conversational pathing and escalation analysis.",
           "value_format": "String",
           "example_value": "programme-discovery",
-          "data_element": "digitalData.concierge.intent",
+          "data_element": "content.concierge.intent",
           "xdm_field": "_experience.analytics.customDimensions.props.prop12",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2488,7 +2488,7 @@
           "description": "Live per-venue crowd density tier mirrored from the Crowd Density eVar for map interaction pathing.",
           "value_format": "String",
           "example_value": "high",
-          "data_element": "digitalData.map.crowdDensityTier",
+          "data_element": "content.map.crowdDensityTier",
           "xdm_field": "_experience.analytics.customDimensions.props.prop13",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2501,7 +2501,7 @@
           "description": "Combined cookie/marketing consent state mirrored from the Consent State eVar for consent-respecting pathing segmentation.",
           "value_format": "String",
           "example_value": "tier1-tier2-granted",
-          "data_element": "digitalData.consent.state",
+          "data_element": "journey.consent.state",
           "xdm_field": "_experience.analytics.customDimensions.props.prop14",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
@@ -2532,7 +2532,7 @@
           "description": "Baseline page load time in milliseconds (Numeric). Pairs with Page Load Time Instances to enable Avg Page Load Time calculated metric. Supports Core Web Vitals / performance reporting.",
           "event_type": "Numeric",
           "unique_recording": "No",
-          "data_element": "digitalData.page.loadTimeMs",
+          "data_element": "web.webPageDetails.pageLoadTimeMs",
           "xdm_field": "_experience.analytics.event1to100.event2.value",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Proposed"
