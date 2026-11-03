@@ -20,14 +20,14 @@
       "sourceName": "blueprint-af6ec3dc_Government_Default_generated.xlsx"
     },
     "tsd": {
-      "sha": "ea017c4b036bd53c7ad2bace2b630520041583ff1f8813fd7a40910efc8346d0",
-      "updatedAt": "2026-11-03T06:36:03.191Z",
+      "sha": "0ae32ae7f7d8dcb443eac6eee804d601da9b8a3414dcfedb6a7408766dc5dd02",
+      "updatedAt": "2026-11-03T08:31:49.189Z",
       "source": "tagsmith",
       "sourceName": "tsd-9b1128b0_Brand_new.docx"
     },
     "rules": {
-      "sha": "184d5b2eac605d995da264a6869f3a09ea13b30ef316057f06e5c4bcf09e8407",
-      "updatedAt": "2026-11-03T06:36:03.195Z",
+      "sha": "a9a7798fde1a966cecbd137c324ecac8572453bd7de2d91a40705a4ef0d52e21",
+      "updatedAt": "2026-11-03T08:31:49.192Z",
       "source": "tagsmith",
       "sourceName": "sdr-0c9ea135_Government_Default.rules-3f1b0fa1.rules.json"
     }

@@ -1,4 +1,4 @@
-# Tagsmith — Brand new
+# Tagsmith — Taylers University
 
 This folder is maintained by Tagsmith. Office documents (xlsx / docx) are not stored here;
 Tagsmith renders them from these files when someone downloads them.
