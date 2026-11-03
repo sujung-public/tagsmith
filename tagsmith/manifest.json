@@ -8,8 +8,8 @@
       "sourceName": "brd-7c235e62_Government_Default.xlsx"
     },
     "sdr": {
-      "sha": "1271f52b7e2cdb1859ff0c74b425680708a30427d29e0091cdd871e79b953d3c",
-      "updatedAt": "2026-11-03T06:07:10.913Z",
+      "sha": "f331ea0ff72b4dd24f6f28fdf04b41645bdd014537e6b4cd7be08e78a21c20ec",
+      "updatedAt": "2026-11-03T06:24:20.170Z",
       "source": "tagsmith",
       "sourceName": "sdr-0c9ea135_Government_Default.xlsx"
     },
@@ -18,6 +18,24 @@
       "updatedAt": "2026-11-03T06:07:15.849Z",
       "source": "tagsmith",
       "sourceName": "blueprint-af6ec3dc_Government_Default_generated.xlsx"
+    },
+    "tsd": {
+      "sha": "1fd0059699f787d886b1149f8e9f39bd4325011343fa05ed7ea77bcdc65517ba",
+      "updatedAt": "2026-11-03T06:24:20.174Z",
+      "source": "tagsmith",
+      "sourceName": "tsd-9b1128b0_Brand_new.docx"
+    },
+    "rules": {
+      "sha": "134c1e949c5fae594855a8e8f8241fd1500523ac9d5c2b0cb4b6b09db87d8697",
+      "updatedAt": "2026-11-03T06:24:20.177Z",
+      "source": "tagsmith",
+      "sourceName": "sdr-0c9ea135_Government_Default.rules-3f1b0fa1.rules.json"
+    }
+  },
+  "views": {
+    "enriched-blueprint": {
+      "sourceName": "enriched-blueprint-6cfec67b_Brand_new_blueprint.xlsx",
+      "updatedAt": "2026-11-03T06:24:20.181Z"
     }
   }
 }
