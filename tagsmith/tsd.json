@@ -64,42 +64,42 @@
       },
       {
         "id": "eVar1",
-        "name": "Page URL",
+        "name": "Page Name",
         "description": "Full page URL of the current page. Baseline global dimension on every hit."
       },
       {
         "id": "eVar2",
-        "name": "Business Unit",
+        "name": "Page URL",
         "description": "Business unit / property identifier. Baseline global dimension for cross-property roll-up."
       },
       {
         "id": "eVar3",
-        "name": "Environment",
+        "name": "Business Unit",
         "description": "Environment flag (production / staging / dev). Backs the Production Data Only segment."
       },
       {
         "id": "eVar4",
-        "name": "Login / Registration Status",
+        "name": "Environment",
         "description": "Visitor registration/authentication state. Supports email-registration and optional-registration tracking."
       },
       {
         "id": "eVar5",
-        "name": "Hashed Visitor ID",
+        "name": "Site Section",
         "description": "[Hashed — PII] SHA-256 hashed registered visitor ID for CRM/AEP profile stitching. Never store raw email."
       },
       {
         "id": "eVar6",
-        "name": "Student Cohort Flag",
+        "name": "Login Status",
         "description": "Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually."
       },
       {
         "id": "eVar7",
-        "name": "Page Name",
+        "name": "User ID [Hashed]",
         "description": "Friendly page name for all instrumented pages across the SNF site."
       },
       {
         "id": "eVar8",
-        "name": "Site Section",
+        "name": "ECID (Experience Cloud ID)",
         "description": "Top-level site section for content grouping and navigation reporting."
       },
       {
@@ -124,7 +124,7 @@
       },
       {
         "id": "eVar13",
-        "name": "Programme / Installation ID",
+        "name": "CTA Name",
         "description": "Unique ID of the festival programme or installation in context. Also used for QR check-in installation ID."
       },
       {
@@ -159,7 +159,7 @@
       },
       {
         "id": "eVar20",
-        "name": "Klook Ticketing CTA",
+        "name": "Download File Name",
         "description": "Context of the Klook ticketing call-to-action click directing visitors off-site (programme/installation referenced)."
       },
       {
@@ -209,42 +209,42 @@
       },
       {
         "id": "eVar30",
-        "name": "Consent Tier Selection",
+        "name": "Project Name",
         "description": "Three-tier consent model selection captured at registration (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB)."
       },
       {
         "id": "eVar31",
-        "name": "Consent Action",
+        "name": "Industry",
         "description": "Consent action captured for the consent log (grant / withdraw) by tier, effective immediately via self-service settings."
       },
       {
         "id": "eVar32",
-        "name": "Cookie Consent Category",
+        "name": "Workflow Step",
         "description": "Cookie consent categories accepted (Strictly Necessary / Analytics & Performance / Personalisation & Targeting)."
       },
       {
         "id": "eVar33",
-        "name": "Personalisation Use Case",
+        "name": "Workflow Interface",
         "description": "Active Adobe Target personalisation use case in context (your-picks / trending-circle / returning-banner / last-chance)."
       },
       {
         "id": "eVar34",
-        "name": "Recommendation Context",
+        "name": "Prompt Text",
         "description": "Context of an affinity-matched recommendation shown or clicked (feed position, programme recommended)."
       },
       {
         "id": "eVar35",
-        "name": "Share Method",
+        "name": "Prompt Type",
         "description": "Method used for itinerary sharing via native device share (no social OAuth). Captures channel chosen by OS share sheet."
       },
       {
         "id": "eVar36",
-        "name": "Brand Concierge Intent",
+        "name": "Prompt Length",
         "description": "Visitor intent classified in a Brand Concierge interaction (programme discovery / trail recommendation / venue info / general info)."
       },
       {
         "id": "eVar37",
-        "name": "Brand Concierge Outcome",
+        "name": "Last Step Before Drop-Off",
         "description": "Outcome of a Brand Concierge interaction (answered / escalated / failed) for engagement and escalation-rate reporting."
       },
       {
@@ -261,52 +261,52 @@
       },
       {
         "id": "prop1",
-        "name": "Page URL",
+        "name": "ECID (Experience Cloud ID)",
         "description": "Mirror of the Page URL eVar for PathFinder / pathing analysis. Baseline variable."
       },
       {
         "id": "prop2",
-        "name": "Business Unit",
+        "name": "Page URL",
         "description": "Mirror of the Business Unit eVar for pathing / ClickMap segmentation. Baseline variable."
       },
       {
         "id": "prop3",
-        "name": "Page Name",
+        "name": "Business Unit",
         "description": "Mirror of the Page Name eVar for PathFinder pathing across the SNF site. Supports page-tagging requirement."
       },
       {
         "id": "prop4",
-        "name": "Site Section",
+        "name": "Page Name",
         "description": "Mirror of the Site Section eVar for next-page-flow pathing through the SNF site hierarchy."
       },
       {
         "id": "prop5",
-        "name": "Page Type",
+        "name": "Site Section",
         "description": "Mirror of the Page Type eVar for pathing between listing, detail and policy page templates."
       },
       {
         "id": "prop6",
-        "name": "Programme / Installation Name",
+        "name": "Workflow Interface",
         "description": "Mirror of the Programme / Installation Name eVar for pathing across festival content items."
       },
       {
         "id": "prop7",
-        "name": "Venue Name",
+        "name": "Workflow Step",
         "description": "Mirror of the Venue Name eVar for pathing / ClickMap of precinct venue interactions."
       },
       {
         "id": "prop8",
-        "name": "Trail Name",
+        "name": "CTA Name",
         "description": "Mirror of the Trail Name eVar for pathing through curated and custom trail flows."
       },
       {
         "id": "prop9",
-        "name": "Registration Trigger Moment",
+        "name": "Prompt Type",
         "description": "Mirror of the Registration Trigger Moment eVar for pathing analysis of which moment drove registration (QR scan, trail save, share adoption)."
       },
       {
         "id": "prop10",
-        "name": "Brand Concierge Query Intent",
+        "name": "Prompt Text",
         "description": "Mirror of the Brand Concierge Query Intent eVar for pathing of intent sequences within concierge sessions."
       }
     ],
@@ -803,87 +803,23 @@
       }
     ],
     "pageLoadPush": "{\n    \"event\": \"pageLoad\",\n    \"content\": {\n        \"aiDiscoverySource\": \"chatgpt\",\n        \"brandCompliant\": \"Y\",\n        \"crowdDensityLevel\": \"high\",\n        \"firstFestivalYear\": \"2026\",\n        \"pageType\": \"programme-detail\",\n        \"programmeId\": \"INST-0421\",\n        \"programmeName\": \"Lumen Light Garden\",\n        \"programmeTitle\": \"Lights of Memory\",\n        \"structuredDataTypes\": \"Event+Place\",\n        \"timeSlot\": \"2026-08-22 20:00\",\n        \"unlockedContentStatus\": \"unlocked\",\n        \"venueName\": \"National Museum of Singapore\",\n        \"viewportMode\": \"mobile\",\n        \"eventData\": {\n            \"personalisationUseCase\": \"your-picks-tonight\",\n            \"recommendationContext\": \"picks-slot-2:INST-0421\"\n        },\n        \"trail\": {\n            \"trailName\": \"Civic District Heritage Trail\"\n        }\n    },\n    \"journey\": {\n        \"locationPermission\": \"granted\",\n        \"studentCohortFlag\": \"Y\",\n        \"zoneLabel\": \"zone-bras-basah\",\n        \"consent\": {\n            \"cookieCategories\": \"StrictlyNecessary|Analytics\"\n        }\n    },\n    \"marketing\": {\n        \"trackingCode\": \"em_spring24_google_cpc\"\n    },\n    \"user\": {\n        \"ecid\": \"38961882559817821902449637980926447915\",\n        \"loginStatus\": \"registered\"\n    },\n    \"web\": {\n        \"webPageDetails\": {\n            \"businessUnit\": \"Heritage SG - SNF\",\n            \"environment\": \"production\",\n            \"name\": \"Programmes : Light Walk\",\n            \"pageLoadTimeMs\": \"1243\",\n            \"server\": \"www.tagsmith.com\",\n            \"siteSection\": \"Programmes\",\n            \"URL\": \"https://singaporenightfestival.sg/programmes/light-walk\"\n        },\n        \"webReferrer\": {\n            \"URL\": \"https://www.google.com/\"\n        }\n    }\n}",
-    "launchRules": [
-      {
-        "name": "PV1 Page Load",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "page-view"
-      },
-      {
-        "name": "N-CL1 Cta Click",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "ctaClick"
-      },
-      {
-        "name": "SC1 User Registration",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "userRegistration"
-      },
-      {
-        "name": "SC2 Project Created",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "projectCreated"
-      },
-      {
-        "name": "SC3 Step Complete",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "stepComplete"
-      },
-      {
-        "name": "N-CL2 Download",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "download"
-      },
-      {
-        "name": "SC4 Login",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "login"
-      },
-      {
-        "name": "SC5 Chat Prompt Submitted",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "chatPromptSubmitted"
-      },
-      {
-        "name": "SC6 Logout",
-        "triggers": "",
-        "conditions": "",
-        "actions": "",
-        "sourceEventId": "logout"
-      }
-    ],
-    "deploymentPropertyId": "PRa17e6a582da3481d9865f4e8bccc2f66",
-    "deploymentPropertyName": "Taylors University",
-    "deploymentEnvironment": "production",
-    "deploymentStatus": "deployed",
-    "deploymentId": "deploy-87e8fb89",
-    "deployedAt": "2026-11-03T08:30:51.289Z",
-    "environmentLibraryUrlDevelopment": "49cb2261c204/a1fe310faa34/launch-38699d7099c8-development.min.js",
-    "environmentLibraryUrlStaging": "49cb2261c204/a1fe310faa34/launch-8e005ace06a5-staging.min.js",
-    "environmentLibraryUrlProduction": "49cb2261c204/a1fe310faa34/launch-5212f778d9a1.min.js",
-    "TagPropertyName": "Taylors University",
+    "launchRules": [],
+    "deploymentPropertyId": "",
+    "deploymentPropertyName": "",
+    "deploymentEnvironment": "",
+    "deploymentStatus": "",
+    "deploymentId": "",
+    "deployedAt": "",
+    "environmentLibraryUrlDevelopment": "",
+    "environmentLibraryUrlStaging": "",
+    "environmentLibraryUrlProduction": "",
+    "TagPropertyName": "",
     "ReportSuiteDev": "",
     "ReportSuiteStage": "",
     "ReportSuiteProd": "",
-    "DatastreamDev": "dc75fe5d-2a28-4e5a-a47c-c87f15729961",
-    "DatastreamStage": "dc75fe5d-2a28-4e5a-a47c-c87f15729961",
-    "DatastreamProd": "dc75fe5d-2a28-4e5a-a47c-c87f15729961"
+    "DatastreamDev": "",
+    "DatastreamStage": "",
+    "DatastreamProd": ""
   },
   "webSdk": false,
   "clientName": "Brand new",
@@ -892,6 +828,6 @@
     "evarRows": 48,
     "propRows": 11,
     "eventRows": 0,
-    "launchRuleRows": 9
+    "launchRuleRows": 0
   }
 }

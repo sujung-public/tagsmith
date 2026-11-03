@@ -8,8 +8,8 @@
       "sourceName": "brd-7c235e62_Government_Default.xlsx"
     },
     "sdr": {
-      "sha": "2f913b9e56b066ee66fae0b9f4c5f91ba875c62a2ff13db3af955b9b6847b955",
-      "updatedAt": "2026-11-03T09:18:08.011Z",
+      "sha": "a7bebc40a9eb90ee8b6791f8bcd7d7f2a1a8d177865892c4c720d87cc7017859",
+      "updatedAt": "2026-11-03T09:20:02.757Z",
       "source": "tagsmith",
       "sourceName": "sdr-0c9ea135_Government_Default.xlsx"
     },
@@ -20,16 +20,10 @@
       "sourceName": "blueprint-af6ec3dc_Government_Default_generated.xlsx"
     },
     "tsd": {
-      "sha": "0ae32ae7f7d8dcb443eac6eee804d601da9b8a3414dcfedb6a7408766dc5dd02",
-      "updatedAt": "2026-11-03T08:31:49.189Z",
+      "sha": "7cd5c0ac269d0e33007acb5267b9e35485c6d6f4b39af6bbbb6525dd07da7db3",
+      "updatedAt": "2026-11-03T09:20:02.760Z",
       "source": "tagsmith",
       "sourceName": "tsd-9b1128b0_Brand_new.docx"
-    },
-    "rules": {
-      "sha": "a9a7798fde1a966cecbd137c324ecac8572453bd7de2d91a40705a4ef0d52e21",
-      "updatedAt": "2026-11-03T08:31:49.192Z",
-      "source": "tagsmith",
-      "sourceName": "sdr-0c9ea135_Government_Default.rules-3f1b0fa1.rules.json"
     }
   },
   "views": {
