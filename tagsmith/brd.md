@@ -1,8 +1,8 @@
 ---
-client: Brand new
+client: Taylers University
 template: government-default-brd
 ---
-# Business Requirements — Brand new
+# Business Requirements — Taylers University
 
 <!-- Managed by Tagsmith. Edit rows freely; keep each ID stable. IDs that are multiples of 100 are category headers. eVar / Event / prop hold the allocated Adobe variables (comma-separated). -->
 
