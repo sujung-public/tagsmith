@@ -90,7 +90,7 @@
       {
         "id": "eVar7",
         "name": "Page Type",
-        "description": "Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812."
+        "description": "Records the type of page being viewed, including distinguishing venue detail pages from venue listing pages. (BRD 104, 107, 108, 1812)"
       },
       {
         "id": "eVar8",
@@ -251,6 +251,11 @@
         "id": "eVar39",
         "name": "Content Author / Publish Source",
         "description": "AEMaaCS publish source/channel (independent author publish vs migration) for content governance reporting (BRD 1102/1103)."
+      },
+      {
+        "id": "eVar40",
+        "name": "Newsletter Subscription Topic",
+        "description": "Captures the topic selected when a visitor submits a newsletter sign-up form. (BRD 1950)"
       }
     ],
     "props": [
@@ -656,6 +661,17 @@
           }
         ],
         "pushExample": "{\n    \"event\": \"logout\",\n    \"user\": {\n        \"loginStatus\": \"registered\"\n    }\n}"
+      },
+      {
+        "cdlEventKey": "newsletterSignUp",
+        "cdlEventDescription": "Captures the topic selected when a visitor submits a newsletter sign-up form. (BRD 1950)",
+        "dataLayerRows": [
+          {
+            "path": "newsletter.topic",
+            "description": "Captures the topic selected when a visitor submits a newsletter sign-up form. (BRD 1950) e.g. Festivals"
+          }
+        ],
+        "pushExample": "{\n    \"event\": \"newsletterSignUp\",\n    \"newsletter\": {\n        \"topic\": \"Festivals\"\n    }\n}"
       }
     ],
     "pageLoadRows": [
@@ -856,6 +872,13 @@
         "conditions": "",
         "actions": "",
         "sourceEventId": "logout"
+      },
+      {
+        "name": "N-CL3 Newsletter Sign Up",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "newsletterSignUp"
       }
     ],
     "deploymentPropertyId": "",
@@ -879,9 +902,9 @@
   "clientName": "Taylers University",
   "projectName": "Taylers University",
   "stats": {
-    "evarRows": 48,
+    "evarRows": 49,
     "propRows": 9,
     "eventRows": 0,
-    "launchRuleRows": 9
+    "launchRuleRows": 10
   }
 }

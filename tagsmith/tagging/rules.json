@@ -1,9 +1,9 @@
 {
-  "rulesDocumentId": "rules-6bbf37dc",
+  "rulesDocumentId": "rules-1021a9db",
   "sourceSdrExcelId": "sdr-903d5925",
   "sourceLaunchSpecPath": "/app/documents/sujung+write@adobetest.com/b16a87c8-e0dc-4b9c-b197-06eb74ee32fe/sdr-903d5925_Government_Default.launch-spec.json",
-  "generatedAt": "2026-11-04T01:18:16.212Z",
-  "rulesCount": 9,
+  "generatedAt": "2026-11-04T05:07:36.682Z",
+  "rulesCount": 10,
   "rules": [
     {
       "name": "PV1 Page Load",
@@ -67,6 +67,13 @@
       "conditions": [],
       "actions": [],
       "sourceEventId": "logout"
+    },
+    {
+      "name": "N-CL3 Newsletter Sign Up",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "newsletterSignUp"
     }
   ],
   "requirements": [
@@ -222,6 +229,23 @@
       "ruleCategory": "SC",
       "ruleCategoryLabel": "Status Change",
       "ruleCode": "SC6"
+    },
+    {
+      "id": "newsletterSignUp",
+      "name": "N-CL3 Newsletter Sign Up",
+      "description": "Fires the newsletterSignUp beacon with 2 variables.",
+      "cdlEventKey": "newsletterSignUp",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "click",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "newsletterSignUp"
+        }
+      ],
+      "ruleCategory": "N-CL",
+      "ruleCategoryLabel": "Non-link Click",
+      "ruleCode": "N-CL3"
     }
   ]
 }
