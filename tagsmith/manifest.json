@@ -9,8 +9,8 @@
       "sourceName": "brd-3cd8466c_Government_Default.xlsx"
     },
     "sdr": {
-      "sha": "dbabcf83e34382a947f58cc1190d5036d4fa0c503f835c4e0fd0ad32a94c8924",
-      "updatedAt": "2026-11-04T05:07:41.015Z",
+      "sha": "051180637c0d58e3b3ba573cc1a6cae3053b62667b2abc096f87a96481245336",
+      "updatedAt": "2026-11-04T05:11:19.530Z",
       "source": "tagsmith",
       "sourceName": "sdr-903d5925_Government_Default.xlsx"
     },
@@ -21,14 +21,14 @@
       "sourceName": "blueprint-cd77eacf_Government_Default_generated.xlsx"
     },
     "tsd": {
-      "sha": "3670a88fa0692e02a7e45480e1a8c9e7791e283ca45076cb91496a064874b179",
-      "updatedAt": "2026-11-04T05:07:41.018Z",
+      "sha": "0ed26c20a5db945e067b72286012c428e05a0054f9602180a7e922a62fa64517",
+      "updatedAt": "2026-11-04T05:11:19.533Z",
       "source": "tagsmith",
       "sourceName": "tsd-108b5944_Taylers_University.docx"
     },
     "rules": {
-      "sha": "9f13683ace2753cbf3e5682b49e472f48273fc80cdb5fa5bf450df81c84da506",
-      "updatedAt": "2026-11-04T05:07:41.022Z",
+      "sha": "b502906bc5de3b292b52f0f1c1fe82bebd4dbab8a6ccfe999bb2267792108037",
+      "updatedAt": "2026-11-04T05:11:19.538Z",
       "source": "tagsmith",
       "sourceName": "sdr-903d5925_Government_Default.rules-1021a9db.rules.json"
     }
