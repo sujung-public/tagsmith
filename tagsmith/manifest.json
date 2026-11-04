@@ -8,8 +8,8 @@
       "sourceName": "brd-3cd8466c_Government_Default.xlsx"
     },
     "sdr": {
-      "sha": "05d86e2585cb3f3da59aebfa8b31e1eacff60b6f2d243fd9c1f39237d02057a8",
-      "updatedAt": "2026-11-04T01:16:53.534Z",
+      "sha": "8919975c5930d31171e5d85ea1016833c65d01181a2664864a51b252c1e3a740",
+      "updatedAt": "2026-11-04T01:18:20.514Z",
       "source": "tagsmith",
       "sourceName": "sdr-903d5925_Government_Default.xlsx"
     },
@@ -20,16 +20,22 @@
       "sourceName": "blueprint-cd77eacf_Government_Default_generated.xlsx"
     },
     "tsd": {
-      "sha": "7cd5c0ac269d0e33007acb5267b9e35485c6d6f4b39af6bbbb6525dd07da7db3",
-      "updatedAt": "2026-11-03T09:20:02.760Z",
+      "sha": "9e1b7a0eea7593a96f202b96f8fc8efa1f44def3c5b73b70af1924840b5213bd",
+      "updatedAt": "2026-11-04T01:18:20.518Z",
       "source": "tagsmith",
-      "sourceName": "tsd-9b1128b0_Brand_new.docx"
+      "sourceName": "tsd-f2a569a1_Taylers_University.docx"
+    },
+    "rules": {
+      "sha": "4b908fda41e0b66f6ec95586a722508a3bb42c54c6cd0c46d6ab1906ae80bd2d",
+      "updatedAt": "2026-11-04T01:18:20.521Z",
+      "source": "tagsmith",
+      "sourceName": "sdr-903d5925_Government_Default.rules-6bbf37dc.rules.json"
     }
   },
   "views": {
     "enriched-blueprint": {
-      "sourceName": "enriched-blueprint-6cfec67b_Brand_new_blueprint.xlsx",
-      "updatedAt": "2026-11-03T06:24:20.181Z"
+      "sourceName": "enriched-blueprint-47167895_Taylers_University_blueprint.xlsx",
+      "updatedAt": "2026-11-04T01:18:20.523Z"
     }
   }
 }

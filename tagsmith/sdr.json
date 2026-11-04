@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T00:46:12.222799",
+  "generated_at": "2026-11-04T01:17:54.928957",
   "industry": "government",
   "platform": "web",
   "report_suite": "",
@@ -10,56 +10,56 @@
       "id": "eVar1",
       "name": "ECID",
       "description": "Adobe Experience Cloud ID auto-collected by AEP Web SDK. Primary visitor identity.",
-      "valueFormat": "String (auto)",
-      "exampleValue": "79658739203495820394857",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visitor",
-      "xdmField": "identityMap.ECID[0].id",
-      "dataLayerPath": "OOTB"
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar1",
+      "dataLayerPath": "user.ecid"
     },
     {
       "type": "eVar",
       "id": "eVar2",
       "name": "Page URL",
       "description": "Full page URL of the current hit. Baseline dimension for all pages (BRD 101).",
-      "valueFormat": "URL string",
-      "exampleValue": "https://snf.gov.sg/programme/lantern-walk",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
-      "xdmField": "web.webPageDetails.URL",
-      "dataLayerPath": "digitalData.page.url"
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar2",
+      "dataLayerPath": "web.webPageDetails.URL"
     },
     {
       "type": "eVar",
       "id": "eVar3",
       "name": "Business Unit",
       "description": "Business unit / brand owner for the property. Baseline dimension on every hit.",
-      "valueFormat": "String",
-      "exampleValue": "SNF",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar3",
-      "dataLayerPath": "digitalData.page.businessUnit"
+      "dataLayerPath": "web.webPageDetails.businessUnit"
     },
     {
       "type": "eVar",
       "id": "eVar4",
       "name": "Environment",
       "description": "Environment flag (production/staging) powering the Production Data Only segment.",
-      "valueFormat": "String",
-      "exampleValue": "production",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar4",
-      "dataLayerPath": "digitalData.page.environment"
+      "dataLayerPath": "web.webPageDetails.environment"
     },
     {
       "type": "eVar",
       "id": "campaign",
       "name": "Tracking Code (s.campaign)",
       "description": "Native campaign tracking code sourced from URL query parameter (BRD 101).",
-      "valueFormat": "String",
-      "exampleValue": "snf2026_launch_email",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "marketing.trackingCode",
@@ -70,11 +70,11 @@
       "id": "mktchannel",
       "name": "Marketing Channel",
       "description": "OOTB Marketing Channel processing-rule dimension. Processing rules required (not defined here).",
-      "valueFormat": "String",
-      "exampleValue": "Email",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "N/A (OOTB)",
+      "xdmField": "",
       "dataLayerPath": "OOTB"
     },
     {
@@ -82,35 +82,35 @@
       "id": "campaign.source",
       "name": "Campaign Source",
       "description": "SAINT classification of s.campaign — traffic source.",
-      "valueFormat": "String",
-      "exampleValue": "newsletter",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "N/A (OOTB)",
-      "dataLayerPath": "Query Param → utm_campaign / cid"
+      "xdmField": "",
+      "dataLayerPath": "marketing.source"
     },
     {
       "type": "eVar",
       "id": "campaign.medium",
       "name": "Campaign Medium",
       "description": "SAINT classification of s.campaign — medium.",
-      "valueFormat": "String",
-      "exampleValue": "email",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "N/A (OOTB)",
-      "dataLayerPath": "Query Param → utm_campaign / cid"
+      "xdmField": "",
+      "dataLayerPath": "marketing.medium"
     },
     {
       "type": "eVar",
       "id": "campaign.name",
       "name": "Campaign Name",
       "description": "SAINT classification of s.campaign — campaign name.",
-      "valueFormat": "String",
-      "exampleValue": "SNF 2026 Launch",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "N/A (OOTB)",
+      "xdmField": "",
       "dataLayerPath": "Query Param → utm_campaign / cid"
     },
     {
@@ -118,23 +118,23 @@
       "id": "campaign.content",
       "name": "Campaign Content",
       "description": "SAINT classification of s.campaign — creative/content variant.",
-      "valueFormat": "String",
-      "exampleValue": "hero_banner_a",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "N/A (OOTB)",
-      "dataLayerPath": "Query Param → utm_campaign / cid"
+      "xdmField": "",
+      "dataLayerPath": "marketing.content"
     },
     {
       "type": "eVar",
       "id": "geo",
       "name": "Geo Location",
       "description": "OOTB geo-segmentation dimensions derived by Adobe from IP. Raw GPS never stored (BRD 1802).",
-      "valueFormat": "String",
-      "exampleValue": "Singapore",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "N/A (OOTB)",
+      "xdmField": "",
       "dataLayerPath": "OOTB"
     },
     {
@@ -142,11 +142,11 @@
       "id": "deviceType",
       "name": "Device Type",
       "description": "OOTB device/mobile dimensions from user-agent — supports responsive/mobile-first reporting (BRD 103).",
-      "valueFormat": "String",
-      "exampleValue": "Mobile Phone",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
-      "xdmField": "N/A (OOTB)",
+      "xdmField": "",
       "dataLayerPath": "OOTB"
     },
     {
@@ -154,11 +154,11 @@
       "id": "newReturn",
       "name": "New vs Return Visitor",
       "description": "OOTB return-frequency dimension — supports returning-visitor contextual banner (BRD 704).",
-      "valueFormat": "String",
-      "exampleValue": "Return",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
-      "xdmField": "N/A (OOTB)",
+      "xdmField": "",
       "dataLayerPath": "OOTB"
     },
     {
@@ -166,510 +166,510 @@
       "id": "eVar5",
       "name": "Page Name",
       "description": "Human-readable page name on every hit (BRD 101).",
-      "valueFormat": "String",
-      "exampleValue": "Programme Detail : Lantern Walk",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
-      "xdmField": "web.webPageDetails.name",
-      "dataLayerPath": "digitalData.page.pageName"
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar5",
+      "dataLayerPath": "web.webPageDetails.name"
     },
     {
       "type": "eVar",
       "id": "eVar6",
       "name": "Site Section",
       "description": "Top-level site section for content grouping across all pages (BRD 101).",
-      "valueFormat": "String",
-      "exampleValue": "Programme",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
-      "xdmField": "web.webPageDetails.siteSection",
-      "dataLayerPath": "digitalData.page.siteSection"
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar6",
+      "dataLayerPath": "web.webPageDetails.siteSection"
     },
     {
       "type": "eVar",
       "id": "eVar7",
       "name": "Page Type",
       "description": "Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812.",
-      "valueFormat": "String",
-      "exampleValue": "programme-detail",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar7",
-      "dataLayerPath": "digitalData.page.pageType"
+      "dataLayerPath": "content.pageType"
     },
     {
       "type": "eVar",
       "id": "eVar8",
       "name": "Brand Compliance Flag",
       "description": "Flags whether the page conforms to Heritage SG brand guidelines and carries the standard government disclaimer (BRD 106/109).",
-      "valueFormat": "String (true/false)",
-      "exampleValue": "true",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar8",
-      "dataLayerPath": "digitalData.page.brandCompliant"
+      "dataLayerPath": "content.brandCompliant"
     },
     {
       "type": "eVar",
       "id": "eVar9",
       "name": "Programme / Installation ID",
       "description": "Unique AEMaaCS ID of the programme/installation in context (BRD 104).",
-      "valueFormat": "String",
-      "exampleValue": "PRG-00421",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar9",
-      "dataLayerPath": "digitalData.content.programmeId"
+      "dataLayerPath": "content.programmeId"
     },
     {
       "type": "eVar",
       "id": "eVar10",
       "name": "Programme / Installation Title",
       "description": "Display title of the programme/installation (BRD 104).",
-      "valueFormat": "String",
-      "exampleValue": "Lantern Walk at Armenian Street",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar10",
-      "dataLayerPath": "digitalData.content.programmeTitle"
+      "dataLayerPath": "content.programmeTitle"
     },
     {
       "type": "eVar",
       "id": "eVar11",
       "name": "Venue Name",
       "description": "Venue associated with the programme/installation listing (BRD 104/401).",
-      "valueFormat": "String",
-      "exampleValue": "Armenian Street",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar11",
-      "dataLayerPath": "digitalData.content.venueName"
+      "dataLayerPath": "content.venueName"
     },
     {
       "type": "eVar",
       "id": "eVar12",
       "name": "Programme Schedule",
       "description": "Programme date/time window shown on listing detail (BRD 104).",
-      "valueFormat": "String",
-      "exampleValue": "2026-08-21 19:00-22:00",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar12",
-      "dataLayerPath": "digitalData.content.schedule"
+      "dataLayerPath": "content.schedule"
     },
     {
       "type": "eVar",
       "id": "eVar13",
       "name": "Unlocked Content Status",
       "description": "Whether optional unlocked content is present/visible for a scanned-in visitor (BRD 602/605/1104).",
-      "valueFormat": "String",
-      "exampleValue": "visible-scanned-in",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar13",
-      "dataLayerPath": "digitalData.content.unlockedStatus"
+      "dataLayerPath": "content.unlockedStatus"
     },
     {
       "type": "eVar",
       "id": "eVar14",
       "name": "First Festival Year",
       "description": "firstFestivalYear content-model field flagging debut programmes/installations (BRD 1104).",
-      "valueFormat": "String (YYYY)",
-      "exampleValue": "2026",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar14",
-      "dataLayerPath": "digitalData.content.firstFestivalYear"
+      "dataLayerPath": "content.firstFestivalYear"
     },
     {
       "type": "eVar",
       "id": "eVar15",
       "name": "Login / Registration Status",
       "description": "Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203).",
-      "valueFormat": "String",
-      "exampleValue": "registered",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar15",
-      "dataLayerPath": "digitalData.user.loginStatus"
+      "dataLayerPath": "user.loginStatus"
     },
     {
       "type": "eVar",
       "id": "eVar16",
       "name": "Hashed Visitor ID",
       "description": "[Hashed — PII] Registered visitor profile ID, SHA-256 hashed in JS before collection. Never expiration (BRD 204/604/304).",
-      "valueFormat": "SHA-256 hash",
-      "exampleValue": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Never",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar16",
-      "dataLayerPath": "digitalData.user.idHash"
+      "dataLayerPath": "user.idHash"
     },
     {
       "type": "eVar",
       "id": "eVar17",
       "name": "Registration Trigger Moment",
       "description": "Context/moment that triggered the registration prompt (first QR scan, itinerary adoption, etc.) — funnel reporting by trigger (BRD 603/506/1205).",
-      "valueFormat": "String",
-      "exampleValue": "first-qr-scan",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar17",
-      "dataLayerPath": "digitalData.user.regTrigger"
+      "dataLayerPath": "journey.regTrigger"
     },
     {
       "type": "eVar",
       "id": "eVar18",
       "name": "Consent Tier State",
       "description": "Three-tier consent state (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). Unbundled, unchecked by default (BRD 301/302).",
-      "valueFormat": "String",
-      "exampleValue": "T0:on|T1:off|T2:on",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar18",
-      "dataLayerPath": "digitalData.consent.tierState"
+      "dataLayerPath": "journey.consent.tierState"
     },
     {
       "type": "eVar",
       "id": "eVar19",
       "name": "Consent Action",
       "description": "Consent action recorded (grant/withdraw) for the consent log, effective immediately (BRD 303/304).",
-      "valueFormat": "String",
-      "exampleValue": "withdraw-tier1",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar19",
-      "dataLayerPath": "digitalData.consent.action"
+      "dataLayerPath": "journey.consent.action"
     },
     {
       "type": "eVar",
       "id": "eVar20",
       "name": "Cookie Consent Category State",
       "description": "Cookie consent category states (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). No pre-ticked acceptance (BRD 1808/1809/1811).",
-      "valueFormat": "String",
-      "exampleValue": "necessary:on|analytics:on|targeting:off",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar20",
-      "dataLayerPath": "digitalData.consent.cookieState"
+      "dataLayerPath": "journey.consent.cookieState"
     },
     {
       "type": "eVar",
       "id": "eVar21",
       "name": "Student Cohort Flag",
       "description": "Derived student cohort flag from geolocation cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually (BRD 1806).",
-      "valueFormat": "String (true/false)",
-      "exampleValue": "true",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar21",
-      "dataLayerPath": "digitalData.user.studentCohort"
+      "dataLayerPath": "journey.studentCohort"
     },
     {
       "type": "eVar",
       "id": "eVar22",
       "name": "QR Scan Installation ID",
       "description": "Installation ID captured on a QR check-in scan. Venue check-in derived from QR only, not GPS (BRD 601/604/1803).",
-      "valueFormat": "String",
-      "exampleValue": "INST-0097",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar22",
-      "dataLayerPath": "digitalData.qr.installationId"
+      "dataLayerPath": "journey.qr.installationId"
     },
     {
       "type": "eVar",
       "id": "eVar23",
       "name": "Trail Name",
       "description": "Selected curated self-guided trail name (BRD 501/502).",
-      "valueFormat": "String",
-      "exampleValue": "Bras Basah Heritage Loop",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar23",
-      "dataLayerPath": "digitalData.trail.name"
+      "dataLayerPath": "web.webInteraction.name"
     },
     {
       "type": "eVar",
       "id": "eVar24",
       "name": "Trail Progress / Check-in Step",
       "description": "Trail progress tracked via QR check-ins — current step / completion ratio (BRD 502).",
-      "valueFormat": "String",
-      "exampleValue": "3 of 6",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar24",
-      "dataLayerPath": "digitalData.trail.progressStep"
+      "dataLayerPath": "journey.trail.progressStep"
     },
     {
       "type": "eVar",
       "id": "eVar25",
       "name": "Itinerary ID",
       "description": "Custom itinerary identifier for created/shared/adopted itineraries incl. Community Picks (BRD 503/506/507).",
-      "valueFormat": "String",
-      "exampleValue": "ITIN-5521",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar25",
-      "dataLayerPath": "digitalData.itinerary.id"
+      "dataLayerPath": "journey.itinerary.id"
     },
     {
       "type": "eVar",
       "id": "eVar26",
       "name": "Itinerary Share Method",
       "description": "Native device share channel used for itinerary sharing (no social OAuth) (BRD 505/705).",
-      "valueFormat": "String",
-      "exampleValue": "native-share-whatsapp",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar26",
-      "dataLayerPath": "digitalData.itinerary.shareMethod"
+      "dataLayerPath": "journey.itinerary.shareMethod"
     },
     {
       "type": "eVar",
       "id": "eVar27",
       "name": "Itinerary Optimisation Suggestion",
       "description": "Type of dismissible inline optimisation suggestion surfaced for itinerary conflicts/inefficiencies (BRD 504).",
-      "valueFormat": "String",
-      "exampleValue": "time-conflict",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar27",
-      "dataLayerPath": "digitalData.itinerary.suggestionType"
+      "dataLayerPath": "journey.itinerary.suggestionType"
     },
     {
       "type": "eVar",
       "id": "eVar28",
       "name": "Klook CTA Destination",
       "description": "Off-site Klook ticketing CTA destination clicked (exit link). No ticketing built on SNF site (BRD 105).",
-      "valueFormat": "URL string",
-      "exampleValue": "https://klook.com/activity/snf2026",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar28",
-      "dataLayerPath": "digitalData.cta.klookDestination"
+      "dataLayerPath": "web.webInteraction.klookDestination"
     },
     {
       "type": "eVar",
       "id": "eVar29",
       "name": "Map Interaction Type",
       "description": "Interaction type on the Bras Basah–Bugis MapBox map (pin tap, zoom, directions). Map by Adobe using MapBox (BRD 401/402).",
-      "valueFormat": "String",
-      "exampleValue": "pin-tap",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar29",
-      "dataLayerPath": "digitalData.map.interactionType"
+      "dataLayerPath": "web.webInteraction.type"
     },
     {
       "type": "eVar",
       "id": "eVar30",
       "name": "Location Permission State",
       "description": "Location permission grant/deny state driving proximity sorting vs default listing. Geolocation client-side only (BRD 403/404/1802).",
-      "valueFormat": "String",
-      "exampleValue": "granted",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar30",
-      "dataLayerPath": "digitalData.map.locationPermission"
+      "dataLayerPath": "journey.map.locationPermission"
     },
     {
       "type": "eVar",
       "id": "eVar31",
       "name": "Listing Sort Mode",
       "description": "Active listing sort/auto-sort mode (proximity, current-night, last-chance post-9pm) (BRD 403/404/701).",
-      "valueFormat": "String",
-      "exampleValue": "current-night-urgency",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar31",
-      "dataLayerPath": "digitalData.listing.sortMode"
+      "dataLayerPath": "journey.listing.sortMode"
     },
     {
       "type": "eVar",
       "id": "eVar32",
       "name": "Personalisation Use Case",
       "description": "Adobe Target personalisation use case in context (Your picks tonight, Trending with your circle, returning banner) (BRD 702/703/704/706).",
-      "valueFormat": "String",
-      "exampleValue": "your-picks-tonight",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar32",
-      "dataLayerPath": "digitalData.personalisation.useCase"
+      "dataLayerPath": "journey.personalisation.useCase"
     },
     {
       "type": "eVar",
       "id": "eVar33",
       "name": "Personalisation Experience / Variant",
       "description": "Adobe Target activity/experience variant served — supports lift & conversion reporting (BRD 706/1203).",
-      "valueFormat": "String",
-      "exampleValue": "activity42:variantB",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar33",
-      "dataLayerPath": "digitalData.personalisation.variant"
+      "dataLayerPath": "journey.personalisation.variant"
     },
     {
       "type": "eVar",
       "id": "eVar34",
       "name": "Session Loop Cluster Hash",
       "description": "[Hashed] Session hash cluster key powering 'Trending with your circle' chip. Non-PII hashed cluster id (BRD 703).",
-      "valueFormat": "Hash string",
-      "exampleValue": "c1f4a9e2",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Visit",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar34",
-      "dataLayerPath": "digitalData.personalisation.loopClusterHash"
+      "dataLayerPath": "journey.personalisation.loopClusterHash"
     },
     {
       "type": "eVar",
       "id": "eVar35",
       "name": "Brand Concierge Query Intent",
       "description": "Classified visitor intent for a Brand Concierge query (programme discovery, trail rec, venue info, general) (BRD 1405/1406).",
-      "valueFormat": "String",
-      "exampleValue": "trail-recommendation",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar35",
-      "dataLayerPath": "digitalData.concierge.queryIntent"
+      "dataLayerPath": "journey.concierge.queryIntent"
     },
     {
       "type": "eVar",
       "id": "eVar36",
       "name": "Brand Concierge Outcome",
       "description": "Outcome of a Brand Concierge interaction (answered, escalated, failed) for engagement/escalation reporting (BRD 1406).",
-      "valueFormat": "String",
-      "exampleValue": "answered",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar36",
-      "dataLayerPath": "digitalData.concierge.outcome"
+      "dataLayerPath": "journey.concierge.outcome"
     },
     {
       "type": "eVar",
       "id": "eVar37",
       "name": "AI / Agent Crawler Source",
       "description": "Identifies AI-powered / agentic crawler source for GEO & LLMO visibility reporting (BRD 901/902/1303).",
-      "valueFormat": "String",
-      "exampleValue": "chatgpt-agent",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar37",
-      "dataLayerPath": "digitalData.seo.agentSource"
+      "dataLayerPath": "journey.seo.agentSource"
     },
     {
       "type": "eVar",
       "id": "eVar38",
       "name": "Social Share Surface",
       "description": "Social sharing surface / Open Graph–Twitter Card context on programme detail and shareable itinerary pages (BRD 1001/1002).",
-      "valueFormat": "String",
-      "exampleValue": "og-programme-detail",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Event",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar38",
-      "dataLayerPath": "digitalData.social.shareSurface"
+      "dataLayerPath": "journey.social.shareSurface"
     },
     {
       "type": "eVar",
       "id": "eVar39",
       "name": "Content Author / Publish Source",
       "description": "AEMaaCS publish source/channel (independent author publish vs migration) for content governance reporting (BRD 1102/1103).",
-      "valueFormat": "String",
-      "exampleValue": "aem-author-publish",
+      "valueFormat": "",
+      "exampleValue": "",
       "allocation": "Most Recent (Last)",
       "expiration": "Page View",
       "xdmField": "_experience.analytics.customDimensions.eVars.eVar39",
-      "dataLayerPath": "digitalData.content.publishSource"
+      "dataLayerPath": "content.publishSource"
     },
     {
       "type": "prop",
       "id": "prop1",
       "name": "Page URL",
       "description": "Mirrors the Page URL eVar to enable PathFinder pathing analysis across the SNF site. Captures the full page URL on every hit.",
-      "valueFormat": "Full URL string",
-      "exampleValue": "https://singaporenightfestival.gov.sg/programme/light-projection",
-      "xdmField": "web.webPageDetails.URL",
-      "dataLayerPath": "digitalData.page.url"
+      "valueFormat": "",
+      "exampleValue": "",
+      "xdmField": "_experience.analytics.customDimensions.props.prop1",
+      "dataLayerPath": "web.webPageDetails.URL"
     },
     {
       "type": "prop",
       "id": "prop2",
       "name": "Business Unit",
       "description": "Mirrors the Business Unit eVar to enable ClickMap / PatternMatch segmentation of pathing by business unit. Constant value for the SNF site.",
-      "valueFormat": "Lowercase string",
-      "exampleValue": "heritage-sg",
+      "valueFormat": "",
+      "exampleValue": "",
       "xdmField": "_experience.analytics.customDimensions.props.prop2",
-      "dataLayerPath": "digitalData.page.businessUnit"
+      "dataLayerPath": "web.webPageDetails.businessUnit"
     },
     {
       "type": "prop",
       "id": "prop3",
       "name": "Page Name",
       "description": "Mirrors the Page Name eVar to enable PathFinder pathing across programme, installation and content pages. Supports requirement 104 (programme/installation listing display tracking).",
-      "valueFormat": "Colon-delimited hierarchy string",
-      "exampleValue": "snf:programme:light-projection",
-      "xdmField": "web.webPageDetails.name",
-      "dataLayerPath": "digitalData.page.pageName"
+      "valueFormat": "",
+      "exampleValue": "",
+      "xdmField": "_experience.analytics.customDimensions.props.prop3",
+      "dataLayerPath": "web.webPageDetails.name"
     },
     {
       "type": "prop",
       "id": "prop4",
       "name": "Site Section",
       "description": "Mirrors the Site Section eVar to enable PatternMatch / ClickMap analysis of section-level navigation across the festival site.",
-      "valueFormat": "Lowercase string",
-      "exampleValue": "programme",
-      "xdmField": "web.webPageDetails.siteSection",
-      "dataLayerPath": "digitalData.page.siteSection"
+      "valueFormat": "",
+      "exampleValue": "",
+      "xdmField": "_experience.analytics.customDimensions.props.prop4",
+      "dataLayerPath": "web.webPageDetails.siteSection"
     },
     {
       "type": "prop",
       "id": "prop5",
       "name": "Programme Name",
       "description": "Mirrors the Programme Name eVar to support content pathing analysis of which programmes/installations visitors traverse. Supports requirement 104.",
-      "valueFormat": "String",
-      "exampleValue": "Light Projection on the Padang",
+      "valueFormat": "",
+      "exampleValue": "",
       "xdmField": "_experience.analytics.customDimensions.props.prop5",
-      "dataLayerPath": "digitalData.content.programmeName"
+      "dataLayerPath": "content.programmeName"
     },
     {
       "type": "prop",
       "id": "prop6",
       "name": "Venue Name",
       "description": "Mirrors the Venue Name eVar to enable PathFinder analysis of venue-to-venue navigation on the precinct map and listings. Supports requirement 401 (interactive precinct map).",
-      "valueFormat": "String",
-      "exampleValue": "National Museum of Singapore",
+      "valueFormat": "",
+      "exampleValue": "",
       "xdmField": "_experience.analytics.customDimensions.props.prop6",
-      "dataLayerPath": "digitalData.content.venueName"
+      "dataLayerPath": "content.venueName"
     },
     {
       "type": "prop",
       "id": "prop7",
       "name": "Trail Name",
       "description": "Mirrors the Trail Name eVar to enable pathing analysis of which curated self-guided trails visitors view and follow. Supports requirement 501 (trail presentation).",
-      "valueFormat": "String",
-      "exampleValue": "Bras Basah Arts Trail",
+      "valueFormat": "",
+      "exampleValue": "",
       "xdmField": "_experience.analytics.customDimensions.props.prop7",
-      "dataLayerPath": "digitalData.content.trailName"
+      "dataLayerPath": "content.trailName"
     },
     {
       "type": "prop",
       "id": "prop8",
       "name": "Registration Flow Step",
       "description": "Mirrors the Registration Journey Step eVar to enable PathFinder analysis of the email registration funnel flow. Supports requirement 201 (email registration verification).",
-      "valueFormat": "String step label",
-      "exampleValue": "email-entered",
+      "valueFormat": "",
+      "exampleValue": "",
       "xdmField": "_experience.analytics.customDimensions.props.prop8",
-      "dataLayerPath": "digitalData.eventData.registrationStep"
+      "dataLayerPath": "journey.registrationStep"
     },
     {
       "type": "prop",
       "id": "prop9",
       "name": "Installation ID",
       "description": "Mirrors the Installation ID eVar to enable PatternMatch analysis of QR check-in sequences across installations. Supports requirement 604 (QR scan events / confirmed check-ins).",
-      "valueFormat": "Alphanumeric ID",
-      "exampleValue": "INST-0427",
+      "valueFormat": "",
+      "exampleValue": "",
       "xdmField": "_experience.analytics.customDimensions.props.prop9",
-      "dataLayerPath": "digitalData.eventData.installationId"
+      "dataLayerPath": "journey.qr.installationId"
     },
     {
       "type": "event",
@@ -689,7 +689,7 @@
       "eventType": "Numeric",
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event2.value",
-      "dataLayerPath": "digitalData.page.loadTimeMs"
+      "dataLayerPath": "web.webPageDetails.pageLoadTimeMs"
     },
     {
       "type": "event",
@@ -974,38 +974,13 @@
   ],
   "processing_rules_hints": {},
   "out_of_box_requirements": [],
-  "warnings": [
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "separator-fallback: template has no pre-styled separator row (SECTION/Group divider) — using bold italic. Update the SDR template to ship a styled donor row for cleaner output.",
-    "Requirements: copied 109 rows from BRD"
-  ],
+  "warnings": [],
   "metadata": {
     "client": "Business Requirements",
     "industry": "government",
     "platform": "Adobe Analytics + AEP Web SDK",
     "version": "1.0",
-    "generated_at": "2026-11-04T00:46:12.222799",
+    "generated_at": "2026-11-04T01:17:54.928957",
     "properties": []
   },
   "summary": {
@@ -1014,1028 +989,9 @@
     "section_b_prop_count": 9,
     "section_b_event_count": 30
   },
-  "metrics_segments": [
-    {
-      "id": "baseline",
-      "segment_kind": "Metric",
-      "name": "Bounce Rate",
-      "description": "Percentage of single-hit visits. Standard engagement health metric.",
-      "value_format": "Percent"
-    },
-    {
-      "id": "baseline",
-      "segment_kind": "Metric",
-      "name": "Conversion Rate",
-      "description": "Ratio of key conversion events (e.g. registration, QR check-in) to visits.",
-      "value_format": "Percent"
-    },
-    {
-      "id": "baseline",
-      "segment_kind": "Metric",
-      "name": "Pages per Visit",
-      "description": "Average number of page views per visit. Standard depth-of-engagement metric.",
-      "value_format": "Decimal"
-    },
-    {
-      "id": "baseline",
-      "segment_kind": "Metric",
-      "name": "All Visits",
-      "description": "Total visit count across the report suite.",
-      "value_format": "Integer"
-    },
-    {
-      "id": "baseline",
-      "segment_kind": "Metric",
-      "name": "New Visitors",
-      "description": "Count of visitors whose first visit falls within the reporting window.",
-      "value_format": "Integer"
-    },
-    {
-      "id": "baseline",
-      "segment_kind": "Metric",
-      "name": "Returning Visitors",
-      "description": "Count of visitors with prior visit history in the reporting window.",
-      "value_format": "Integer"
-    },
-    {
-      "id": "baseline",
-      "segment_kind": "Metric",
-      "name": "Authenticated Users",
-      "description": "Count of visits where Login/Registration status indicates an authenticated (registered) visitor.",
-      "value_format": "Integer"
-    },
-    {
-      "id": "baseline",
-      "segment_kind": "Segment",
-      "name": "Production Data Only",
-      "description": "Isolates production traffic where the Environment eVar equals 'production'. Default segment applied to all project reporting to exclude dev/stage beacons.",
-      "value_format": "Environment eVar = 'production'"
-    },
-    {
-      "id": "201",
-      "segment_kind": "Segment",
-      "name": "Registered Visitors",
-      "description": "Visitor-scoped segment where registration/login status indicates email-verified registered visitors (BRD 201/202). Used for registered-only features and funnel reporting.",
-      "value_format": "Registration Status eVar = 'registered'"
-    },
-    {
-      "id": "203",
-      "segment_kind": "Segment",
-      "name": "Unregistered Visitors",
-      "description": "Visitor-scoped segment where registration status is anonymous/guest (BRD 203). Confirms unregistered visitors retain full content access.",
-      "value_format": "Registration Status eVar = 'unregistered'"
-    },
-    {
-      "id": "1806",
-      "segment_kind": "Segment",
-      "name": "Derived Student Cohort",
-      "description": "Visitor-scoped segment on the derived student cohort flag (geolocation cluster + visit timing + referral source, BRD 1806). Not permanent PII; refreshed annually.",
-      "value_format": "Student Cohort Flag eVar = 'student'"
-    },
-    {
-      "id": "301",
-      "segment_kind": "Segment",
-      "name": "Consent Tier 0 — Functional",
-      "description": "Visitor-scoped segment on consent tier capture at registration (BRD 301). Visitors who granted Tier 0 Functional consent.",
-      "value_format": "Consent Tier eVar contains 'tier0'"
-    },
-    {
-      "id": "301",
-      "segment_kind": "Segment",
-      "name": "Consent Tier 1 — Festival Marketing",
-      "description": "Visitor-scoped segment on Tier 1 Festival Marketing consent (BRD 301/302, unbundled positive action). Supports consent tier distribution reporting (BRD 1204).",
-      "value_format": "Consent Tier eVar contains 'tier1'"
-    },
-    {
-      "id": "301",
-      "segment_kind": "Segment",
-      "name": "Consent Tier 2 — Year-Round NHB",
-      "description": "Visitor-scoped segment on Tier 2 Year-Round NHB consent (BRD 301/302). Supports consent tier distribution reporting (BRD 1204).",
-      "value_format": "Consent Tier eVar contains 'tier2'"
-    },
-    {
-      "id": "303",
-      "segment_kind": "Segment",
-      "name": "Consent Withdrawn",
-      "description": "Visitor-scoped segment capturing visitors who withdrew consent via self-service settings (BRD 303), effective immediately.",
-      "value_format": "Consent Action eVar = 'withdrawn'"
-    },
-    {
-      "id": "604",
-      "segment_kind": "Segment",
-      "name": "QR Checked-in Visits",
-      "description": "Visit-scoped segment where at least one QR check-in event fired against the registered visitor profile (BRD 604).",
-      "value_format": "QR Check-in event exists"
-    },
-    {
-      "id": "602",
-      "segment_kind": "Segment",
-      "name": "Unlocked Content Viewers",
-      "description": "Visit-scoped segment of physically scanned-in visitors who viewed QR-unlocked programme content (BRD 602/605).",
-      "value_format": "Unlocked Content View event exists"
-    },
-    {
-      "id": "105",
-      "segment_kind": "Segment",
-      "name": "Klook Ticketing CTA Clickers",
-      "description": "Visit-scoped segment of visits clicking the off-site Klook ticketing call-to-action (BRD 105).",
-      "value_format": "Klook CTA Click event exists"
-    },
-    {
-      "id": "401",
-      "segment_kind": "Segment",
-      "name": "Map Interaction Visits",
-      "description": "Visit-scoped segment of visits interacting with the Bras Basah–Bugis precinct map (BRD 401).",
-      "value_format": "Map Interaction event exists"
-    },
-    {
-      "id": "403",
-      "segment_kind": "Segment",
-      "name": "Location Permission Granted",
-      "description": "Visit-scoped segment where visitor granted location permission enabling proximity-based sorting (BRD 403).",
-      "value_format": "Location Permission eVar = 'granted'"
-    },
-    {
-      "id": "502",
-      "segment_kind": "Segment",
-      "name": "Trail Savers / Followers",
-      "description": "Visitor-scoped segment of registered visitors who saved and followed a self-guided trail with QR progress (BRD 502).",
-      "value_format": "Trail Save/Follow event exists"
-    },
-    {
-      "id": "503",
-      "segment_kind": "Segment",
-      "name": "Custom Itinerary Creators",
-      "description": "Visitor-scoped segment of visitors who created a custom itinerary by adding programmes/installations (BRD 503).",
-      "value_format": "Itinerary Create event exists"
-    },
-    {
-      "id": "505",
-      "segment_kind": "Segment",
-      "name": "Itinerary Sharers",
-      "description": "Visit-scoped segment of visits sharing an itinerary via native device share (BRD 505).",
-      "value_format": "Itinerary Share event exists"
-    },
-    {
-      "id": "506",
-      "segment_kind": "Segment",
-      "name": "Shared Itinerary Adopters",
-      "description": "Visit-scoped segment of visits performing one-tap adoption of a shared itinerary (BRD 506/507), feeding Community Picks surfacing.",
-      "value_format": "Itinerary Adopt event exists"
-    },
-    {
-      "id": "706",
-      "segment_kind": "Segment",
-      "name": "Personalisation-Exposed Visitors",
-      "description": "Visitor-scoped segment of visitors exposed to Adobe Target personalisation use cases (BRD 701–706).",
-      "value_format": "Personalisation Exposure eVar is set"
-    },
-    {
-      "id": "1406",
-      "segment_kind": "Segment",
-      "name": "Brand Concierge Engaged Visits",
-      "description": "Visit-scoped segment of visits engaging the Adobe Brand Concierge conversational assistant (BRD 1404–1406).",
-      "value_format": "Brand Concierge Interaction event exists"
-    },
-    {
-      "id": "1406",
-      "segment_kind": "Segment",
-      "name": "Brand Concierge Escalation / Failure",
-      "description": "Visit-scoped segment of Brand Concierge sessions that escalated or failed to resolve the intent (BRD 1406).",
-      "value_format": "Brand Concierge Escalation/Failure event exists"
-    },
-    {
-      "id": "103",
-      "segment_kind": "Segment",
-      "name": "Mobile Viewport Visits",
-      "description": "Visit-scoped segment of visits on mobile viewports (OOTB device/viewport dimension) per responsive, mobile-first delivery (BRD 103).",
-      "value_format": "Device Type = 'mobile'"
-    }
-  ],
+  "metrics_segments": [],
   "brd_traceability": [],
-  "variable_groups_by_brd_row": [
-    {
-      "brd_row": 9,
-      "evars": [
-        "eVar2"
-      ],
-      "props": [
-        "prop2"
-      ],
-      "events": [
-        "event2"
-      ],
-      "brd_id": "102"
-    },
-    {
-      "brd_row": 10,
-      "evars": [
-        "eVar3"
-      ],
-      "props": [
-        "prop3"
-      ],
-      "events": [
-        "event3"
-      ],
-      "brd_id": "103"
-    },
-    {
-      "brd_row": 11,
-      "evars": [
-        "eVar7",
-        "eVar9",
-        "eVar10",
-        "eVar11",
-        "eVar12"
-      ],
-      "props": [
-        "prop3",
-        "prop4",
-        "prop5"
-      ],
-      "events": [
-        "event11"
-      ],
-      "brd_id": "104"
-    },
-    {
-      "brd_row": 12,
-      "evars": [
-        "eVar28"
-      ],
-      "props": [],
-      "events": [
-        "event12"
-      ],
-      "brd_id": "105"
-    },
-    {
-      "brd_row": 13,
-      "evars": [
-        "eVar6"
-      ],
-      "props": [
-        "prop6"
-      ],
-      "events": [
-        "event6"
-      ],
-      "brd_id": "106"
-    },
-    {
-      "brd_row": 14,
-      "evars": [
-        "eVar7"
-      ],
-      "props": [
-        "prop7"
-      ],
-      "events": [
-        "event7"
-      ],
-      "brd_id": "107"
-    },
-    {
-      "brd_row": 15,
-      "evars": [
-        "eVar8"
-      ],
-      "props": [
-        "prop8"
-      ],
-      "events": [
-        "event8"
-      ],
-      "brd_id": "108"
-    },
-    {
-      "brd_row": 18,
-      "evars": [],
-      "props": [
-        "prop8"
-      ],
-      "events": [
-        "event4",
-        "event5",
-        "event6"
-      ],
-      "brd_id": "201"
-    },
-    {
-      "brd_row": 23,
-      "evars": [
-        "eVar18"
-      ],
-      "props": [],
-      "events": [
-        "event8"
-      ],
-      "brd_id": "301"
-    },
-    {
-      "brd_row": 24,
-      "evars": [
-        "eVar15"
-      ],
-      "props": [
-        "prop15"
-      ],
-      "events": [
-        "event15"
-      ],
-      "brd_id": "302"
-    },
-    {
-      "brd_row": 25,
-      "evars": [
-        "eVar19"
-      ],
-      "props": [],
-      "events": [
-        "event9"
-      ],
-      "brd_id": "303"
-    },
-    {
-      "brd_row": 26,
-      "evars": [
-        "eVar17"
-      ],
-      "props": [
-        "prop17"
-      ],
-      "events": [
-        "event17"
-      ],
-      "brd_id": "304"
-    },
-    {
-      "brd_row": 28,
-      "evars": [
-        "eVar29"
-      ],
-      "props": [
-        "prop6"
-      ],
-      "events": [
-        "event14"
-      ],
-      "brd_id": "401"
-    },
-    {
-      "brd_row": 29,
-      "evars": [
-        "eVar19"
-      ],
-      "props": [
-        "prop19"
-      ],
-      "events": [
-        "event19"
-      ],
-      "brd_id": "402"
-    },
-    {
-      "brd_row": 30,
-      "evars": [
-        "eVar30"
-      ],
-      "props": [],
-      "events": [
-        "event15"
-      ],
-      "brd_id": "403"
-    },
-    {
-      "brd_row": 32,
-      "evars": [
-        "eVar22"
-      ],
-      "props": [
-        "prop22"
-      ],
-      "events": [
-        "event22"
-      ],
-      "brd_id": "405"
-    },
-    {
-      "brd_row": 33,
-      "evars": [
-        "eVar23"
-      ],
-      "props": [
-        "prop23"
-      ],
-      "events": [
-        "event23"
-      ],
-      "brd_id": "406"
-    },
-    {
-      "brd_row": 35,
-      "evars": [
-        "eVar23"
-      ],
-      "props": [
-        "prop7"
-      ],
-      "events": [
-        "event17"
-      ],
-      "brd_id": "501"
-    },
-    {
-      "brd_row": 36,
-      "evars": [
-        "eVar24"
-      ],
-      "props": [],
-      "events": [
-        "event18"
-      ],
-      "brd_id": "502"
-    },
-    {
-      "brd_row": 37,
-      "evars": [
-        "eVar25"
-      ],
-      "props": [],
-      "events": [
-        "event19"
-      ],
-      "brd_id": "503"
-    },
-    {
-      "brd_row": 38,
-      "evars": [
-        "eVar27"
-      ],
-      "props": [],
-      "events": [
-        "event20"
-      ],
-      "brd_id": "504"
-    },
-    {
-      "brd_row": 39,
-      "evars": [
-        "eVar26"
-      ],
-      "props": [],
-      "events": [
-        "event21"
-      ],
-      "brd_id": "505"
-    },
-    {
-      "brd_row": 43,
-      "evars": [
-        "eVar31"
-      ],
-      "props": [
-        "prop31"
-      ],
-      "events": [
-        "event31"
-      ],
-      "brd_id": "601"
-    },
-    {
-      "brd_row": 46,
-      "evars": [
-        "eVar22"
-      ],
-      "props": [
-        "prop9"
-      ],
-      "events": [
-        "event24"
-      ],
-      "brd_id": "604"
-    },
-    {
-      "brd_row": 52,
-      "evars": [
-        "eVar39"
-      ],
-      "props": [
-        "prop39"
-      ],
-      "events": [
-        "event39"
-      ],
-      "brd_id": "704"
-    },
-    {
-      "brd_row": 53,
-      "evars": [
-        "eVar40"
-      ],
-      "props": [
-        "prop40"
-      ],
-      "events": [
-        "event40"
-      ],
-      "brd_id": "705"
-    },
-    {
-      "brd_row": 54,
-      "evars": [
-        "eVar32"
-      ],
-      "props": [],
-      "events": [
-        "event27"
-      ],
-      "brd_id": "706"
-    },
-    {
-      "brd_row": 56,
-      "evars": [
-        "eVar42"
-      ],
-      "props": [
-        "prop42"
-      ],
-      "events": [
-        "event42"
-      ],
-      "brd_id": "801"
-    },
-    {
-      "brd_row": 57,
-      "evars": [
-        "eVar43"
-      ],
-      "props": [
-        "prop43"
-      ],
-      "events": [
-        "event43"
-      ],
-      "brd_id": "802"
-    },
-    {
-      "brd_row": 58,
-      "evars": [
-        "eVar44"
-      ],
-      "props": [
-        "prop44"
-      ],
-      "events": [
-        "event44"
-      ],
-      "brd_id": "803"
-    },
-    {
-      "brd_row": 61,
-      "evars": [
-        "eVar46"
-      ],
-      "props": [
-        "prop46"
-      ],
-      "events": [
-        "event46"
-      ],
-      "brd_id": "902"
-    },
-    {
-      "brd_row": 64,
-      "evars": [
-        "eVar48"
-      ],
-      "props": [
-        "prop48"
-      ],
-      "events": [
-        "event48"
-      ],
-      "brd_id": "1002"
-    },
-    {
-      "brd_row": 66,
-      "evars": [
-        "eVar49"
-      ],
-      "props": [
-        "prop49"
-      ],
-      "events": [
-        "event49"
-      ],
-      "brd_id": "1101"
-    },
-    {
-      "brd_row": 68,
-      "evars": [
-        "eVar51"
-      ],
-      "props": [
-        "prop51"
-      ],
-      "events": [
-        "event51"
-      ],
-      "brd_id": "1103"
-    },
-    {
-      "brd_row": 71,
-      "evars": [
-        "eVar53"
-      ],
-      "props": [
-        "prop53"
-      ],
-      "events": [
-        "event53"
-      ],
-      "brd_id": "1201"
-    },
-    {
-      "brd_row": 72,
-      "evars": [
-        "eVar54"
-      ],
-      "props": [
-        "prop54"
-      ],
-      "events": [
-        "event54"
-      ],
-      "brd_id": "1202"
-    },
-    {
-      "brd_row": 74,
-      "evars": [
-        "eVar56"
-      ],
-      "props": [
-        "prop56"
-      ],
-      "events": [
-        "event56"
-      ],
-      "brd_id": "1204"
-    },
-    {
-      "brd_row": 76,
-      "evars": [
-        "eVar58"
-      ],
-      "props": [
-        "prop58"
-      ],
-      "events": [
-        "event58"
-      ],
-      "brd_id": "1206"
-    },
-    {
-      "brd_row": 77,
-      "evars": [
-        "eVar59"
-      ],
-      "props": [
-        "prop59"
-      ],
-      "events": [
-        "event59"
-      ],
-      "brd_id": "1207"
-    },
-    {
-      "brd_row": 78,
-      "evars": [
-        "eVar60"
-      ],
-      "props": [
-        "prop60"
-      ],
-      "events": [
-        "event60"
-      ],
-      "brd_id": "1208"
-    },
-    {
-      "brd_row": 80,
-      "evars": [
-        "eVar61"
-      ],
-      "props": [
-        "prop61"
-      ],
-      "events": [
-        "event61"
-      ],
-      "brd_id": "1301"
-    },
-    {
-      "brd_row": 81,
-      "evars": [
-        "eVar62"
-      ],
-      "props": [
-        "prop62"
-      ],
-      "events": [
-        "event62"
-      ],
-      "brd_id": "1302"
-    },
-    {
-      "brd_row": 82,
-      "evars": [
-        "eVar63"
-      ],
-      "props": [
-        "prop63"
-      ],
-      "events": [
-        "event63"
-      ],
-      "brd_id": "1303"
-    },
-    {
-      "brd_row": 83,
-      "evars": [
-        "eVar64"
-      ],
-      "props": [
-        "prop64"
-      ],
-      "events": [
-        "event64"
-      ],
-      "brd_id": "1304"
-    },
-    {
-      "brd_row": 85,
-      "evars": [
-        "eVar65"
-      ],
-      "props": [
-        "prop65"
-      ],
-      "events": [
-        "event65"
-      ],
-      "brd_id": "1401"
-    },
-    {
-      "brd_row": 86,
-      "evars": [
-        "eVar66"
-      ],
-      "props": [
-        "prop66"
-      ],
-      "events": [
-        "event66"
-      ],
-      "brd_id": "1402"
-    },
-    {
-      "brd_row": 87,
-      "evars": [
-        "eVar67"
-      ],
-      "props": [
-        "prop67"
-      ],
-      "events": [
-        "event67"
-      ],
-      "brd_id": "1403"
-    },
-    {
-      "brd_row": 88,
-      "evars": [
-        "eVar68"
-      ],
-      "props": [
-        "prop68"
-      ],
-      "events": [
-        "event68"
-      ],
-      "brd_id": "1404"
-    },
-    {
-      "brd_row": 90,
-      "evars": [
-        "eVar36"
-      ],
-      "props": [],
-      "events": [
-        "event28",
-        "event29"
-      ],
-      "brd_id": "1406"
-    },
-    {
-      "brd_row": 92,
-      "evars": [
-        "eVar71"
-      ],
-      "props": [
-        "prop71"
-      ],
-      "events": [
-        "event71"
-      ],
-      "brd_id": "1501"
-    },
-    {
-      "brd_row": 93,
-      "evars": [
-        "eVar72"
-      ],
-      "props": [
-        "prop72"
-      ],
-      "events": [
-        "event72"
-      ],
-      "brd_id": "1502"
-    },
-    {
-      "brd_row": 94,
-      "evars": [
-        "eVar73"
-      ],
-      "props": [
-        "prop73"
-      ],
-      "events": [
-        "event73"
-      ],
-      "brd_id": "1503"
-    },
-    {
-      "brd_row": 95,
-      "evars": [
-        "eVar74"
-      ],
-      "props": [
-        "prop74"
-      ],
-      "events": [
-        "event74"
-      ],
-      "brd_id": "1504"
-    },
-    {
-      "brd_row": 97,
-      "evars": [
-        "eVar75"
-      ],
-      "props": [
-        "prop75"
-      ],
-      "events": [
-        "event75"
-      ],
-      "brd_id": "1601"
-    },
-    {
-      "brd_row": 98,
-      "evars": [
-        "eVar76"
-      ],
-      "props": [],
-      "events": [
-        "event76"
-      ],
-      "brd_id": "1602"
-    },
-    {
-      "brd_row": 99,
-      "evars": [
-        "eVar77"
-      ],
-      "props": [],
-      "events": [
-        "event77"
-      ],
-      "brd_id": "1603"
-    },
-    {
-      "brd_row": 101,
-      "evars": [
-        "eVar78"
-      ],
-      "props": [],
-      "events": [
-        "event78"
-      ],
-      "brd_id": "1701"
-    },
-    {
-      "brd_row": 102,
-      "evars": [
-        "eVar79"
-      ],
-      "props": [],
-      "events": [
-        "event79"
-      ],
-      "brd_id": "1702"
-    },
-    {
-      "brd_row": 104,
-      "evars": [
-        "eVar80"
-      ],
-      "props": [],
-      "events": [
-        "event80"
-      ],
-      "brd_id": "1801"
-    },
-    {
-      "brd_row": 105,
-      "evars": [
-        "eVar81"
-      ],
-      "props": [],
-      "events": [
-        "event81"
-      ],
-      "brd_id": "1802"
-    },
-    {
-      "brd_row": 106,
-      "evars": [
-        "eVar82"
-      ],
-      "props": [],
-      "events": [
-        "event82"
-      ],
-      "brd_id": "1803"
-    },
-    {
-      "brd_row": 107,
-      "evars": [
-        "eVar83"
-      ],
-      "props": [],
-      "events": [
-        "event83"
-      ],
-      "brd_id": "1804"
-    },
-    {
-      "brd_row": 110,
-      "evars": [
-        "eVar86"
-      ],
-      "props": [],
-      "events": [
-        "event86"
-      ],
-      "brd_id": "1807"
-    },
-    {
-      "brd_row": 113,
-      "evars": [
-        "eVar89"
-      ],
-      "props": [],
-      "events": [
-        "event89"
-      ],
-      "brd_id": "1810"
-    },
-    {
-      "brd_row": 114,
-      "evars": [
-        "eVar90"
-      ],
-      "props": [],
-      "events": [
-        "event90"
-      ],
-      "brd_id": "1811"
-    },
-    {
-      "brd_row": 115,
-      "evars": [
-        "eVar91"
-      ],
-      "props": [],
-      "events": [
-        "event91"
-      ],
-      "brd_id": "1812"
-    }
-  ],
+  "variable_groups_by_brd_row": [],
   "layout": {
     "version": 1,
     "sheets": {

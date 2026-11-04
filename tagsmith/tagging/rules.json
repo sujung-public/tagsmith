@@ -1,0 +1,227 @@
+{
+  "rulesDocumentId": "rules-6bbf37dc",
+  "sourceSdrExcelId": "sdr-903d5925",
+  "sourceLaunchSpecPath": "/app/documents/sujung+write@adobetest.com/b16a87c8-e0dc-4b9c-b197-06eb74ee32fe/sdr-903d5925_Government_Default.launch-spec.json",
+  "generatedAt": "2026-11-04T01:18:16.212Z",
+  "rulesCount": 9,
+  "rules": [
+    {
+      "name": "PV1 Page Load",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "page-view"
+    },
+    {
+      "name": "N-CL1 Cta Click",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "ctaClick"
+    },
+    {
+      "name": "SC1 User Registration",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "userRegistration"
+    },
+    {
+      "name": "N-CL2 Download",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "download"
+    },
+    {
+      "name": "SC2 Chat Prompt Submitted",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "chatPromptSubmitted"
+    },
+    {
+      "name": "SC3 Login",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "login"
+    },
+    {
+      "name": "SC4 Project Created",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "projectCreated"
+    },
+    {
+      "name": "SC5 Step Complete",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "stepComplete"
+    },
+    {
+      "name": "SC6 Logout",
+      "triggers": [],
+      "conditions": [],
+      "actions": [],
+      "sourceEventId": "logout"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "page-view",
+      "name": "PV1 Page Load",
+      "description": "Fires the pageLoad beacon with 37 variables.",
+      "cdlEventKey": "pageLoad",
+      "xdmEventType": "web.webpagedetails.pageViews",
+      "triggerEvent": "page-load",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "pageLoad"
+        }
+      ],
+      "ruleCategory": "PV",
+      "ruleCategoryLabel": "Pageview",
+      "ruleCode": "PV1"
+    },
+    {
+      "id": "ctaClick",
+      "name": "N-CL1 Cta Click",
+      "description": "Fires the ctaClick beacon with 9 variables.",
+      "cdlEventKey": "ctaClick",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "click",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "ctaClick"
+        }
+      ],
+      "ruleCategory": "N-CL",
+      "ruleCategoryLabel": "Non-link Click",
+      "ruleCode": "N-CL1"
+    },
+    {
+      "id": "userRegistration",
+      "name": "SC1 User Registration",
+      "description": "Fires the userRegistration beacon with 9 variables.",
+      "cdlEventKey": "userRegistration",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "direct-call",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "userRegistration"
+        }
+      ],
+      "ruleCategory": "SC",
+      "ruleCategoryLabel": "Status Change",
+      "ruleCode": "SC1"
+    },
+    {
+      "id": "download",
+      "name": "N-CL2 Download",
+      "description": "Fires the download beacon with 2 variables.",
+      "cdlEventKey": "download",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "click",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "download"
+        }
+      ],
+      "ruleCategory": "N-CL",
+      "ruleCategoryLabel": "Non-link Click",
+      "ruleCode": "N-CL2"
+    },
+    {
+      "id": "chatPromptSubmitted",
+      "name": "SC2 Chat Prompt Submitted",
+      "description": "Fires the chatPromptSubmitted beacon with 2 variables.",
+      "cdlEventKey": "chatPromptSubmitted",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "direct-call",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "chatPromptSubmitted"
+        }
+      ],
+      "ruleCategory": "SC",
+      "ruleCategoryLabel": "Status Change",
+      "ruleCode": "SC2"
+    },
+    {
+      "id": "login",
+      "name": "SC3 Login",
+      "description": "Fires the login beacon with 4 variables.",
+      "cdlEventKey": "login",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "direct-call",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "login"
+        }
+      ],
+      "ruleCategory": "SC",
+      "ruleCategoryLabel": "Status Change",
+      "ruleCode": "SC3"
+    },
+    {
+      "id": "projectCreated",
+      "name": "SC4 Project Created",
+      "description": "Fires the projectCreated beacon with 1 variable.",
+      "cdlEventKey": "projectCreated",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "direct-call",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "projectCreated"
+        }
+      ],
+      "ruleCategory": "SC",
+      "ruleCategoryLabel": "Status Change",
+      "ruleCode": "SC4"
+    },
+    {
+      "id": "stepComplete",
+      "name": "SC5 Step Complete",
+      "description": "Fires the stepComplete beacon with 1 variable.",
+      "cdlEventKey": "stepComplete",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "direct-call",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "stepComplete"
+        }
+      ],
+      "ruleCategory": "SC",
+      "ruleCategoryLabel": "Status Change",
+      "ruleCode": "SC5"
+    },
+    {
+      "id": "logout",
+      "name": "SC6 Logout",
+      "description": "Fires the logout beacon with 1 variable.",
+      "cdlEventKey": "logout",
+      "xdmEventType": "web.webinteraction.linkClicks",
+      "triggerEvent": "direct-call",
+      "variables": [
+        {
+          "variableType": "event",
+          "variableId": "logout"
+        }
+      ],
+      "ruleCategory": "SC",
+      "ruleCategoryLabel": "Status Change",
+      "ruleCode": "SC6"
+    }
+  ]
+}

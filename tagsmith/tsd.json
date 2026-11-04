@@ -2,399 +2,397 @@
   "version": 1,
   "templateFile": "adobe-dcts-acdl-tsd.docx",
   "data": {
-    "projectName": "Brand new",
-    "project": "Brand new",
-    "date": "2026-11-03",
+    "projectName": "Taylers University",
+    "project": "Taylers University",
+    "date": "2026-11-04",
     "version": "1.0",
     "author": "",
-    "clientName": "Brand new",
-    "CLIENTNAME": "Brand new",
+    "clientName": "Taylers University",
+    "CLIENTNAME": "Taylers University",
     "dataLayerName": "adobeDataLayer",
     "SOLUTION_LOOP": [],
     "evars": [
       {
-        "id": "eVar (OOTB)",
-        "name": "Experience Cloud ID (ECID)",
-        "description": "Adobe Experience Cloud ID set automatically by AEP Web SDK. Primary cross-session visitor identity."
-      },
-      {
-        "id": "eVar (OOTB)",
-        "name": "Marketing Channel",
-        "description": "Marketing channel derived by Marketing Channel Processing Rules (rules to be defined in AA Admin)."
-      },
-      {
-        "id": "campaign",
-        "name": "Tracking Code",
-        "description": "Campaign tracking code captured from the inbound URL query parameter. Native campaign variable."
-      },
-      {
-        "id": "campaign",
-        "name": "Campaign Source",
-        "description": "SAINT classification of s.campaign — traffic source (utm_source)."
-      },
-      {
-        "id": "campaign",
-        "name": "Campaign Medium",
-        "description": "SAINT classification of s.campaign — marketing medium (utm_medium)."
-      },
-      {
-        "id": "campaign",
-        "name": "Campaign Name",
-        "description": "SAINT classification of s.campaign — human-readable campaign name (utm_campaign)."
-      },
-      {
-        "id": "campaign",
-        "name": "Campaign Content",
-        "description": "SAINT classification of s.campaign — creative/content variant (utm_content)."
-      },
-      {
-        "id": "eVar (OOTB)",
-        "name": "Device Type",
-        "description": "Device type auto-collected by AEP Web SDK / AA device enrichment. Supports responsive mobile-first reporting (BRD 103)."
-      },
-      {
-        "id": "eVar (OOTB)",
-        "name": "Geolocation",
-        "description": "Geo-location (country/region/city) derived server-side from IP by AA. No raw GPS collected (BRD 1802)."
-      },
-      {
-        "id": "eVar (OOTB)",
-        "name": "New / Return Visitor",
-        "description": "New vs returning visitor status auto-derived by AA. Supports returning-visitor personalisation (BRD 704)."
-      },
-      {
         "id": "eVar1",
-        "name": "Page Name",
-        "description": "Full page URL of the current page. Baseline global dimension on every hit."
+        "name": "ECID",
+        "description": "Adobe Experience Cloud ID auto-collected by AEP Web SDK. Primary visitor identity."
       },
       {
         "id": "eVar2",
         "name": "Page URL",
-        "description": "Business unit / property identifier. Baseline global dimension for cross-property roll-up."
+        "description": "Full page URL of the current hit. Baseline dimension for all pages (BRD 101)."
       },
       {
         "id": "eVar3",
         "name": "Business Unit",
-        "description": "Environment flag (production / staging / dev). Backs the Production Data Only segment."
+        "description": "Business unit / brand owner for the property. Baseline dimension on every hit."
       },
       {
         "id": "eVar4",
         "name": "Environment",
-        "description": "Visitor registration/authentication state. Supports email-registration and optional-registration tracking."
+        "description": "Environment flag (production/staging) powering the Production Data Only segment."
+      },
+      {
+        "id": "campaign",
+        "name": "Tracking Code (s.campaign)",
+        "description": "Native campaign tracking code sourced from URL query parameter (BRD 101)."
+      },
+      {
+        "id": "mktchannel",
+        "name": "Marketing Channel",
+        "description": "OOTB Marketing Channel processing-rule dimension. Processing rules required (not defined here)."
+      },
+      {
+        "id": "campaign.source",
+        "name": "Campaign Source",
+        "description": "SAINT classification of s.campaign — traffic source."
+      },
+      {
+        "id": "campaign.medium",
+        "name": "Campaign Medium",
+        "description": "SAINT classification of s.campaign — medium."
+      },
+      {
+        "id": "campaign.name",
+        "name": "Campaign Name",
+        "description": "SAINT classification of s.campaign — campaign name."
+      },
+      {
+        "id": "campaign.content",
+        "name": "Campaign Content",
+        "description": "SAINT classification of s.campaign — creative/content variant."
+      },
+      {
+        "id": "geo",
+        "name": "Geo Location",
+        "description": "OOTB geo-segmentation dimensions derived by Adobe from IP. Raw GPS never stored (BRD 1802)."
+      },
+      {
+        "id": "deviceType",
+        "name": "Device Type",
+        "description": "OOTB device/mobile dimensions from user-agent — supports responsive/mobile-first reporting (BRD 103)."
+      },
+      {
+        "id": "newReturn",
+        "name": "New vs Return Visitor",
+        "description": "OOTB return-frequency dimension — supports returning-visitor contextual banner (BRD 704)."
       },
       {
         "id": "eVar5",
-        "name": "Site Section",
-        "description": "[Hashed — PII] SHA-256 hashed registered visitor ID for CRM/AEP profile stitching. Never store raw email."
+        "name": "Page Name",
+        "description": "Human-readable page name on every hit (BRD 101)."
       },
       {
         "id": "eVar6",
-        "name": "Login Status",
-        "description": "Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually."
+        "name": "Site Section",
+        "description": "Top-level site section for content grouping across all pages (BRD 101)."
       },
       {
         "id": "eVar7",
-        "name": "User ID [Hashed]",
-        "description": "Friendly page name for all instrumented pages across the SNF site."
+        "name": "Page Type",
+        "description": "Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812."
       },
       {
         "id": "eVar8",
-        "name": "ECID (Experience Cloud ID)",
-        "description": "Top-level site section for content grouping and navigation reporting."
+        "name": "Brand Compliance Flag",
+        "description": "Flags whether the page conforms to Heritage SG brand guidelines and carries the standard government disclaimer (BRD 106/109)."
       },
       {
         "id": "eVar9",
-        "name": "Page Type",
-        "description": "Template/page type (home, listing, detail, policy, map, trails). Distinguishes Privacy, Terms, Cookie Policy views."
+        "name": "Programme / Installation ID",
+        "description": "Unique AEMaaCS ID of the programme/installation in context (BRD 104)."
       },
       {
         "id": "eVar10",
-        "name": "Viewport / Delivery Mode",
-        "description": "Rendered viewport / responsive delivery mode (desktop / mobile) per approved wireframes."
+        "name": "Programme / Installation Title",
+        "description": "Display title of the programme/installation (BRD 104)."
       },
       {
         "id": "eVar11",
-        "name": "Brand Compliance Flag",
-        "description": "Flag indicating page compliance with Heritage SG brand guidelines (and presence of standard government disclaimer, BRD 106)."
+        "name": "Venue Name",
+        "description": "Venue associated with the programme/installation listing (BRD 104/401)."
       },
       {
         "id": "eVar12",
-        "name": "SEO / Structured Data Flag",
-        "description": "Flag indicating presence of Schema.org JSON-LD structured data / indexability on the page (BRD 801–803)."
+        "name": "Programme Schedule",
+        "description": "Programme date/time window shown on listing detail (BRD 104)."
       },
       {
         "id": "eVar13",
-        "name": "CTA Name",
-        "description": "Unique ID of the festival programme or installation in context. Also used for QR check-in installation ID."
+        "name": "Unlocked Content Status",
+        "description": "Whether optional unlocked content is present/visible for a scanned-in visitor (BRD 602/605/1104)."
       },
       {
         "id": "eVar14",
-        "name": "Programme / Installation Title",
-        "description": "Display title of the programme or installation being viewed/listed."
+        "name": "First Festival Year",
+        "description": "firstFestivalYear content-model field flagging debut programmes/installations (BRD 1104)."
       },
       {
         "id": "eVar15",
-        "name": "Venue Name",
-        "description": "Venue associated with the programme / installation within the Bras Basah–Bugis precinct."
+        "name": "Login / Registration Status",
+        "description": "Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203)."
       },
       {
         "id": "eVar16",
-        "name": "Content Date / Time Slot",
-        "description": "Scheduled date and time slot of the programme / installation shown in listings and detail pages."
+        "name": "Hashed Visitor ID",
+        "description": "[Hashed — PII] Registered visitor profile ID, SHA-256 hashed in JS before collection. Never expiration (BRD 204/604/304)."
       },
       {
         "id": "eVar17",
-        "name": "Unlocked Content Status",
-        "description": "State of optional unlocked content on a programme detail page (locked / unlocked-via-QR / none). Only visible to scanned-in visitors."
+        "name": "Registration Trigger Moment",
+        "description": "Context/moment that triggered the registration prompt (first QR scan, itinerary adoption, etc.) — funnel reporting by trigger (BRD 603/506/1205)."
       },
       {
         "id": "eVar18",
-        "name": "First Festival Year",
-        "description": "firstFestivalYear content field from AEMaaCS model — indicates debut year of the programme / installation."
+        "name": "Consent Tier State",
+        "description": "Three-tier consent state (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). Unbundled, unchecked by default (BRD 301/302)."
       },
       {
         "id": "eVar19",
-        "name": "Interaction Type",
-        "description": "Generic interaction descriptor for key user interactions (CTA click, expand, filter, share, etc.)."
+        "name": "Consent Action",
+        "description": "Consent action recorded (grant/withdraw) for the consent log, effective immediately (BRD 303/304)."
       },
       {
         "id": "eVar20",
-        "name": "Download File Name",
-        "description": "Context of the Klook ticketing call-to-action click directing visitors off-site (programme/installation referenced)."
+        "name": "Cookie Consent Category State",
+        "description": "Cookie consent category states (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). No pre-ticked acceptance (BRD 1808/1809/1811)."
       },
       {
         "id": "eVar21",
-        "name": "Map Interaction Context",
-        "description": "Context of interactive precinct map interactions (pin click, zoom, listing open) on the MapBox map."
+        "name": "Student Cohort Flag",
+        "description": "Derived student cohort flag from geolocation cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually (BRD 1806)."
       },
       {
         "id": "eVar22",
-        "name": "Location Permission State",
-        "description": "Visitor's location-permission state (granted / denied) governing proximity sorting and default listing behaviour."
+        "name": "QR Scan Installation ID",
+        "description": "Installation ID captured on a QR check-in scan. Venue check-in derived from QR only, not GPS (BRD 601/604/1803)."
       },
       {
         "id": "eVar23",
-        "name": "Derived Zone Label",
-        "description": "Client-side derived zone label passed to Adobe Target. Raw GPS never stored server-side (PDPA)."
+        "name": "Trail Name",
+        "description": "Selected curated self-guided trail name (BRD 501/502)."
       },
       {
         "id": "eVar24",
-        "name": "Venue Crowd Density Level",
-        "description": "Live per-venue crowd density indicator level derived from real-time AA session data (low / medium / high)."
+        "name": "Trail Progress / Check-in Step",
+        "description": "Trail progress tracked via QR check-ins — current step / completion ratio (BRD 502)."
       },
       {
         "id": "eVar25",
-        "name": "Trail Name",
-        "description": "Name of the curated self-guided trail being presented, selected or followed."
+        "name": "Itinerary ID",
+        "description": "Custom itinerary identifier for created/shared/adopted itineraries incl. Community Picks (BRD 503/506/507)."
       },
       {
         "id": "eVar26",
-        "name": "Trail / Itinerary ID",
-        "description": "Unique ID of the trail or custom itinerary (used for save/follow, sharing, adoption and Community Picks)."
+        "name": "Itinerary Share Method",
+        "description": "Native device share channel used for itinerary sharing (no social OAuth) (BRD 505/705)."
       },
       {
         "id": "eVar27",
-        "name": "Itinerary Source",
-        "description": "Origin of the itinerary in context (self-created / shared-view / one-tap-adopted / community-pick)."
+        "name": "Itinerary Optimisation Suggestion",
+        "description": "Type of dismissible inline optimisation suggestion surfaced for itinerary conflicts/inefficiencies (BRD 504)."
       },
       {
         "id": "eVar28",
-        "name": "Itinerary Optimisation Suggestion",
-        "description": "Type of inline optimisation suggestion surfaced for itinerary conflicts/inefficiencies (dismissible, non-blocking)."
+        "name": "Klook CTA Destination",
+        "description": "Off-site Klook ticketing CTA destination clicked (exit link). No ticketing built on SNF site (BRD 105)."
       },
       {
         "id": "eVar29",
-        "name": "Registration Trigger Moment",
-        "description": "The moment/context that triggered registration (QR first scan, itinerary adoption, save trail, manual). Drives funnel-by-trigger reporting."
+        "name": "Map Interaction Type",
+        "description": "Interaction type on the Bras Basah–Bugis MapBox map (pin tap, zoom, directions). Map by Adobe using MapBox (BRD 401/402)."
       },
       {
         "id": "eVar30",
-        "name": "Project Name",
-        "description": "Three-tier consent model selection captured at registration (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB)."
+        "name": "Location Permission State",
+        "description": "Location permission grant/deny state driving proximity sorting vs default listing. Geolocation client-side only (BRD 403/404/1802)."
       },
       {
         "id": "eVar31",
-        "name": "Industry",
-        "description": "Consent action captured for the consent log (grant / withdraw) by tier, effective immediately via self-service settings."
+        "name": "Listing Sort Mode",
+        "description": "Active listing sort/auto-sort mode (proximity, current-night, last-chance post-9pm) (BRD 403/404/701)."
       },
       {
         "id": "eVar32",
-        "name": "Workflow Step",
-        "description": "Cookie consent categories accepted (Strictly Necessary / Analytics & Performance / Personalisation & Targeting)."
+        "name": "Personalisation Use Case",
+        "description": "Adobe Target personalisation use case in context (Your picks tonight, Trending with your circle, returning banner) (BRD 702/703/704/706)."
       },
       {
         "id": "eVar33",
-        "name": "Workflow Interface",
-        "description": "Active Adobe Target personalisation use case in context (your-picks / trending-circle / returning-banner / last-chance)."
+        "name": "Personalisation Experience / Variant",
+        "description": "Adobe Target activity/experience variant served — supports lift & conversion reporting (BRD 706/1203)."
       },
       {
         "id": "eVar34",
-        "name": "Prompt Text",
-        "description": "Context of an affinity-matched recommendation shown or clicked (feed position, programme recommended)."
+        "name": "Session Loop Cluster Hash",
+        "description": "[Hashed] Session hash cluster key powering 'Trending with your circle' chip. Non-PII hashed cluster id (BRD 703)."
       },
       {
         "id": "eVar35",
-        "name": "Prompt Type",
-        "description": "Method used for itinerary sharing via native device share (no social OAuth). Captures channel chosen by OS share sheet."
+        "name": "Brand Concierge Query Intent",
+        "description": "Classified visitor intent for a Brand Concierge query (programme discovery, trail rec, venue info, general) (BRD 1405/1406)."
       },
       {
         "id": "eVar36",
-        "name": "Prompt Length",
-        "description": "Visitor intent classified in a Brand Concierge interaction (programme discovery / trail recommendation / venue info / general info)."
+        "name": "Brand Concierge Outcome",
+        "description": "Outcome of a Brand Concierge interaction (answered, escalated, failed) for engagement/escalation reporting (BRD 1406)."
       },
       {
         "id": "eVar37",
-        "name": "Last Step Before Drop-Off",
-        "description": "Outcome of a Brand Concierge interaction (answered / escalated / failed) for engagement and escalation-rate reporting."
+        "name": "AI / Agent Crawler Source",
+        "description": "Identifies AI-powered / agentic crawler source for GEO & LLMO visibility reporting (BRD 901/902/1303)."
       },
       {
         "id": "eVar38",
-        "name": "AI / Agentic Discovery Source",
-        "description": "Referral source indicating discovery via AI-powered/agentic search or LLM crawler (GEO/LLMO). Captured from referrer/UA heuristics."
+        "name": "Social Share Surface",
+        "description": "Social sharing surface / Open Graph–Twitter Card context on programme detail and shareable itinerary pages (BRD 1001/1002)."
+      },
+      {
+        "id": "eVar39",
+        "name": "Content Author / Publish Source",
+        "description": "AEMaaCS publish source/channel (independent author publish vs migration) for content governance reporting (BRD 1102/1103)."
       }
     ],
     "props": [
       {
-        "id": "N/A (OOTB)",
-        "name": "Marketing Channel",
-        "description": "OOTB marketing channel reporting — mirror of the OOTB dimension; no custom prop allocated."
-      },
-      {
         "id": "prop1",
-        "name": "ECID (Experience Cloud ID)",
-        "description": "Mirror of the Page URL eVar for PathFinder / pathing analysis. Baseline variable."
+        "name": "Page URL",
+        "description": "Mirrors the Page URL eVar to enable PathFinder pathing analysis across the SNF site. Captures the full page URL on every hit."
       },
       {
         "id": "prop2",
-        "name": "Page URL",
-        "description": "Mirror of the Business Unit eVar for pathing / ClickMap segmentation. Baseline variable."
+        "name": "Business Unit",
+        "description": "Mirrors the Business Unit eVar to enable ClickMap / PatternMatch segmentation of pathing by business unit. Constant value for the SNF site."
       },
       {
         "id": "prop3",
-        "name": "Business Unit",
-        "description": "Mirror of the Page Name eVar for PathFinder pathing across the SNF site. Supports page-tagging requirement."
+        "name": "Page Name",
+        "description": "Mirrors the Page Name eVar to enable PathFinder pathing across programme, installation and content pages. Supports requirement 104 (programme/installation listing display tracking)."
       },
       {
         "id": "prop4",
-        "name": "Page Name",
-        "description": "Mirror of the Site Section eVar for next-page-flow pathing through the SNF site hierarchy."
+        "name": "Site Section",
+        "description": "Mirrors the Site Section eVar to enable PatternMatch / ClickMap analysis of section-level navigation across the festival site."
       },
       {
         "id": "prop5",
-        "name": "Site Section",
-        "description": "Mirror of the Page Type eVar for pathing between listing, detail and policy page templates."
+        "name": "Programme Name",
+        "description": "Mirrors the Programme Name eVar to support content pathing analysis of which programmes/installations visitors traverse. Supports requirement 104."
       },
       {
         "id": "prop6",
-        "name": "Workflow Interface",
-        "description": "Mirror of the Programme / Installation Name eVar for pathing across festival content items."
+        "name": "Venue Name",
+        "description": "Mirrors the Venue Name eVar to enable PathFinder analysis of venue-to-venue navigation on the precinct map and listings. Supports requirement 401 (interactive precinct map)."
       },
       {
         "id": "prop7",
-        "name": "Workflow Step",
-        "description": "Mirror of the Venue Name eVar for pathing / ClickMap of precinct venue interactions."
+        "name": "Trail Name",
+        "description": "Mirrors the Trail Name eVar to enable pathing analysis of which curated self-guided trails visitors view and follow. Supports requirement 501 (trail presentation)."
       },
       {
         "id": "prop8",
-        "name": "CTA Name",
-        "description": "Mirror of the Trail Name eVar for pathing through curated and custom trail flows."
+        "name": "Registration Flow Step",
+        "description": "Mirrors the Registration Journey Step eVar to enable PathFinder analysis of the email registration funnel flow. Supports requirement 201 (email registration verification)."
       },
       {
         "id": "prop9",
-        "name": "Prompt Type",
-        "description": "Mirror of the Registration Trigger Moment eVar for pathing analysis of which moment drove registration (QR scan, trail save, share adoption)."
-      },
-      {
-        "id": "prop10",
-        "name": "Prompt Text",
-        "description": "Mirror of the Brand Concierge Query Intent eVar for pathing of intent sequences within concierge sessions."
+        "name": "Installation ID",
+        "description": "Mirrors the Installation ID eVar to enable PatternMatch analysis of QR check-in sequences across installations. Supports requirement 604 (QR scan events / confirmed check-ins)."
       }
     ],
     "events": [],
     "EVENT_LOOP": [
       {
         "cdlEventKey": "pageLoad",
-        "cdlEventDescription": "Referral source indicating discovery via AI-powered/agentic search or LLM crawler (GEO/LLMO). Captured from referrer/UA heuristics. Flag indicating page compliance with Heritage SG brand guidelines (and presence of standard government disclaimer, BRD 106). Live per-venue crowd density indicator level derived from real-time AA session data (low / medium / high). firstFestivalYear content field from AEMaaCS model — indicates debut year of the programme / installation. Template/page type (home, listing, detail, policy, map, trails). Distinguishes Privacy, Terms, Cookie Policy views. Unique ID of the festival programme or installation in context. Also used for QR check-in installation ID. Mirror of the Programme / Installation Name eVar for pathing across festival content items. Display title of the programme or installation being viewed/listed. Flag indicating presence of Schema.org JSON-LD structured data / indexability on the page (BRD 801–803). Scheduled date and time slot of the programme / installation shown in listings and detail pages. State of optional unlocked content on a programme detail page (locked / unlocked-via-QR / none). Only visible to scanned-in visitors. Venue associated with the programme / installation within the Bras Basah–Bugis precinct. Rendered viewport / responsive delivery mode (desktop / mobile) per approved wireframes. Active Adobe Target personalisation use case in context (your-picks / trending-circle / returning-banner / last-chance). Context of an affinity-matched recommendation shown or clicked (feed position, programme recommended). Mirror of the Trail Name eVar for pathing through curated and custom trail flows. Visitor's location-permission state (granted / denied) governing proximity sorting and default listing behaviour. Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually. Client-side derived zone label passed to Adobe Target. Raw GPS never stored server-side (PDPA). Cookie consent categories accepted (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). External campaign tracking code (utm_campaign / cid) — Adobe s.campaign. Experience Cloud ID for the visitor. Visitor registration/authentication state. Supports email-registration and optional-registration tracking. Business unit / property identifier. Baseline global dimension for cross-property roll-up. Environment flag (production / staging / dev). Backs the Production Data Only segment. Friendly page name for all instrumented pages across the SNF site. Numeric page load time in milliseconds. Paired with Page Load Time Instances to build the Avg Page Load Time calculated metric. Hostname of the server that served the page. Top-level site section for content grouping and navigation reporting. Full page URL of the current page. Baseline global dimension on every hit. HTTP referrer URL for the page view.",
+        "cdlEventDescription": "Flags whether the page conforms to Heritage SG brand guidelines and carries the standard government disclaimer (BRD 106/109). firstFestivalYear content-model field flagging debut programmes/installations (BRD 1104). Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812. Unique AEMaaCS ID of the programme/installation in context (BRD 104). Mirrors the Programme Name eVar to support content pathing analysis of which programmes/installations visitors traverse. Supports requirement 104. Display title of the programme/installation (BRD 104). AEMaaCS publish source/channel (independent author publish vs migration) for content governance reporting (BRD 1102/1103). Programme date/time window shown on listing detail (BRD 104). Mirrors the Trail Name eVar to enable pathing analysis of which curated self-guided trails visitors view and follow. Supports requirement 501 (trail presentation). Whether optional unlocked content is present/visible for a scanned-in visitor (BRD 602/605/1104). Venue associated with the programme/installation listing (BRD 104/401). Derived student cohort flag from geolocation cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually (BRD 1806). Cookie consent category states (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). No pre-ticked acceptance (BRD 1808/1809/1811). Active listing sort/auto-sort mode (proximity, current-night, last-chance post-9pm) (BRD 403/404/701). Location permission grant/deny state driving proximity sorting vs default listing. Geolocation client-side only (BRD 403/404/1802). [Hashed] Session hash cluster key powering 'Trending with your circle' chip. Non-PII hashed cluster id (BRD 703). Adobe Target personalisation use case in context (Your picks tonight, Trending with your circle, returning banner) (BRD 702/703/704/706). Adobe Target activity/experience variant served — supports lift & conversion reporting (BRD 706/1203). Identifies AI-powered / agentic crawler source for GEO & LLMO visibility reporting (BRD 901/902/1303). SAINT classification of s.campaign — creative/content variant. SAINT classification of s.campaign — medium. SAINT classification of s.campaign — traffic source. External campaign tracking code (utm_campaign / cid) — Adobe s.campaign. Adobe Experience Cloud ID auto-collected by AEP Web SDK. Primary visitor identity. Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203). Business unit / brand owner for the property. Baseline dimension on every hit. Environment flag (production/staging) powering the Production Data Only segment. Human-readable page name on every hit (BRD 101). Numeric page load time in milliseconds. Pairs with Page Load Time Instances to derive Avg Page Load Time calculated metric. Supports BRD 1501-1504 performance monitoring. Hostname of the server that served the page. Top-level site section for content grouping across all pages (BRD 101). Full page URL of the current hit. Baseline dimension for all pages (BRD 101). HTTP referrer URL for the page view.",
         "dataLayerRows": [
           {
-            "path": "content.aiDiscoverySource",
-            "description": "Referral source indicating discovery via AI-powered/agentic search or LLM crawler (GEO/LLMO). Captured from referrer/UA heuristics. e.g. chatgpt"
-          },
-          {
             "path": "content.brandCompliant",
-            "description": "Flag indicating page compliance with Heritage SG brand guidelines (and presence of standard government disclaimer, BRD 106). e.g. Y"
-          },
-          {
-            "path": "content.crowdDensityLevel",
-            "description": "Live per-venue crowd density indicator level derived from real-time AA session data (low / medium / high). e.g. high"
+            "description": "Flags whether the page conforms to Heritage SG brand guidelines and carries the standard government disclaimer (BRD 106/109). e.g. true"
           },
           {
             "path": "content.firstFestivalYear",
-            "description": "firstFestivalYear content field from AEMaaCS model — indicates debut year of the programme / installation. e.g. 2026"
+            "description": "firstFestivalYear content-model field flagging debut programmes/installations (BRD 1104). e.g. 2026"
           },
           {
             "path": "content.pageType",
-            "description": "Template/page type (home, listing, detail, policy, map, trails). Distinguishes Privacy, Terms, Cookie Policy views. e.g. programme-detail"
+            "description": "Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812. e.g. programme-detail"
           },
           {
             "path": "content.programmeId",
-            "description": "Unique ID of the festival programme or installation in context. Also used for QR check-in installation ID. e.g. INST-0421"
+            "description": "Unique AEMaaCS ID of the programme/installation in context (BRD 104). e.g. PRG-00421"
           },
           {
             "path": "content.programmeName",
-            "description": "Mirror of the Programme / Installation Name eVar for pathing across festival content items. e.g. Lumen Light Garden"
+            "description": "Mirrors the Programme Name eVar to support content pathing analysis of which programmes/installations visitors traverse. Supports requirement 104. e.g. Light Projection on the Padang"
           },
           {
             "path": "content.programmeTitle",
-            "description": "Display title of the programme or installation being viewed/listed. e.g. Lights of Memory"
+            "description": "Display title of the programme/installation (BRD 104). e.g. Lantern Walk at Armenian Street"
           },
           {
-            "path": "content.structuredDataTypes",
-            "description": "Flag indicating presence of Schema.org JSON-LD structured data / indexability on the page (BRD 801–803). e.g. Event+Place"
+            "path": "content.publishSource",
+            "description": "AEMaaCS publish source/channel (independent author publish vs migration) for content governance reporting (BRD 1102/1103). e.g. aem-author-publish"
           },
           {
-            "path": "content.timeSlot",
-            "description": "Scheduled date and time slot of the programme / installation shown in listings and detail pages. e.g. 2026-08-22 20:00"
+            "path": "content.schedule",
+            "description": "Programme date/time window shown on listing detail (BRD 104). e.g. 2026-08-21 19:00-22:00"
           },
           {
-            "path": "content.unlockedContentStatus",
-            "description": "State of optional unlocked content on a programme detail page (locked / unlocked-via-QR / none). Only visible to scanned-in visitors. e.g. unlocked"
+            "path": "content.trailName",
+            "description": "Mirrors the Trail Name eVar to enable pathing analysis of which curated self-guided trails visitors view and follow. Supports requirement 501 (trail presentation). e.g. Bras Basah Arts Trail"
+          },
+          {
+            "path": "content.unlockedStatus",
+            "description": "Whether optional unlocked content is present/visible for a scanned-in visitor (BRD 602/605/1104). e.g. visible-scanned-in"
           },
           {
             "path": "content.venueName",
-            "description": "Venue associated with the programme / installation within the Bras Basah–Bugis precinct. e.g. National Museum of Singapore"
+            "description": "Venue associated with the programme/installation listing (BRD 104/401). e.g. Armenian Street"
           },
           {
-            "path": "content.viewportMode",
-            "description": "Rendered viewport / responsive delivery mode (desktop / mobile) per approved wireframes. e.g. mobile"
+            "path": "journey.studentCohort",
+            "description": "Derived student cohort flag from geolocation cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually (BRD 1806). e.g. true"
           },
           {
-            "path": "content.eventData.personalisationUseCase",
-            "description": "Active Adobe Target personalisation use case in context (your-picks / trending-circle / returning-banner / last-chance). e.g. your-picks-tonight"
+            "path": "journey.consent.cookieState",
+            "description": "Cookie consent category states (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). No pre-ticked acceptance (BRD 1808/1809/1811). e.g. necessary:on|analytics:on|targeting:off"
           },
           {
-            "path": "content.eventData.recommendationContext",
-            "description": "Context of an affinity-matched recommendation shown or clicked (feed position, programme recommended). e.g. picks-slot-2:INST-0421"
+            "path": "journey.listing.sortMode",
+            "description": "Active listing sort/auto-sort mode (proximity, current-night, last-chance post-9pm) (BRD 403/404/701). e.g. current-night-urgency"
           },
           {
-            "path": "content.trail.trailName",
-            "description": "Mirror of the Trail Name eVar for pathing through curated and custom trail flows. e.g. Civic District Heritage Trail"
+            "path": "journey.map.locationPermission",
+            "description": "Location permission grant/deny state driving proximity sorting vs default listing. Geolocation client-side only (BRD 403/404/1802). e.g. granted"
           },
           {
-            "path": "journey.locationPermission",
-            "description": "Visitor's location-permission state (granted / denied) governing proximity sorting and default listing behaviour. e.g. granted"
+            "path": "journey.personalisation.loopClusterHash",
+            "description": "[Hashed] Session hash cluster key powering 'Trending with your circle' chip. Non-PII hashed cluster id (BRD 703). e.g. c1f4a9e2"
           },
           {
-            "path": "journey.studentCohortFlag",
-            "description": "Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually. e.g. Y"
+            "path": "journey.personalisation.useCase",
+            "description": "Adobe Target personalisation use case in context (Your picks tonight, Trending with your circle, returning banner) (BRD 702/703/704/706). e.g. your-picks-tonight"
           },
           {
-            "path": "journey.zoneLabel",
-            "description": "Client-side derived zone label passed to Adobe Target. Raw GPS never stored server-side (PDPA). e.g. zone-bras-basah"
+            "path": "journey.personalisation.variant",
+            "description": "Adobe Target activity/experience variant served — supports lift & conversion reporting (BRD 706/1203). e.g. activity42:variantB"
           },
           {
-            "path": "journey.consent.cookieCategories",
-            "description": "Cookie consent categories accepted (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). e.g. StrictlyNecessary|Analytics"
+            "path": "journey.seo.agentSource",
+            "description": "Identifies AI-powered / agentic crawler source for GEO & LLMO visibility reporting (BRD 901/902/1303). e.g. chatgpt-agent"
+          },
+          {
+            "path": "marketing.content",
+            "description": "SAINT classification of s.campaign — creative/content variant. e.g. hero_banner_a"
+          },
+          {
+            "path": "marketing.medium",
+            "description": "SAINT classification of s.campaign — medium. e.g. email"
+          },
+          {
+            "path": "marketing.source",
+            "description": "SAINT classification of s.campaign — traffic source. e.g. newsletter"
           },
           {
             "path": "marketing.trackingCode",
@@ -402,27 +400,27 @@
           },
           {
             "path": "user.ecid",
-            "description": "Experience Cloud ID for the visitor. e.g. 38961882559817821902449637980926447915"
+            "description": "Adobe Experience Cloud ID auto-collected by AEP Web SDK. Primary visitor identity. e.g. 79658739203495820394857"
           },
           {
             "path": "user.loginStatus",
-            "description": "Visitor registration/authentication state. Supports email-registration and optional-registration tracking. e.g. registered"
+            "description": "Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203). e.g. registered"
           },
           {
             "path": "web.webPageDetails.businessUnit",
-            "description": "Business unit / property identifier. Baseline global dimension for cross-property roll-up. e.g. Heritage SG - SNF"
+            "description": "Business unit / brand owner for the property. Baseline dimension on every hit. e.g. SNF"
           },
           {
             "path": "web.webPageDetails.environment",
-            "description": "Environment flag (production / staging / dev). Backs the Production Data Only segment. e.g. production"
+            "description": "Environment flag (production/staging) powering the Production Data Only segment. e.g. production"
           },
           {
             "path": "web.webPageDetails.name",
-            "description": "Friendly page name for all instrumented pages across the SNF site. e.g. Programmes : Light Walk"
+            "description": "Human-readable page name on every hit (BRD 101). e.g. Programme Detail : Lantern Walk"
           },
           {
             "path": "web.webPageDetails.pageLoadTimeMs",
-            "description": "Numeric page load time in milliseconds. Paired with Page Load Time Instances to build the Avg Page Load Time calculated metric. e.g. 1243"
+            "description": "Numeric page load time in milliseconds. Pairs with Page Load Time Instances to derive Avg Page Load Time calculated metric. Supports BRD 1501-1504 performance monitoring. e.g. 1243"
           },
           {
             "path": "web.webPageDetails.server",
@@ -430,155 +428,34 @@
           },
           {
             "path": "web.webPageDetails.siteSection",
-            "description": "Top-level site section for content grouping and navigation reporting. e.g. Programmes"
+            "description": "Top-level site section for content grouping across all pages (BRD 101). e.g. Programme"
           },
           {
             "path": "web.webPageDetails.URL",
-            "description": "Full page URL of the current page. Baseline global dimension on every hit. e.g. https://singaporenightfestival.sg/programmes/light-walk"
+            "description": "Full page URL of the current hit. Baseline dimension for all pages (BRD 101). e.g. https://snf.gov.sg/programme/lantern-walk"
           },
           {
             "path": "web.webReferrer.URL",
             "description": "HTTP referrer URL for the page view. e.g. https://www.google.com/"
           }
         ],
-        "pushExample": "{\n    \"event\": \"pageLoad\",\n    \"content\": {\n        \"aiDiscoverySource\": \"chatgpt\",\n        \"brandCompliant\": \"Y\",\n        \"crowdDensityLevel\": \"high\",\n        \"firstFestivalYear\": \"2026\",\n        \"pageType\": \"programme-detail\",\n        \"programmeId\": \"INST-0421\",\n        \"programmeName\": \"Lumen Light Garden\",\n        \"programmeTitle\": \"Lights of Memory\",\n        \"structuredDataTypes\": \"Event+Place\",\n        \"timeSlot\": \"2026-08-22 20:00\",\n        \"unlockedContentStatus\": \"unlocked\",\n        \"venueName\": \"National Museum of Singapore\",\n        \"viewportMode\": \"mobile\",\n        \"eventData\": {\n            \"personalisationUseCase\": \"your-picks-tonight\",\n            \"recommendationContext\": \"picks-slot-2:INST-0421\"\n        },\n        \"trail\": {\n            \"trailName\": \"Civic District Heritage Trail\"\n        }\n    },\n    \"journey\": {\n        \"locationPermission\": \"granted\",\n        \"studentCohortFlag\": \"Y\",\n        \"zoneLabel\": \"zone-bras-basah\",\n        \"consent\": {\n            \"cookieCategories\": \"StrictlyNecessary|Analytics\"\n        }\n    },\n    \"marketing\": {\n        \"trackingCode\": \"em_spring24_google_cpc\"\n    },\n    \"user\": {\n        \"ecid\": \"38961882559817821902449637980926447915\",\n        \"loginStatus\": \"registered\"\n    },\n    \"web\": {\n        \"webPageDetails\": {\n            \"businessUnit\": \"Heritage SG - SNF\",\n            \"environment\": \"production\",\n            \"name\": \"Programmes : Light Walk\",\n            \"pageLoadTimeMs\": \"1243\",\n            \"server\": \"www.tagsmith.com\",\n            \"siteSection\": \"Programmes\",\n            \"URL\": \"https://singaporenightfestival.sg/programmes/light-walk\"\n        },\n        \"webReferrer\": {\n            \"URL\": \"https://www.google.com/\"\n        }\n    }\n}"
-      },
-      {
-        "cdlEventKey": "ctaClick",
-        "cdlEventDescription": "Type of inline optimisation suggestion surfaced for itinerary conflicts/inefficiencies (dismissible, non-blocking). Consent action captured for the consent log (grant / withdraw) by tier, effective immediately via self-service settings. Method used for itinerary sharing via native device share (no social OAuth). Captures channel chosen by OS share sheet. Context of the Klook ticketing call-to-action click directing visitors off-site (programme/installation referenced). Form or Chat interface the interaction used. Visible text label of the interaction element. Name of the curated self-guided trail being presented, selected or followed. Generic interaction descriptor for key user interactions (CTA click, expand, filter, share, etc.). Context of interactive precinct map interactions (pin click, zoom, listing open) on the MapBox map.",
-        "dataLayerRows": [
-          {
-            "path": "content.eventData.optimisationSuggestion",
-            "description": "Type of inline optimisation suggestion surfaced for itinerary conflicts/inefficiencies (dismissible, non-blocking). e.g. time-conflict"
-          },
-          {
-            "path": "journey.consent.action",
-            "description": "Consent action captured for the consent log (grant / withdraw) by tier, effective immediately via self-service settings. e.g. withdraw"
-          },
-          {
-            "path": "journey.eventData.shareMethod",
-            "description": "Method used for itinerary sharing via native device share (no social OAuth). Captures channel chosen by OS share sheet. e.g. whatsapp"
-          },
-          {
-            "path": "marketing.eventData.klookCtaContext",
-            "description": "Context of the Klook ticketing call-to-action click directing visitors off-site (programme/installation referenced). e.g. klook-INST-0421"
-          },
-          {
-            "path": "web.webInteraction.interface",
-            "description": "Form or Chat interface the interaction used. e.g. chat | form"
-          },
-          {
-            "path": "web.webInteraction.label",
-            "description": "Visible text label of the interaction element. e.g. Get Started"
-          },
-          {
-            "path": "web.webInteraction.name",
-            "description": "Name of the curated self-guided trail being presented, selected or followed. e.g. Heritage Lights Trail"
-          },
-          {
-            "path": "web.webInteraction.type",
-            "description": "Generic interaction descriptor for key user interactions (CTA click, expand, filter, share, etc.). e.g. cta-click"
-          },
-          {
-            "path": "web.webInteraction.eventData.mapContext",
-            "description": "Context of interactive precinct map interactions (pin click, zoom, listing open) on the MapBox map. e.g. pin-click"
-          }
-        ],
-        "pushExample": "{\n    \"event\": \"ctaClick\",\n    \"content\": {\n        \"eventData\": {\n            \"optimisationSuggestion\": \"time-conflict\"\n        }\n    },\n    \"journey\": {\n        \"consent\": {\n            \"action\": \"withdraw\"\n        },\n        \"eventData\": {\n            \"shareMethod\": \"whatsapp\"\n        }\n    },\n    \"marketing\": {\n        \"eventData\": {\n            \"klookCtaContext\": \"klook-INST-0421\"\n        }\n    },\n    \"web\": {\n        \"webInteraction\": {\n            \"interface\": \"chat | form\",\n            \"label\": \"Get Started\",\n            \"name\": \"Heritage Lights Trail\",\n            \"type\": \"cta-click\",\n            \"eventData\": {\n                \"mapContext\": \"pin-click\"\n            }\n        }\n    }\n}"
-      },
-      {
-        "cdlEventKey": "projectCreated",
-        "cdlEventDescription": "Unique ID of the trail or custom itinerary (used for save/follow, sharing, adoption and Community Picks). Origin of the itinerary in context (self-created / shared-view / one-tap-adopted / community-pick). Industry vertical classification for the project. Unique identifier for the current project instance. Human-readable name of the current project.",
-        "dataLayerRows": [
-          {
-            "path": "content.trail.itineraryId",
-            "description": "Unique ID of the trail or custom itinerary (used for save/follow, sharing, adoption and Community Picks). e.g. ITIN-9f3a"
-          },
-          {
-            "path": "content.trail.itinerarySource",
-            "description": "Origin of the itinerary in context (self-created / shared-view / one-tap-adopted / community-pick). e.g. shared-view"
-          },
-          {
-            "path": "project.industry",
-            "description": "Industry vertical classification for the project. e.g. government"
-          },
-          {
-            "path": "project.projectId",
-            "description": "Unique identifier for the current project instance. e.g. GOV-DEFAULT-001"
-          },
-          {
-            "path": "project.projectName",
-            "description": "Human-readable name of the current project. e.g. Government Default"
-          }
-        ],
-        "pushExample": "{\n    \"event\": \"projectCreated\",\n    \"content\": {\n        \"trail\": {\n            \"itineraryId\": \"ITIN-9f3a\",\n            \"itinerarySource\": \"shared-view\"\n        }\n    },\n    \"project\": {\n        \"industry\": \"government\",\n        \"projectId\": \"GOV-DEFAULT-001\",\n        \"projectName\": \"Government Default\"\n    }\n}"
-      },
-      {
-        "cdlEventKey": "stepComplete",
-        "cdlEventDescription": "Unique ID of the trail or custom itinerary (used for save/follow, sharing, adoption and Community Picks). Origin of the itinerary in context (self-created / shared-view / one-tap-adopted / community-pick). Industry vertical classification for the project. Unique identifier for the current project instance. Human-readable name of the current project. Time in milliseconds taken to complete the step. ISO timestamp when the step was completed. ISO timestamp when the step was started. Unique identifier of the completed journey step. Human-readable name of the completed journey step. Ordinal position of the step within the project journey.",
-        "dataLayerRows": [
-          {
-            "path": "content.trail.itineraryId",
-            "description": "Unique ID of the trail or custom itinerary (used for save/follow, sharing, adoption and Community Picks). e.g. ITIN-9f3a"
-          },
-          {
-            "path": "content.trail.itinerarySource",
-            "description": "Origin of the itinerary in context (self-created / shared-view / one-tap-adopted / community-pick). e.g. shared-view"
-          },
-          {
-            "path": "project.industry",
-            "description": "Industry vertical classification for the project. e.g. government"
-          },
-          {
-            "path": "project.projectId",
-            "description": "Unique identifier for the current project instance. e.g. GOV-DEFAULT-001"
-          },
-          {
-            "path": "project.projectName",
-            "description": "Human-readable name of the current project. e.g. Government Default"
-          },
-          {
-            "path": "project.step.durationMs",
-            "description": "Time in milliseconds taken to complete the step. e.g. 4200"
-          },
-          {
-            "path": "project.step.finishedAt",
-            "description": "ISO timestamp when the step was completed. e.g. 2026-08-22T20:04:12Z"
-          },
-          {
-            "path": "project.step.startedAt",
-            "description": "ISO timestamp when the step was started. e.g. 2026-08-22T20:00:00Z"
-          },
-          {
-            "path": "project.step.stepId",
-            "description": "Unique identifier of the completed journey step. e.g. step-001"
-          },
-          {
-            "path": "project.step.stepName",
-            "description": "Human-readable name of the completed journey step. e.g. Registration"
-          },
-          {
-            "path": "project.step.stepNumber",
-            "description": "Ordinal position of the step within the project journey. e.g. 1"
-          }
-        ],
-        "pushExample": "{\n    \"event\": \"stepComplete\",\n    \"content\": {\n        \"trail\": {\n            \"itineraryId\": \"ITIN-9f3a\",\n            \"itinerarySource\": \"shared-view\"\n        }\n    },\n    \"project\": {\n        \"industry\": \"government\",\n        \"projectId\": \"GOV-DEFAULT-001\",\n        \"projectName\": \"Government Default\",\n        \"step\": {\n            \"durationMs\": \"4200\",\n            \"finishedAt\": \"2026-08-22T20:04:12Z\",\n            \"startedAt\": \"2026-08-22T20:00:00Z\",\n            \"stepId\": \"step-001\",\n            \"stepName\": \"Registration\",\n            \"stepNumber\": \"1\"\n        }\n    }\n}"
+        "pushExample": "{\n    \"event\": \"pageLoad\",\n    \"content\": {\n        \"brandCompliant\": \"true\",\n        \"firstFestivalYear\": \"2026\",\n        \"pageType\": \"programme-detail\",\n        \"programmeId\": \"PRG-00421\",\n        \"programmeName\": \"Light Projection on the Padang\",\n        \"programmeTitle\": \"Lantern Walk at Armenian Street\",\n        \"publishSource\": \"aem-author-publish\",\n        \"schedule\": \"2026-08-21 19:00-22:00\",\n        \"trailName\": \"Bras Basah Arts Trail\",\n        \"unlockedStatus\": \"visible-scanned-in\",\n        \"venueName\": \"Armenian Street\"\n    },\n    \"journey\": {\n        \"studentCohort\": \"true\",\n        \"consent\": {\n            \"cookieState\": \"necessary:on|analytics:on|targeting:off\"\n        },\n        \"listing\": {\n            \"sortMode\": \"current-night-urgency\"\n        },\n        \"map\": {\n            \"locationPermission\": \"granted\"\n        },\n        \"personalisation\": {\n            \"loopClusterHash\": \"c1f4a9e2\",\n            \"useCase\": \"your-picks-tonight\",\n            \"variant\": \"activity42:variantB\"\n        },\n        \"seo\": {\n            \"agentSource\": \"chatgpt-agent\"\n        }\n    },\n    \"marketing\": {\n        \"content\": \"hero_banner_a\",\n        \"medium\": \"email\",\n        \"source\": \"newsletter\",\n        \"trackingCode\": \"em_spring24_google_cpc\"\n    },\n    \"user\": {\n        \"ecid\": \"79658739203495820394857\",\n        \"loginStatus\": \"registered\"\n    },\n    \"web\": {\n        \"webPageDetails\": {\n            \"businessUnit\": \"SNF\",\n            \"environment\": \"production\",\n            \"name\": \"Programme Detail : Lantern Walk\",\n            \"pageLoadTimeMs\": \"1243\",\n            \"server\": \"www.tagsmith.com\",\n            \"siteSection\": \"Programme\",\n            \"URL\": \"https://snf.gov.sg/programme/lantern-walk\"\n        },\n        \"webReferrer\": {\n            \"URL\": \"https://www.google.com/\"\n        }\n    }\n}"
       },
       {
         "cdlEventKey": "download",
-        "cdlEventDescription": "File name of the downloaded document. File format of the downloaded document. Display name of the downloaded document. Form or Chat interface the interaction used. Visible text label of the interaction element. Name of the curated self-guided trail being presented, selected or followed. Generic interaction descriptor for key user interactions (CTA click, expand, filter, share, etc.).",
+        "cdlEventDescription": "Raw filename of the downloaded document asset. File format of the downloaded document asset. Human-readable display name of the downloaded document. Form or Chat interface the interaction used. Visible text label of the interaction element. Selected curated self-guided trail name (BRD 501/502). Interaction type on the Bras Basah–Bugis MapBox map (pin tap, zoom, directions). Map by Adobe using MapBox (BRD 401/402).",
         "dataLayerRows": [
           {
             "path": "document.documentFileName",
-            "description": "File name of the downloaded document. e.g. snf2026-programme-guide.pdf"
+            "description": "Raw filename of the downloaded document asset. e.g. snf2026-programme-guide.pdf"
           },
           {
             "path": "document.documentFormat",
-            "description": "File format of the downloaded document. e.g. PDF"
+            "description": "File format of the downloaded document asset. e.g. pdf"
           },
           {
             "path": "document.documentName",
-            "description": "Display name of the downloaded document. e.g. SNF 2026 Programme Guide"
+            "description": "Human-readable display name of the downloaded document. e.g. SNF 2026 Programme Guide"
           },
           {
             "path": "web.webInteraction.interface",
@@ -590,87 +467,192 @@
           },
           {
             "path": "web.webInteraction.name",
-            "description": "Name of the curated self-guided trail being presented, selected or followed. e.g. Heritage Lights Trail"
+            "description": "Selected curated self-guided trail name (BRD 501/502). e.g. Bras Basah Heritage Loop"
           },
           {
             "path": "web.webInteraction.type",
-            "description": "Generic interaction descriptor for key user interactions (CTA click, expand, filter, share, etc.). e.g. cta-click"
+            "description": "Interaction type on the Bras Basah–Bugis MapBox map (pin tap, zoom, directions). Map by Adobe using MapBox (BRD 401/402). e.g. pin-tap"
           }
         ],
-        "pushExample": "{\n    \"event\": \"download\",\n    \"document\": {\n        \"documentFileName\": \"snf2026-programme-guide.pdf\",\n        \"documentFormat\": \"PDF\",\n        \"documentName\": \"SNF 2026 Programme Guide\"\n    },\n    \"web\": {\n        \"webInteraction\": {\n            \"interface\": \"chat | form\",\n            \"label\": \"Get Started\",\n            \"name\": \"Heritage Lights Trail\",\n            \"type\": \"cta-click\"\n        }\n    }\n}"
+        "pushExample": "{\n    \"event\": \"download\",\n    \"document\": {\n        \"documentFileName\": \"snf2026-programme-guide.pdf\",\n        \"documentFormat\": \"pdf\",\n        \"documentName\": \"SNF 2026 Programme Guide\"\n    },\n    \"web\": {\n        \"webInteraction\": {\n            \"interface\": \"chat | form\",\n            \"label\": \"Get Started\",\n            \"name\": \"Bras Basah Heritage Loop\",\n            \"type\": \"pin-tap\"\n        }\n    }\n}"
       },
       {
         "cdlEventKey": "userRegistration",
-        "cdlEventDescription": "The moment/context that triggered registration (QR first scan, itinerary adoption, save trail, manual). Drives funnel-by-trigger reporting. Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually. Consent action captured for the consent log (grant / withdraw) by tier, effective immediately via self-service settings. Three-tier consent model selection captured at registration (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). [Hashed — PII] SHA-256 hashed registered visitor ID for CRM/AEP profile stitching. Never store raw email.",
+        "cdlEventDescription": "Mirrors the Registration Journey Step eVar to enable PathFinder analysis of the email registration funnel flow. Supports requirement 201 (email registration verification). Context/moment that triggered the registration prompt (first QR scan, itinerary adoption, etc.) — funnel reporting by trigger (BRD 603/506/1205). Consent action recorded (grant/withdraw) for the consent log, effective immediately (BRD 303/304). Three-tier consent state (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). Unbundled, unchecked by default (BRD 301/302). [Hashed — PII] Registered visitor profile ID, SHA-256 hashed in JS before collection. Never expiration (BRD 204/604/304).",
         "dataLayerRows": [
           {
-            "path": "journey.registrationTrigger",
-            "description": "The moment/context that triggered registration (QR first scan, itinerary adoption, save trail, manual). Drives funnel-by-trigger reporting. e.g. qr-first-scan"
+            "path": "journey.registrationStep",
+            "description": "Mirrors the Registration Journey Step eVar to enable PathFinder analysis of the email registration funnel flow. Supports requirement 201 (email registration verification). e.g. email-entered"
           },
           {
-            "path": "journey.studentCohortFlag",
-            "description": "Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually. e.g. Y"
+            "path": "journey.regTrigger",
+            "description": "Context/moment that triggered the registration prompt (first QR scan, itinerary adoption, etc.) — funnel reporting by trigger (BRD 603/506/1205). e.g. first-qr-scan"
           },
           {
             "path": "journey.consent.action",
-            "description": "Consent action captured for the consent log (grant / withdraw) by tier, effective immediately via self-service settings. e.g. withdraw"
+            "description": "Consent action recorded (grant/withdraw) for the consent log, effective immediately (BRD 303/304). e.g. withdraw-tier1"
           },
           {
-            "path": "journey.consent.tierSelection",
-            "description": "Three-tier consent model selection captured at registration (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). e.g. Tier0|Tier1"
-          },
-          {
-            "path": "user.idHash",
-            "description": "[Hashed — PII] SHA-256 hashed registered visitor ID for CRM/AEP profile stitching. Never store raw email. e.g. 8f14e45fceea167a..."
-          }
-        ],
-        "pushExample": "{\n    \"event\": \"userRegistration\",\n    \"journey\": {\n        \"registrationTrigger\": \"qr-first-scan\",\n        \"studentCohortFlag\": \"Y\",\n        \"consent\": {\n            \"action\": \"withdraw\",\n            \"tierSelection\": \"Tier0|Tier1\"\n        }\n    },\n    \"user\": {\n        \"idHash\": \"8f14e45fceea167a...\"\n    }\n}"
-      },
-      {
-        "cdlEventKey": "login",
-        "cdlEventDescription": "Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually. [Hashed — PII] SHA-256 hashed registered visitor ID for CRM/AEP profile stitching. Never store raw email. Visitor registration/authentication state. Supports email-registration and optional-registration tracking.",
-        "dataLayerRows": [
-          {
-            "path": "journey.studentCohortFlag",
-            "description": "Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually. e.g. Y"
+            "path": "journey.consent.tierState",
+            "description": "Three-tier consent state (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). Unbundled, unchecked by default (BRD 301/302). e.g. T0:on|T1:off|T2:on"
           },
           {
             "path": "user.idHash",
-            "description": "[Hashed — PII] SHA-256 hashed registered visitor ID for CRM/AEP profile stitching. Never store raw email. e.g. 8f14e45fceea167a..."
-          },
-          {
-            "path": "user.loginStatus",
-            "description": "Visitor registration/authentication state. Supports email-registration and optional-registration tracking. e.g. registered"
+            "description": "[Hashed — PII] Registered visitor profile ID, SHA-256 hashed in JS before collection. Never expiration (BRD 204/604/304). e.g. 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b"
           }
         ],
-        "pushExample": "{\n    \"event\": \"login\",\n    \"journey\": {\n        \"studentCohortFlag\": \"Y\"\n    },\n    \"user\": {\n        \"idHash\": \"8f14e45fceea167a...\",\n        \"loginStatus\": \"registered\"\n    }\n}"
+        "pushExample": "{\n    \"event\": \"userRegistration\",\n    \"journey\": {\n        \"registrationStep\": \"email-entered\",\n        \"regTrigger\": \"first-qr-scan\",\n        \"consent\": {\n            \"action\": \"withdraw-tier1\",\n            \"tierState\": \"T0:on|T1:off|T2:on\"\n        }\n    },\n    \"user\": {\n        \"idHash\": \"9f86d081884c7d659a2feaa0c55ad015a3bf4f1b\"\n    }\n}"
       },
       {
         "cdlEventKey": "chatPromptSubmitted",
-        "cdlEventDescription": "Visitor intent classified in a Brand Concierge interaction (programme discovery / trail recommendation / venue info / general info). Outcome of a Brand Concierge interaction (answered / escalated / failed) for engagement and escalation-rate reporting. Form or Chat interface the interaction used.",
+        "cdlEventDescription": "Outcome of a Brand Concierge interaction (answered, escalated, failed) for engagement/escalation reporting (BRD 1406). Classified visitor intent for a Brand Concierge query (programme discovery, trail rec, venue info, general) (BRD 1405/1406). Form or Chat interface the interaction used.",
         "dataLayerRows": [
           {
-            "path": "journey.eventData.conciergeIntent",
-            "description": "Visitor intent classified in a Brand Concierge interaction (programme discovery / trail recommendation / venue info / general info). e.g. trail-recommendation"
+            "path": "journey.concierge.outcome",
+            "description": "Outcome of a Brand Concierge interaction (answered, escalated, failed) for engagement/escalation reporting (BRD 1406). e.g. answered"
           },
           {
-            "path": "journey.eventData.conciergeOutcome",
-            "description": "Outcome of a Brand Concierge interaction (answered / escalated / failed) for engagement and escalation-rate reporting. e.g. answered"
+            "path": "journey.concierge.queryIntent",
+            "description": "Classified visitor intent for a Brand Concierge query (programme discovery, trail rec, venue info, general) (BRD 1405/1406). e.g. trail-recommendation"
           },
           {
             "path": "web.webInteraction.interface",
             "description": "Form or Chat interface the interaction used. e.g. chat | form"
           }
         ],
-        "pushExample": "{\n    \"event\": \"chatPromptSubmitted\",\n    \"journey\": {\n        \"eventData\": {\n            \"conciergeIntent\": \"trail-recommendation\",\n            \"conciergeOutcome\": \"answered\"\n        }\n    },\n    \"web\": {\n        \"webInteraction\": {\n            \"interface\": \"chat | form\"\n        }\n    }\n}"
+        "pushExample": "{\n    \"event\": \"chatPromptSubmitted\",\n    \"journey\": {\n        \"concierge\": {\n            \"outcome\": \"answered\",\n            \"queryIntent\": \"trail-recommendation\"\n        }\n    },\n    \"web\": {\n        \"webInteraction\": {\n            \"interface\": \"chat | form\"\n        }\n    }\n}"
+      },
+      {
+        "cdlEventKey": "login",
+        "cdlEventDescription": "Consent action recorded (grant/withdraw) for the consent log, effective immediately (BRD 303/304). Three-tier consent state (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). Unbundled, unchecked by default (BRD 301/302). [Hashed — PII] Registered visitor profile ID, SHA-256 hashed in JS before collection. Never expiration (BRD 204/604/304). Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203).",
+        "dataLayerRows": [
+          {
+            "path": "journey.consent.action",
+            "description": "Consent action recorded (grant/withdraw) for the consent log, effective immediately (BRD 303/304). e.g. withdraw-tier1"
+          },
+          {
+            "path": "journey.consent.tierState",
+            "description": "Three-tier consent state (Tier 0 Functional / Tier 1 Festival Marketing / Tier 2 Year-Round NHB). Unbundled, unchecked by default (BRD 301/302). e.g. T0:on|T1:off|T2:on"
+          },
+          {
+            "path": "user.idHash",
+            "description": "[Hashed — PII] Registered visitor profile ID, SHA-256 hashed in JS before collection. Never expiration (BRD 204/604/304). e.g. 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b"
+          },
+          {
+            "path": "user.loginStatus",
+            "description": "Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203). e.g. registered"
+          }
+        ],
+        "pushExample": "{\n    \"event\": \"login\",\n    \"journey\": {\n        \"consent\": {\n            \"action\": \"withdraw-tier1\",\n            \"tierState\": \"T0:on|T1:off|T2:on\"\n        }\n    },\n    \"user\": {\n        \"idHash\": \"9f86d081884c7d659a2feaa0c55ad015a3bf4f1b\",\n        \"loginStatus\": \"registered\"\n    }\n}"
+      },
+      {
+        "cdlEventKey": "projectCreated",
+        "cdlEventDescription": "Custom itinerary identifier for created/shared/adopted itineraries incl. Community Picks (BRD 503/506/507). Industry vertical associated with the project for cross-client benchmarking. Unique identifier for the project instance recorded at project creation. Display name of the project instance recorded at project creation.",
+        "dataLayerRows": [
+          {
+            "path": "journey.itinerary.id",
+            "description": "Custom itinerary identifier for created/shared/adopted itineraries incl. Community Picks (BRD 503/506/507). e.g. ITIN-5521"
+          },
+          {
+            "path": "project.industry",
+            "description": "Industry vertical associated with the project for cross-client benchmarking. e.g. government"
+          },
+          {
+            "path": "project.projectId",
+            "description": "Unique identifier for the project instance recorded at project creation. e.g. proj-00123"
+          },
+          {
+            "path": "project.projectName",
+            "description": "Display name of the project instance recorded at project creation. e.g. SNF 2026 Festival Planner"
+          }
+        ],
+        "pushExample": "{\n    \"event\": \"projectCreated\",\n    \"journey\": {\n        \"itinerary\": {\n            \"id\": \"ITIN-5521\"\n        }\n    },\n    \"project\": {\n        \"industry\": \"government\",\n        \"projectId\": \"proj-00123\",\n        \"projectName\": \"SNF 2026 Festival Planner\"\n    }\n}"
+      },
+      {
+        "cdlEventKey": "ctaClick",
+        "cdlEventDescription": "Native device share channel used for itinerary sharing (no social OAuth) (BRD 505/705). Type of dismissible inline optimisation suggestion surfaced for itinerary conflicts/inefficiencies (BRD 504). Installation ID captured on a QR check-in scan. Venue check-in derived from QR only, not GPS (BRD 601/604/1803). Social sharing surface / Open Graph–Twitter Card context on programme detail and shareable itinerary pages (BRD 1001/1002). Form or Chat interface the interaction used. Off-site Klook ticketing CTA destination clicked (exit link). No ticketing built on SNF site (BRD 105). Visible text label of the interaction element. Selected curated self-guided trail name (BRD 501/502). Interaction type on the Bras Basah–Bugis MapBox map (pin tap, zoom, directions). Map by Adobe using MapBox (BRD 401/402).",
+        "dataLayerRows": [
+          {
+            "path": "journey.itinerary.shareMethod",
+            "description": "Native device share channel used for itinerary sharing (no social OAuth) (BRD 505/705). e.g. native-share-whatsapp"
+          },
+          {
+            "path": "journey.itinerary.suggestionType",
+            "description": "Type of dismissible inline optimisation suggestion surfaced for itinerary conflicts/inefficiencies (BRD 504). e.g. time-conflict"
+          },
+          {
+            "path": "journey.qr.installationId",
+            "description": "Installation ID captured on a QR check-in scan. Venue check-in derived from QR only, not GPS (BRD 601/604/1803). e.g. INST-0097"
+          },
+          {
+            "path": "journey.social.shareSurface",
+            "description": "Social sharing surface / Open Graph–Twitter Card context on programme detail and shareable itinerary pages (BRD 1001/1002). e.g. og-programme-detail"
+          },
+          {
+            "path": "web.webInteraction.interface",
+            "description": "Form or Chat interface the interaction used. e.g. chat | form"
+          },
+          {
+            "path": "web.webInteraction.klookDestination",
+            "description": "Off-site Klook ticketing CTA destination clicked (exit link). No ticketing built on SNF site (BRD 105). e.g. https://klook.com/activity/snf2026"
+          },
+          {
+            "path": "web.webInteraction.label",
+            "description": "Visible text label of the interaction element. e.g. Get Started"
+          },
+          {
+            "path": "web.webInteraction.name",
+            "description": "Selected curated self-guided trail name (BRD 501/502). e.g. Bras Basah Heritage Loop"
+          },
+          {
+            "path": "web.webInteraction.type",
+            "description": "Interaction type on the Bras Basah–Bugis MapBox map (pin tap, zoom, directions). Map by Adobe using MapBox (BRD 401/402). e.g. pin-tap"
+          }
+        ],
+        "pushExample": "{\n    \"event\": \"ctaClick\",\n    \"journey\": {\n        \"itinerary\": {\n            \"shareMethod\": \"native-share-whatsapp\",\n            \"suggestionType\": \"time-conflict\"\n        },\n        \"qr\": {\n            \"installationId\": \"INST-0097\"\n        },\n        \"social\": {\n            \"shareSurface\": \"og-programme-detail\"\n        }\n    },\n    \"web\": {\n        \"webInteraction\": {\n            \"interface\": \"chat | form\",\n            \"klookDestination\": \"https://klook.com/activity/snf2026\",\n            \"label\": \"Get Started\",\n            \"name\": \"Bras Basah Heritage Loop\",\n            \"type\": \"pin-tap\"\n        }\n    }\n}"
+      },
+      {
+        "cdlEventKey": "stepComplete",
+        "cdlEventDescription": "Trail progress tracked via QR check-ins — current step / completion ratio (BRD 502). Elapsed time in milliseconds spent on the completed step. ISO-8601 timestamp when the step was completed. ISO-8601 timestamp when the step was started. Unique identifier for the completed project step. Human-readable name of the completed project step. Ordinal position of the step within the project flow.",
+        "dataLayerRows": [
+          {
+            "path": "journey.trail.progressStep",
+            "description": "Trail progress tracked via QR check-ins — current step / completion ratio (BRD 502). e.g. 3 of 6"
+          },
+          {
+            "path": "project.step.durationMs",
+            "description": "Elapsed time in milliseconds spent on the completed step. e.g. 4200"
+          },
+          {
+            "path": "project.step.finishedAt",
+            "description": "ISO-8601 timestamp when the step was completed. e.g. 2026-08-21T19:04:12Z"
+          },
+          {
+            "path": "project.step.startedAt",
+            "description": "ISO-8601 timestamp when the step was started. e.g. 2026-08-21T19:00:00Z"
+          },
+          {
+            "path": "project.step.stepId",
+            "description": "Unique identifier for the completed project step. e.g. step-03"
+          },
+          {
+            "path": "project.step.stepName",
+            "description": "Human-readable name of the completed project step. e.g. qr-checkin-confirmed"
+          },
+          {
+            "path": "project.step.stepNumber",
+            "description": "Ordinal position of the step within the project flow. e.g. 3"
+          }
+        ],
+        "pushExample": "{\n    \"event\": \"stepComplete\",\n    \"journey\": {\n        \"trail\": {\n            \"progressStep\": \"3 of 6\"\n        }\n    },\n    \"project\": {\n        \"step\": {\n            \"durationMs\": \"4200\",\n            \"finishedAt\": \"2026-08-21T19:04:12Z\",\n            \"startedAt\": \"2026-08-21T19:00:00Z\",\n            \"stepId\": \"step-03\",\n            \"stepName\": \"qr-checkin-confirmed\",\n            \"stepNumber\": \"3\"\n        }\n    }\n}"
       },
       {
         "cdlEventKey": "logout",
-        "cdlEventDescription": "Visitor registration/authentication state. Supports email-registration and optional-registration tracking.",
+        "cdlEventDescription": "Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203).",
         "dataLayerRows": [
           {
             "path": "user.loginStatus",
-            "description": "Visitor registration/authentication state. Supports email-registration and optional-registration tracking. e.g. registered"
+            "description": "Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203). e.g. registered"
           }
         ],
         "pushExample": "{\n    \"event\": \"logout\",\n    \"user\": {\n        \"loginStatus\": \"registered\"\n    }\n}"
@@ -678,84 +660,92 @@
     ],
     "pageLoadRows": [
       {
-        "path": "content.aiDiscoverySource",
-        "description": "Referral source indicating discovery via AI-powered/agentic search or LLM crawler (GEO/LLMO). Captured from referrer/UA heuristics. e.g. chatgpt"
-      },
-      {
         "path": "content.brandCompliant",
-        "description": "Flag indicating page compliance with Heritage SG brand guidelines (and presence of standard government disclaimer, BRD 106). e.g. Y"
-      },
-      {
-        "path": "content.crowdDensityLevel",
-        "description": "Live per-venue crowd density indicator level derived from real-time AA session data (low / medium / high). e.g. high"
+        "description": "Flags whether the page conforms to Heritage SG brand guidelines and carries the standard government disclaimer (BRD 106/109). e.g. true"
       },
       {
         "path": "content.firstFestivalYear",
-        "description": "firstFestivalYear content field from AEMaaCS model — indicates debut year of the programme / installation. e.g. 2026"
+        "description": "firstFestivalYear content-model field flagging debut programmes/installations (BRD 1104). e.g. 2026"
       },
       {
         "path": "content.pageType",
-        "description": "Template/page type (home, listing, detail, policy, map, trails). Distinguishes Privacy, Terms, Cookie Policy views. e.g. programme-detail"
+        "description": "Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812. e.g. programme-detail"
       },
       {
         "path": "content.programmeId",
-        "description": "Unique ID of the festival programme or installation in context. Also used for QR check-in installation ID. e.g. INST-0421"
+        "description": "Unique AEMaaCS ID of the programme/installation in context (BRD 104). e.g. PRG-00421"
       },
       {
         "path": "content.programmeName",
-        "description": "Mirror of the Programme / Installation Name eVar for pathing across festival content items. e.g. Lumen Light Garden"
+        "description": "Mirrors the Programme Name eVar to support content pathing analysis of which programmes/installations visitors traverse. Supports requirement 104. e.g. Light Projection on the Padang"
       },
       {
         "path": "content.programmeTitle",
-        "description": "Display title of the programme or installation being viewed/listed. e.g. Lights of Memory"
+        "description": "Display title of the programme/installation (BRD 104). e.g. Lantern Walk at Armenian Street"
       },
       {
-        "path": "content.structuredDataTypes",
-        "description": "Flag indicating presence of Schema.org JSON-LD structured data / indexability on the page (BRD 801–803). e.g. Event+Place"
+        "path": "content.publishSource",
+        "description": "AEMaaCS publish source/channel (independent author publish vs migration) for content governance reporting (BRD 1102/1103). e.g. aem-author-publish"
       },
       {
-        "path": "content.timeSlot",
-        "description": "Scheduled date and time slot of the programme / installation shown in listings and detail pages. e.g. 2026-08-22 20:00"
+        "path": "content.schedule",
+        "description": "Programme date/time window shown on listing detail (BRD 104). e.g. 2026-08-21 19:00-22:00"
       },
       {
-        "path": "content.unlockedContentStatus",
-        "description": "State of optional unlocked content on a programme detail page (locked / unlocked-via-QR / none). Only visible to scanned-in visitors. e.g. unlocked"
+        "path": "content.trailName",
+        "description": "Mirrors the Trail Name eVar to enable pathing analysis of which curated self-guided trails visitors view and follow. Supports requirement 501 (trail presentation). e.g. Bras Basah Arts Trail"
+      },
+      {
+        "path": "content.unlockedStatus",
+        "description": "Whether optional unlocked content is present/visible for a scanned-in visitor (BRD 602/605/1104). e.g. visible-scanned-in"
       },
       {
         "path": "content.venueName",
-        "description": "Venue associated with the programme / installation within the Bras Basah–Bugis precinct. e.g. National Museum of Singapore"
+        "description": "Venue associated with the programme/installation listing (BRD 104/401). e.g. Armenian Street"
       },
       {
-        "path": "content.viewportMode",
-        "description": "Rendered viewport / responsive delivery mode (desktop / mobile) per approved wireframes. e.g. mobile"
+        "path": "journey.studentCohort",
+        "description": "Derived student cohort flag from geolocation cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually (BRD 1806). e.g. true"
       },
       {
-        "path": "content.eventData.personalisationUseCase",
-        "description": "Active Adobe Target personalisation use case in context (your-picks / trending-circle / returning-banner / last-chance). e.g. your-picks-tonight"
+        "path": "journey.consent.cookieState",
+        "description": "Cookie consent category states (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). No pre-ticked acceptance (BRD 1808/1809/1811). e.g. necessary:on|analytics:on|targeting:off"
       },
       {
-        "path": "content.eventData.recommendationContext",
-        "description": "Context of an affinity-matched recommendation shown or clicked (feed position, programme recommended). e.g. picks-slot-2:INST-0421"
+        "path": "journey.listing.sortMode",
+        "description": "Active listing sort/auto-sort mode (proximity, current-night, last-chance post-9pm) (BRD 403/404/701). e.g. current-night-urgency"
       },
       {
-        "path": "content.trail.trailName",
-        "description": "Mirror of the Trail Name eVar for pathing through curated and custom trail flows. e.g. Civic District Heritage Trail"
+        "path": "journey.map.locationPermission",
+        "description": "Location permission grant/deny state driving proximity sorting vs default listing. Geolocation client-side only (BRD 403/404/1802). e.g. granted"
       },
       {
-        "path": "journey.locationPermission",
-        "description": "Visitor's location-permission state (granted / denied) governing proximity sorting and default listing behaviour. e.g. granted"
+        "path": "journey.personalisation.loopClusterHash",
+        "description": "[Hashed] Session hash cluster key powering 'Trending with your circle' chip. Non-PII hashed cluster id (BRD 703). e.g. c1f4a9e2"
       },
       {
-        "path": "journey.studentCohortFlag",
-        "description": "Derived student-cohort flag from geo cluster, visit timing and referral source. Not stored as permanent PII; refreshed annually. e.g. Y"
+        "path": "journey.personalisation.useCase",
+        "description": "Adobe Target personalisation use case in context (Your picks tonight, Trending with your circle, returning banner) (BRD 702/703/704/706). e.g. your-picks-tonight"
       },
       {
-        "path": "journey.zoneLabel",
-        "description": "Client-side derived zone label passed to Adobe Target. Raw GPS never stored server-side (PDPA). e.g. zone-bras-basah"
+        "path": "journey.personalisation.variant",
+        "description": "Adobe Target activity/experience variant served — supports lift & conversion reporting (BRD 706/1203). e.g. activity42:variantB"
       },
       {
-        "path": "journey.consent.cookieCategories",
-        "description": "Cookie consent categories accepted (Strictly Necessary / Analytics & Performance / Personalisation & Targeting). e.g. StrictlyNecessary|Analytics"
+        "path": "journey.seo.agentSource",
+        "description": "Identifies AI-powered / agentic crawler source for GEO & LLMO visibility reporting (BRD 901/902/1303). e.g. chatgpt-agent"
+      },
+      {
+        "path": "marketing.content",
+        "description": "SAINT classification of s.campaign — creative/content variant. e.g. hero_banner_a"
+      },
+      {
+        "path": "marketing.medium",
+        "description": "SAINT classification of s.campaign — medium. e.g. email"
+      },
+      {
+        "path": "marketing.source",
+        "description": "SAINT classification of s.campaign — traffic source. e.g. newsletter"
       },
       {
         "path": "marketing.trackingCode",
@@ -763,27 +753,27 @@
       },
       {
         "path": "user.ecid",
-        "description": "Experience Cloud ID for the visitor. e.g. 38961882559817821902449637980926447915"
+        "description": "Adobe Experience Cloud ID auto-collected by AEP Web SDK. Primary visitor identity. e.g. 79658739203495820394857"
       },
       {
         "path": "user.loginStatus",
-        "description": "Visitor registration/authentication state. Supports email-registration and optional-registration tracking. e.g. registered"
+        "description": "Registered vs unregistered visitor. Registration is optional with full content access (BRD 201/203). e.g. registered"
       },
       {
         "path": "web.webPageDetails.businessUnit",
-        "description": "Business unit / property identifier. Baseline global dimension for cross-property roll-up. e.g. Heritage SG - SNF"
+        "description": "Business unit / brand owner for the property. Baseline dimension on every hit. e.g. SNF"
       },
       {
         "path": "web.webPageDetails.environment",
-        "description": "Environment flag (production / staging / dev). Backs the Production Data Only segment. e.g. production"
+        "description": "Environment flag (production/staging) powering the Production Data Only segment. e.g. production"
       },
       {
         "path": "web.webPageDetails.name",
-        "description": "Friendly page name for all instrumented pages across the SNF site. e.g. Programmes : Light Walk"
+        "description": "Human-readable page name on every hit (BRD 101). e.g. Programme Detail : Lantern Walk"
       },
       {
         "path": "web.webPageDetails.pageLoadTimeMs",
-        "description": "Numeric page load time in milliseconds. Paired with Page Load Time Instances to build the Avg Page Load Time calculated metric. e.g. 1243"
+        "description": "Numeric page load time in milliseconds. Pairs with Page Load Time Instances to derive Avg Page Load Time calculated metric. Supports BRD 1501-1504 performance monitoring. e.g. 1243"
       },
       {
         "path": "web.webPageDetails.server",
@@ -791,19 +781,83 @@
       },
       {
         "path": "web.webPageDetails.siteSection",
-        "description": "Top-level site section for content grouping and navigation reporting. e.g. Programmes"
+        "description": "Top-level site section for content grouping across all pages (BRD 101). e.g. Programme"
       },
       {
         "path": "web.webPageDetails.URL",
-        "description": "Full page URL of the current page. Baseline global dimension on every hit. e.g. https://singaporenightfestival.sg/programmes/light-walk"
+        "description": "Full page URL of the current hit. Baseline dimension for all pages (BRD 101). e.g. https://snf.gov.sg/programme/lantern-walk"
       },
       {
         "path": "web.webReferrer.URL",
         "description": "HTTP referrer URL for the page view. e.g. https://www.google.com/"
       }
     ],
-    "pageLoadPush": "{\n    \"event\": \"pageLoad\",\n    \"content\": {\n        \"aiDiscoverySource\": \"chatgpt\",\n        \"brandCompliant\": \"Y\",\n        \"crowdDensityLevel\": \"high\",\n        \"firstFestivalYear\": \"2026\",\n        \"pageType\": \"programme-detail\",\n        \"programmeId\": \"INST-0421\",\n        \"programmeName\": \"Lumen Light Garden\",\n        \"programmeTitle\": \"Lights of Memory\",\n        \"structuredDataTypes\": \"Event+Place\",\n        \"timeSlot\": \"2026-08-22 20:00\",\n        \"unlockedContentStatus\": \"unlocked\",\n        \"venueName\": \"National Museum of Singapore\",\n        \"viewportMode\": \"mobile\",\n        \"eventData\": {\n            \"personalisationUseCase\": \"your-picks-tonight\",\n            \"recommendationContext\": \"picks-slot-2:INST-0421\"\n        },\n        \"trail\": {\n            \"trailName\": \"Civic District Heritage Trail\"\n        }\n    },\n    \"journey\": {\n        \"locationPermission\": \"granted\",\n        \"studentCohortFlag\": \"Y\",\n        \"zoneLabel\": \"zone-bras-basah\",\n        \"consent\": {\n            \"cookieCategories\": \"StrictlyNecessary|Analytics\"\n        }\n    },\n    \"marketing\": {\n        \"trackingCode\": \"em_spring24_google_cpc\"\n    },\n    \"user\": {\n        \"ecid\": \"38961882559817821902449637980926447915\",\n        \"loginStatus\": \"registered\"\n    },\n    \"web\": {\n        \"webPageDetails\": {\n            \"businessUnit\": \"Heritage SG - SNF\",\n            \"environment\": \"production\",\n            \"name\": \"Programmes : Light Walk\",\n            \"pageLoadTimeMs\": \"1243\",\n            \"server\": \"www.tagsmith.com\",\n            \"siteSection\": \"Programmes\",\n            \"URL\": \"https://singaporenightfestival.sg/programmes/light-walk\"\n        },\n        \"webReferrer\": {\n            \"URL\": \"https://www.google.com/\"\n        }\n    }\n}",
-    "launchRules": [],
+    "pageLoadPush": "{\n    \"event\": \"pageLoad\",\n    \"content\": {\n        \"brandCompliant\": \"true\",\n        \"firstFestivalYear\": \"2026\",\n        \"pageType\": \"programme-detail\",\n        \"programmeId\": \"PRG-00421\",\n        \"programmeName\": \"Light Projection on the Padang\",\n        \"programmeTitle\": \"Lantern Walk at Armenian Street\",\n        \"publishSource\": \"aem-author-publish\",\n        \"schedule\": \"2026-08-21 19:00-22:00\",\n        \"trailName\": \"Bras Basah Arts Trail\",\n        \"unlockedStatus\": \"visible-scanned-in\",\n        \"venueName\": \"Armenian Street\"\n    },\n    \"journey\": {\n        \"studentCohort\": \"true\",\n        \"consent\": {\n            \"cookieState\": \"necessary:on|analytics:on|targeting:off\"\n        },\n        \"listing\": {\n            \"sortMode\": \"current-night-urgency\"\n        },\n        \"map\": {\n            \"locationPermission\": \"granted\"\n        },\n        \"personalisation\": {\n            \"loopClusterHash\": \"c1f4a9e2\",\n            \"useCase\": \"your-picks-tonight\",\n            \"variant\": \"activity42:variantB\"\n        },\n        \"seo\": {\n            \"agentSource\": \"chatgpt-agent\"\n        }\n    },\n    \"marketing\": {\n        \"content\": \"hero_banner_a\",\n        \"medium\": \"email\",\n        \"source\": \"newsletter\",\n        \"trackingCode\": \"em_spring24_google_cpc\"\n    },\n    \"user\": {\n        \"ecid\": \"79658739203495820394857\",\n        \"loginStatus\": \"registered\"\n    },\n    \"web\": {\n        \"webPageDetails\": {\n            \"businessUnit\": \"SNF\",\n            \"environment\": \"production\",\n            \"name\": \"Programme Detail : Lantern Walk\",\n            \"pageLoadTimeMs\": \"1243\",\n            \"server\": \"www.tagsmith.com\",\n            \"siteSection\": \"Programme\",\n            \"URL\": \"https://snf.gov.sg/programme/lantern-walk\"\n        },\n        \"webReferrer\": {\n            \"URL\": \"https://www.google.com/\"\n        }\n    }\n}",
+    "launchRules": [
+      {
+        "name": "PV1 Page Load",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "page-view"
+      },
+      {
+        "name": "N-CL1 Cta Click",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "ctaClick"
+      },
+      {
+        "name": "SC1 User Registration",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "userRegistration"
+      },
+      {
+        "name": "N-CL2 Download",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "download"
+      },
+      {
+        "name": "SC2 Chat Prompt Submitted",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "chatPromptSubmitted"
+      },
+      {
+        "name": "SC3 Login",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "login"
+      },
+      {
+        "name": "SC4 Project Created",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "projectCreated"
+      },
+      {
+        "name": "SC5 Step Complete",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "stepComplete"
+      },
+      {
+        "name": "SC6 Logout",
+        "triggers": "",
+        "conditions": "",
+        "actions": "",
+        "sourceEventId": "logout"
+      }
+    ],
     "deploymentPropertyId": "",
     "deploymentPropertyName": "",
     "deploymentEnvironment": "",
@@ -822,12 +876,12 @@
     "DatastreamProd": ""
   },
   "webSdk": false,
-  "clientName": "Brand new",
-  "projectName": "Brand new",
+  "clientName": "Taylers University",
+  "projectName": "Taylers University",
   "stats": {
     "evarRows": 48,
-    "propRows": 11,
+    "propRows": 9,
     "eventRows": 0,
-    "launchRuleRows": 0
+    "launchRuleRows": 9
   }
 }
