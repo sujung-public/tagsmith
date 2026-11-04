@@ -12,7 +12,7 @@ template: government-default-brd
 | 101 | Page Tagging | Instrument Adobe Analytics across all website pages and key user interactions. |  | Medium | 1 |  |  | FR-AN-01 |  |  |  |  |  |
 | 102 | Page Tagging | Capture all events required to measure the KPIs defined in Section 5. |  | Medium | 1 |  |  | FR-AN-02 |  |  |  |  |  |
 | 103 | Page Tagging | Capture responsive, mobile-first page delivery across desktop and mobile viewports per approved wireframes. |  | Medium | 1 |  |  | FR-PW-01 |  |  |  |  |  |
-| 104 | Page Tagging | Track display of festival programme and installation listings including title, description, venue, dates and times. |  | Medium | 1 |  |  | FR-PW-03 |  |  |  |  |  |
+| 104 | Page Tagging | Track display of festival programme and installation listings including title, description, venue, dates and times. Also distinguish venue detail pages from venue listing pages. |  | Medium | 1 |  |  | FR-PW-03 |  |  |  |  |  |
 | 105 | Page Tagging | Track the Klook ticketing call-to-action directing visitors off-site; no ticketing built on the SNF website. |  | Medium | 1 |  |  | FR-PW-02 |  |  |  |  |  |
 | 106 | Page Tagging | Track presence of the standard government disclaimer on all pages. |  | Medium | 1 |  |  | FR-PW-07; exact text provided by NHB / Heritage SG |  |  |  |  |  |
 | 107 | Page Tagging | Track Privacy Policy page views documenting personal data collected, purpose, retention and visitor rights under PDPA. |  | Medium | 1 |  |  | FR-PW-05; distinct from Cookie Policy (NFR-PDPA-12) |  |  |  |  |  |
@@ -117,3 +117,4 @@ template: government-default-brd
 | 1810 | PDPA & Privacy | Provide an accessible cookie settings control to manage preferences at any time, with withdrawal effective immediately. |  | Medium | 1 |  |  | NFR-PDPA-10 |  |  |  |  |  |
 | 1811 | PDPA & Privacy | Record cookie consent choices per visitor and respect them across sessions without relying on a non-essential cookie. |  | Medium | 1 |  |  | NFR-PDPA-11 |  |  |  |  |  |
 | 1812 | PDPA & Privacy | Provide an accessible Cookie Policy page documenting all cookies, purpose, category and retention period. |  | Medium | 1 |  |  | NFR-PDPA-12 |  |  |  |  |  |
+| 1950 | Engagement | Track newsletter sign-up form submissions, including the topic the visitor subscribed to. |  | High | 1 | String | Festivals |  |  |  |  |  |  |
