@@ -2054,7 +2054,7 @@
           "expiration": "Visitor",
           "value_format": "String (auto)",
           "example_value": "79658739203495820394857",
-          "data_element": "OOTB",
+          "data_element": "user.ecid",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar1",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "OOTB"
@@ -2069,7 +2069,7 @@
           "expiration": "Page View",
           "value_format": "URL string",
           "example_value": "https://snf.gov.sg/programme/lantern-walk",
-          "data_element": "digitalData.page.url",
+          "data_element": "web.webPageDetails.URL",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar2",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Baseline"
@@ -2084,7 +2084,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "SNF",
-          "data_element": "digitalData.page.businessUnit",
+          "data_element": "web.webPageDetails.businessUnit",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar3",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Baseline"
@@ -2099,7 +2099,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "production",
-          "data_element": "digitalData.page.environment",
+          "data_element": "web.webPageDetails.environment",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar4",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Baseline"
@@ -2143,7 +2143,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "newsletter",
-          "data_element": "Query Param → utm_campaign / cid",
+          "data_element": "marketing.source",
           "implementation_scope": "SAINT Classification",
           "implementation_status": "OOTB"
         },
@@ -2157,7 +2157,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "email",
-          "data_element": "Query Param → utm_campaign / cid",
+          "data_element": "marketing.medium",
           "implementation_scope": "SAINT Classification",
           "implementation_status": "OOTB"
         },
@@ -2185,7 +2185,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "hero_banner_a",
-          "data_element": "Query Param → utm_campaign / cid",
+          "data_element": "marketing.content",
           "implementation_scope": "SAINT Classification",
           "implementation_status": "OOTB"
         },
@@ -2249,7 +2249,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Programme Detail : Lantern Walk",
-          "data_element": "digitalData.page.pageName",
+          "data_element": "web.webPageDetails.name",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar5",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Baseline"
@@ -2264,7 +2264,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Programme",
-          "data_element": "digitalData.page.siteSection",
+          "data_element": "web.webPageDetails.siteSection",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar6",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2279,7 +2279,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "programme-detail",
-          "data_element": "digitalData.page.pageType",
+          "data_element": "content.pageType",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar7",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2294,7 +2294,7 @@
           "expiration": "Page View",
           "value_format": "String (true/false)",
           "example_value": "true",
-          "data_element": "digitalData.page.brandCompliant",
+          "data_element": "content.brandCompliant",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar8",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2313,7 +2313,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "PRG-00421",
-          "data_element": "digitalData.content.programmeId",
+          "data_element": "content.programmeId",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar9",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2328,7 +2328,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Lantern Walk at Armenian Street",
-          "data_element": "digitalData.content.programmeTitle",
+          "data_element": "content.programmeTitle",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar10",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2343,7 +2343,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "Armenian Street",
-          "data_element": "digitalData.content.venueName",
+          "data_element": "content.venueName",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar11",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2358,7 +2358,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "2026-08-21 19:00-22:00",
-          "data_element": "digitalData.content.schedule",
+          "data_element": "content.schedule",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar12",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2373,7 +2373,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "visible-scanned-in",
-          "data_element": "digitalData.content.unlockedStatus",
+          "data_element": "content.unlockedStatus",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar13",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2388,7 +2388,7 @@
           "expiration": "Page View",
           "value_format": "String (YYYY)",
           "example_value": "2026",
-          "data_element": "digitalData.content.firstFestivalYear",
+          "data_element": "content.firstFestivalYear",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar14",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2407,7 +2407,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "registered",
-          "data_element": "digitalData.user.loginStatus",
+          "data_element": "user.loginStatus",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar15",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2422,7 +2422,7 @@
           "expiration": "Never",
           "value_format": "SHA-256 hash",
           "example_value": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b",
-          "data_element": "digitalData.user.idHash",
+          "data_element": "user.idHash",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar16",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2437,7 +2437,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "first-qr-scan",
-          "data_element": "digitalData.user.regTrigger",
+          "data_element": "journey.regTrigger",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar17",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2452,7 +2452,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "T0:on|T1:off|T2:on",
-          "data_element": "digitalData.consent.tierState",
+          "data_element": "journey.consent.tierState",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar18",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2467,7 +2467,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "withdraw-tier1",
-          "data_element": "digitalData.consent.action",
+          "data_element": "journey.consent.action",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar19",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2482,7 +2482,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "necessary:on|analytics:on|targeting:off",
-          "data_element": "digitalData.consent.cookieState",
+          "data_element": "journey.consent.cookieState",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar20",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2497,7 +2497,7 @@
           "expiration": "Visit",
           "value_format": "String (true/false)",
           "example_value": "true",
-          "data_element": "digitalData.user.studentCohort",
+          "data_element": "journey.studentCohort",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar21",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2516,7 +2516,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "INST-0097",
-          "data_element": "digitalData.qr.installationId",
+          "data_element": "journey.qr.installationId",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar22",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2531,7 +2531,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "Bras Basah Heritage Loop",
-          "data_element": "digitalData.trail.name",
+          "data_element": "web.webInteraction.name",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar23",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2546,7 +2546,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "3 of 6",
-          "data_element": "digitalData.trail.progressStep",
+          "data_element": "journey.trail.progressStep",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar24",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2561,7 +2561,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "ITIN-5521",
-          "data_element": "digitalData.itinerary.id",
+          "data_element": "journey.itinerary.id",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar25",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2576,7 +2576,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "native-share-whatsapp",
-          "data_element": "digitalData.itinerary.shareMethod",
+          "data_element": "journey.itinerary.shareMethod",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar26",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2591,7 +2591,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "time-conflict",
-          "data_element": "digitalData.itinerary.suggestionType",
+          "data_element": "journey.itinerary.suggestionType",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar27",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2606,7 +2606,7 @@
           "expiration": "Event",
           "value_format": "URL string",
           "example_value": "https://klook.com/activity/snf2026",
-          "data_element": "digitalData.cta.klookDestination",
+          "data_element": "web.webInteraction.klookDestination",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar28",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2621,7 +2621,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "pin-tap",
-          "data_element": "digitalData.map.interactionType",
+          "data_element": "web.webInteraction.type",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar29",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2636,7 +2636,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "granted",
-          "data_element": "digitalData.map.locationPermission",
+          "data_element": "journey.map.locationPermission",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar30",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2651,7 +2651,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "current-night-urgency",
-          "data_element": "digitalData.listing.sortMode",
+          "data_element": "journey.listing.sortMode",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar31",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2666,7 +2666,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "your-picks-tonight",
-          "data_element": "digitalData.personalisation.useCase",
+          "data_element": "journey.personalisation.useCase",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar32",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2681,7 +2681,7 @@
           "expiration": "Visit",
           "value_format": "String",
           "example_value": "activity42:variantB",
-          "data_element": "digitalData.personalisation.variant",
+          "data_element": "journey.personalisation.variant",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar33",
           "implementation_scope": "Adobe Target",
           "implementation_status": "Not Started"
@@ -2696,7 +2696,7 @@
           "expiration": "Visit",
           "value_format": "Hash string",
           "example_value": "c1f4a9e2",
-          "data_element": "digitalData.personalisation.loopClusterHash",
+          "data_element": "journey.personalisation.loopClusterHash",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar34",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2711,7 +2711,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "trail-recommendation",
-          "data_element": "digitalData.concierge.queryIntent",
+          "data_element": "journey.concierge.queryIntent",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar35",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2726,7 +2726,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "answered",
-          "data_element": "digitalData.concierge.outcome",
+          "data_element": "journey.concierge.outcome",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar36",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2741,7 +2741,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "chatgpt-agent",
-          "data_element": "digitalData.seo.agentSource",
+          "data_element": "journey.seo.agentSource",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar37",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2756,7 +2756,7 @@
           "expiration": "Event",
           "value_format": "String",
           "example_value": "og-programme-detail",
-          "data_element": "digitalData.social.shareSurface",
+          "data_element": "journey.social.shareSurface",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar38",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2771,7 +2771,7 @@
           "expiration": "Page View",
           "value_format": "String",
           "example_value": "aem-author-publish",
-          "data_element": "digitalData.content.publishSource",
+          "data_element": "content.publishSource",
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar39",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
@@ -2794,7 +2794,7 @@
           "description": "Mirrors the Page URL eVar to enable PathFinder pathing analysis across the SNF site. Captures the full page URL on every hit.",
           "value_format": "Full URL string",
           "example_value": "https://singaporenightfestival.gov.sg/programme/light-projection",
-          "data_element": "digitalData.page.url",
+          "data_element": "web.webPageDetails.URL",
           "xdm_field": "_experience.analytics.customDimensions.props.prop1",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2807,7 +2807,7 @@
           "description": "Mirrors the Business Unit eVar to enable ClickMap / PatternMatch segmentation of pathing by business unit. Constant value for the SNF site.",
           "value_format": "Lowercase string",
           "example_value": "heritage-sg",
-          "data_element": "digitalData.page.businessUnit",
+          "data_element": "web.webPageDetails.businessUnit",
           "xdm_field": "_experience.analytics.customDimensions.props.prop2",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2828,7 +2828,7 @@
           "description": "Mirrors the Page Name eVar to enable PathFinder pathing across programme, installation and content pages. Supports requirement 104 (programme/installation listing display tracking).",
           "value_format": "Colon-delimited hierarchy string",
           "example_value": "snf:programme:light-projection",
-          "data_element": "digitalData.page.pageName",
+          "data_element": "web.webPageDetails.name",
           "xdm_field": "_experience.analytics.customDimensions.props.prop3",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2841,7 +2841,7 @@
           "description": "Mirrors the Site Section eVar to enable PatternMatch / ClickMap analysis of section-level navigation across the festival site.",
           "value_format": "Lowercase string",
           "example_value": "programme",
-          "data_element": "digitalData.page.siteSection",
+          "data_element": "web.webPageDetails.siteSection",
           "xdm_field": "_experience.analytics.customDimensions.props.prop4",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2854,7 +2854,7 @@
           "description": "Mirrors the Programme Name eVar to support content pathing analysis of which programmes/installations visitors traverse. Supports requirement 104.",
           "value_format": "String",
           "example_value": "Light Projection on the Padang",
-          "data_element": "digitalData.content.programmeName",
+          "data_element": "content.programmeName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop5",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2871,7 +2871,7 @@
           "description": "Mirrors the Venue Name eVar to enable PathFinder analysis of venue-to-venue navigation on the precinct map and listings. Supports requirement 401 (interactive precinct map).",
           "value_format": "String",
           "example_value": "National Museum of Singapore",
-          "data_element": "digitalData.content.venueName",
+          "data_element": "content.venueName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop6",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2884,7 +2884,7 @@
           "description": "Mirrors the Trail Name eVar to enable pathing analysis of which curated self-guided trails visitors view and follow. Supports requirement 501 (trail presentation).",
           "value_format": "String",
           "example_value": "Bras Basah Arts Trail",
-          "data_element": "digitalData.content.trailName",
+          "data_element": "content.trailName",
           "xdm_field": "_experience.analytics.customDimensions.props.prop7",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2901,7 +2901,7 @@
           "description": "Mirrors the Registration Journey Step eVar to enable PathFinder analysis of the email registration funnel flow. Supports requirement 201 (email registration verification).",
           "value_format": "String step label",
           "example_value": "email-entered",
-          "data_element": "digitalData.eventData.registrationStep",
+          "data_element": "journey.registrationStep",
           "xdm_field": "_experience.analytics.customDimensions.props.prop8",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2914,7 +2914,7 @@
           "description": "Mirrors the Installation ID eVar to enable PatternMatch analysis of QR check-in sequences across installations. Supports requirement 604 (QR scan events / confirmed check-ins).",
           "value_format": "Alphanumeric ID",
           "example_value": "INST-0427",
-          "data_element": "digitalData.eventData.installationId",
+          "data_element": "journey.qr.installationId",
           "xdm_field": "_experience.analytics.customDimensions.props.prop9",
           "implementation_scope": "WebSDK (alloy.js)",
           "implementation_status": "Requested"
@@ -2945,7 +2945,7 @@
           "description": "Numeric page load time in milliseconds. Pairs with Page Load Time Instances to derive Avg Page Load Time calculated metric. Supports BRD 1501-1504 performance monitoring.",
           "event_type": "Numeric",
           "unique_recording": "No",
-          "data_element": "digitalData.page.loadTimeMs",
+          "data_element": "web.webPageDetails.pageLoadTimeMs",
           "xdm_field": "_experience.analytics.event1to100.event2.value",
           "implementation_scope": "AEP Web SDK (alloy.js)",
           "implementation_status": "Requested"
