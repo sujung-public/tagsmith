@@ -2,20 +2,21 @@
   "version": 1,
   "docs": {
     "brd": {
-      "sha": "05f72ece1d89c5a4dc919d6ec5a48b787dd247d91f9a1cf29805fb909af897f9",
-      "updatedAt": "2026-11-03T09:59:27.205Z",
-      "source": "tagsmith",
+      "sha": "a4554ef13481ec5ffc7a5f2f5340f177604a0d856998515c4df416bd654ad819",
+      "updatedAt": "2026-11-04T03:56:36.886Z",
+      "source": "github",
+      "actor": "github:sujung-public/tagsmith@de1fac6",
       "sourceName": "brd-3cd8466c_Government_Default.xlsx"
     },
     "sdr": {
-      "sha": "8919975c5930d31171e5d85ea1016833c65d01181a2664864a51b252c1e3a740",
-      "updatedAt": "2026-11-04T01:18:20.514Z",
+      "sha": "55d3cad5ab0e0b49b74619216b04c93682d4ef885c0f74148e7ad136ed798920",
+      "updatedAt": "2026-11-04T05:07:06.993Z",
       "source": "tagsmith",
       "sourceName": "sdr-903d5925_Government_Default.xlsx"
     },
     "blueprint": {
-      "sha": "23ffdc2dd337be6989f2bbc461df654d93c404c0e72f505e6d6840a9ff22c7cf",
-      "updatedAt": "2026-11-04T01:16:58.459Z",
+      "sha": "3fa6f14a1597fc168f730351ac8311ead14d4c20e46308e2a88f5182e10b5b33",
+      "updatedAt": "2026-11-04T05:07:12.013Z",
       "source": "tagsmith",
       "sourceName": "blueprint-cd77eacf_Government_Default_generated.xlsx"
     },

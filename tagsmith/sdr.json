@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T01:17:54.928957",
+  "generated_at": "2026-11-04T05:07:05.570949",
   "industry": "government",
   "platform": "web",
   "report_suite": "",
-  "project_name": "Business Requirements",
+  "project_name": "Government Default",
   "variables": [
     {
       "type": "eVar",
@@ -189,7 +189,7 @@
       "type": "eVar",
       "id": "eVar7",
       "name": "Page Type",
-      "description": "Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812.",
+      "description": "Records the type of page being viewed, including distinguishing venue detail pages from venue listing pages. (BRD 104, 107, 108, 1812)",
       "valueFormat": "",
       "exampleValue": "",
       "allocation": "Most Recent (Last)",
@@ -582,6 +582,18 @@
       "dataLayerPath": "content.publishSource"
     },
     {
+      "type": "eVar",
+      "id": "eVar40",
+      "name": "Newsletter Subscription Topic",
+      "description": "Captures the topic selected when a visitor submits a newsletter sign-up form. (BRD 1950)",
+      "valueFormat": "",
+      "exampleValue": "",
+      "allocation": "Most Recent (Last)",
+      "expiration": "Visit",
+      "xdmField": "_experience.analytics.customDimensions.eVars.eVar40",
+      "dataLayerPath": "newsletter.topic"
+    },
+    {
       "type": "prop",
       "id": "prop1",
       "name": "Page URL",
@@ -970,24 +982,34 @@
       "uniqueRecording": "N",
       "xdmField": "_experience.analytics.event1to100.event30.value",
       "dataLayerPath": ""
+    },
+    {
+      "type": "event",
+      "id": "event31",
+      "name": "Newsletter Sign-Up",
+      "description": "Fires on successful newsletter sign-up form submission. (BRD 1950)",
+      "eventType": "Counter",
+      "uniqueRecording": "N",
+      "xdmField": "_experience.analytics.event1to100.event31.value",
+      "dataLayerPath": ""
     }
   ],
   "processing_rules_hints": {},
   "out_of_box_requirements": [],
   "warnings": [],
   "metadata": {
-    "client": "Business Requirements",
+    "client": "Government Default",
     "industry": "government",
     "platform": "Adobe Analytics + AEP Web SDK",
     "version": "1.0",
-    "generated_at": "2026-11-04T01:17:54.928957",
+    "generated_at": "2026-11-04T05:07:05.570949",
     "properties": []
   },
   "summary": {
-    "section_b_evar_count": 47,
+    "section_b_evar_count": 48,
     "list_variable_count": 0,
     "section_b_prop_count": 9,
-    "section_b_event_count": 30
+    "section_b_event_count": 31
   },
   "metrics_segments": [],
   "brd_traceability": [],
@@ -1230,7 +1252,7 @@
           "id": "104",
           "slot": "eVar7",
           "name": "Page Type",
-          "description": "Page template/type (programme, installation, trail, privacy, terms, cookie policy). Covers BRD 104/107/108/1812.",
+          "description": "Records the type of page being viewed, including distinguishing venue detail pages from venue listing pages. (BRD 104, 107, 108, 1812)",
           "allocation": "Most Recent (Last)",
           "expiration": "Page View",
           "value_format": "String",
@@ -1731,6 +1753,21 @@
           "xdm_field": "_experience.analytics.customDimensions.eVars.eVar39",
           "implementation_scope": "AEP Web SDK",
           "implementation_status": "Not Started"
+        },
+        {
+          "kind": "variable",
+          "slot": "eVar40",
+          "name": "Newsletter Subscription Topic",
+          "description": "Captures the topic selected when a visitor submits a newsletter sign-up form. (BRD 1950)",
+          "allocation": "Most Recent (Last)",
+          "expiration": "Visit",
+          "merchandising": "None",
+          "value_format": "String",
+          "example_value": "Festivals",
+          "data_element": "newsletter.topic",
+          "xdm_field": "_experience.analytics.customDimensions.eVars.eVar40",
+          "implementation_scope": "AEP Web SDK",
+          "implementation_status": "OOTB"
         }
       ],
       "props": [
@@ -2279,6 +2316,17 @@
           "event_type": "Counter",
           "unique_recording": "No",
           "xdm_field": "_experience.analytics.event1to100.event30.value",
+          "implementation_scope": "AEP Web SDK (alloy.js)",
+          "implementation_status": "Requested"
+        },
+        {
+          "kind": "variable",
+          "slot": "event31",
+          "name": "Newsletter Sign-Up",
+          "description": "Fires on successful newsletter sign-up form submission. (BRD 1950)",
+          "event_type": "Counter",
+          "unique_recording": "Once Per Visit",
+          "xdm_field": "_experience.analytics.event1to100.event31.value",
           "implementation_scope": "AEP Web SDK (alloy.js)",
           "implementation_status": "Requested"
         }
